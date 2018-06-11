@@ -14,7 +14,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-path = "./raw/30MAY.xml"
+path = "./raw/11JUN.xml"
 raw = open(path,"r")
 
 tree = etree.parse(raw)
