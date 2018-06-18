@@ -12,6 +12,8 @@ from collections import Counter
 class ChatFeatures:
 
 	def __init__ (self, conversation):
+
+		#ToDo: receive conversation via parameter and use the raw txt
 		self.raw = "./raw/11JUN.xml"
 		self.tree = etree.parse(self.raw)
 		self.users = self.tree.xpath("/transcript/messages/message/from//text()")
@@ -59,6 +61,24 @@ class ChatFeatures:
 		self.tokensPerUser[user].append(tokens)
 
 
+	def orthographic(self):
+		import enchant
+		d = enchant.Dict("es")
+		lMistakes = []
+
+		for date, listMsgs in self.conversation.iteritems():
+			for dictMsg in listMsgs:
+				text = dictMsg["text"]
+				user = dictMsg["user"]
+				date = dictMsg["date"]
+				tokens = text.split()
+				tokens = self.clean_words(tokens)
+				for token in tokens:
+					if token and not d.check(token):
+						lMistakes.append((user,token, d.suggest(token)[0:3]))
+
+		return lMistakes
+
 	def process(self):
 		i=0
 		self.tokensPerMsg = []
@@ -75,7 +95,6 @@ class ChatFeatures:
 				self.conversation[simpleDate] = []
 
 			self.conversation[simpleDate].append({"user":user,"date":date,"text":text})
-
 			self.getTokens(text, date, user)
 			
 			i+=1

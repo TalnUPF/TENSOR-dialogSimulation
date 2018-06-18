@@ -50,6 +50,15 @@ def turnsPerDayUser():
 	data = jsonpify(tpd)
 	return data
 
+@app.route('/orthographic',methods=["GET"])
+def orthographic():
+	conversation = request.args.get('conversation')
+	iChat = ChatFeatures(conversation)
+	iChat.process()
+	ort = iChat.orthographic()
+	data = jsonpify(ort)
+	return data
+
 if __name__ == '__main__':
 
     app.debug = True
