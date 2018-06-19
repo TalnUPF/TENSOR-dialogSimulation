@@ -1,2301 +1,1550 @@
 {
-	'2018-05-07': {
-		'azra': Counter({
-			u 'hermanos': 4,
-			u 'Allah': 3,
-			u 'cosas': 3,
-			u 'Khair': 2,
-			u 'tiempo': 2,
-			u 'Barcelona': 2,
-			u 'Ceuta': 2,
-			u 'Jazak': 2,
-			u 'palabras': 1,
-			u 'rezo': 1,
-			u 'enfermera': 1,
-			u 'epilepsia': 1,
-			u 'chicas': 1,
-			u 'alaikum': 1,
-			u 'curso': 1,
-			u 'gente': 1,
-			u 'madre': 1,
-			u 'personas': 1,
-			u 'mujer': 1,
-			u 'hermanitos': 1,
-			u 'Tanger': 1,
-			u 'internet': 1,
-			u 'Salam': 1,
-			u 'd\xedas': 1,
-			u 'padres': 1,
-			u '\u0628\u0633\u0644\u0627\u0645\u0647': 1,
-			u 'Assalam': 1,
-			u 'escuela': 1,
-			u 'sant': 1,
-			u 'gracias': 1,
-			u 'padre': 1,
-			u 'metro': 1,
-			u 'dia': 1,
-			u 'Ala': 1,
-			u 'cabeza': 1,
-			u 'vida': 1,
-			u 'fe': 1
-		}),
-		'jawad': Counter({
-			u 'hermanos': 4,
-			u 'YaAllah': 3,
-			u 'D': 3,
-			u 'fe': 3,
-			u 'Wasallam': 2,
-			u 'estudias': 2,
-			u 'alli': 2,
-			u 'bien': 2,
-			u 'Allahu': 2,
-			u 'Aleihi': 2,
-			u 'amigos': 2,
-			u 'padre': 2,
-			u 'Sal': 2,
-			u 'mezquita': 2,
-			u 'Allah': 2,
-			u 'dia': 2,
-			u 'barcelona': 2,
-			u 'Espa\xf1a': 1,
-			u 'cosa': 1,
-			u 'Wallah': 1,
-			u 'allah': 1,
-			u 'ma\u02bfa': 1,
-			u 'esfuerzo': 1,
-			u 'enfermera': 1,
-			u 'verdad': 1,
-			u 'chicas': 1,
-			u 'Sierte': 1,
-			u 'asi': 1,
-			u 'Khair': 1,
-			u 'antencion': 1,
-			u 'gente': 1,
-			u 'AlhamduLillah': 1,
-			u 'contigo': 1,
-			u 'personas': 1,
-			u 'tiempos': 1,
-			u 'intromision': 1,
-			u 'colegio': 1,
-			u 'tiempo': 1,
-			u 'mujer': 1,
-			u 'mujeres': 1,
-			u 'ignoracia': 1,
-			u 'hermana': 1,
-			u 'gustos': 1,
-			u 'pregunta': 1,
-			u 'Salam': 1,
-			u 'InshaAllah': 1,
-			u 'facebook': 1,
-			u 'familia': 1,
-			u 'risas': 1,
-			u 'ira': 1,
-			u 'tambien': 1,
-			u 'caso': 1,
-			u 'hola': 1,
-			u 'edad': 1,
-			u 'veces': 1,
-			u 'casa': 1,
-			u 'pienses': 1,
-			u 'entenderlos': 1,
-			u 'ceuta': 1,
-			u 'Jazak': 1,
-			u 'chica': 1,
-			u 'universidad': 1,
-			u 'acuerdo': 1,
-			u 'monta\xf1as': 1
-		})
+	"2018-05-07": {
+		"azra": [
+			[
+				"mas",
+				6
+			],
+			[
+				"quiero",
+				5
+			],
+			[
+				"ser",
+				5
+			],
+			[
+				"hermanos",
+				4
+			],
+			[
+				"aqu\u00ed",
+				4
+			],
+			[
+				"cosas",
+				3
+			],
+			[
+				"allah",
+				3
+			],
+			[
+				"mejor",
+				3
+			],
+			[
+				"menos",
+				2
+			],
+			[
+				"triste",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"si",
+				7
+			],
+			[
+				"hermanos",
+				4
+			],
+			[
+				"importante",
+				4
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"mas",
+				4
+			],
+			[
+				"d",
+				3
+			],
+			[
+				"allah",
+				3
+			],
+			[
+				"yaallah",
+				3
+			],
+			[
+				"fe",
+				3
+			],
+			[
+				"alli",
+				2
+			]
+		]
 	},
-	'2018-05-08': {
-		'azra': Counter({
-			u 'mezquita': 4,
-			u 'Allah': 3,
-			u 'd\xeda': 3,
-			u 'verdad': 2,
-			u 'hermano': 2,
-			u 'hermanos': 2,
-			u 'tiempo': 2,
-			u 'cosas': 2,
-			u 'diario': 1,
-			u 'conexi\xf3n': 1,
-			u 'consejo': 1,
-			u 'chicas': 1,
-			u 'ramadan': 1,
-			u 'semana': 1,
-			u 'alaikum': 1,
-			u 'hacerlo': 1,
-			u 'cornell\xe0': 1,
-			u 'bien': 1,
-			u 'confianza': 1,
-			u 'calma': 1,
-			u 'tristeza': 1,
-			u 'escuela': 1,
-			u 'allah': 1,
-			u 'noche': 1,
-			u 'procuro': 1,
-			u 'crueldad': 1,
-			u 'conrell\xe0': 1,
-			u 'consuelo': 1,
-			u 'apariencia': 1,
-			u 'rabia': 1,
-			u 'mente': 1,
-			u 'sukria': 1,
-			u 'Assalam': 1,
-			u 'sitio': 1,
-			u 'edad': 1,
-			u 'gracias': 1,
-			u 'casa': 1,
-			u 'metro': 1,
-			u 'perd\xf3n': 1,
-			u 'tren': 1,
-			u 'caso': 1,
-			u 'hermanas': 1,
-			u 'ganas': 1,
-			u 'tranquilidad': 1
-		}),
-		'jawad': Counter({
-			u 'ramadan': 6,
-			u 'gente': 5,
-			u 'allah': 4,
-			u 'paso': 3,
-			u 'hasanat': 2,
-			u 'veras': 2,
-			u 'verdad': 2,
-			u 'paciencia': 2,
-			u 'profeta': 2,
-			u 'MashaAllah': 2,
-			u 'epoca': 2,
-			u 'ramandan': 2,
-			u 'parte': 2,
-			u 'des': 2,
-			u 'Baraka': 1,
-			u 'hermanas': 1,
-			u 'Radi': 1,
-			u 'muhammad': 1,
-			u 'conceptos': 1,
-			u 'sociedad': 1,
-			u 'a\xf1o': 1,
-			u 'Alaihi': 1,
-			u 'novedades': 1,
-			u 'cornell\xe0': 1,
-			u 'musulman': 1,
-			u 'cristianos': 1,
-			u 'Allah': 1,
-			u 'alli': 1,
-			u 'ma\u02bfa': 1,
-			u 'hermana': 1,
-			u 'Allahu': 1,
-			u 'final': 1,
-			u 'Aleihi': 1,
-			u 'hoy': 1,
-			u 'navidad': 1,
-			u 'hermanos': 1,
-			u 'conexion': 1,
-			u 'mujer': 1,
-			u 'hombres': 1,
-			u 'Mezquita': 1,
-			u 'MashaAlla': 1,
-			u 'camino': 1,
-			u 'azra': 1,
-			u 'Salam': 1,
-			u 'tuj': 1,
-			u 'pareces': 1,
-			u 'ojos': 1,
-			u 'salaam': 1,
-			u 'Wasallam': 1,
-			u 'Sal': 1,
-			u 'mujeres': 1,
-			u 'mezquita': 1,
-			u 'Anha': 1,
-			u 'dudas': 1,
-			u 'musulmanes': 1,
-			u 'SubhanaAllah': 1,
-			u 'occidente': 1
-		})
+	"2018-05-08": {
+		"azra": [
+			[
+				"allah",
+				4
+			],
+			[
+				"mezquita",
+				4
+			],
+			[
+				"rezar",
+				3
+			],
+			[
+				"as\u00ed",
+				3
+			],
+			[
+				"puedo",
+				3
+			],
+			[
+				"d\u00eda",
+				3
+			],
+			[
+				"ayunar",
+				2
+			],
+			[
+				"verdad",
+				2
+			],
+			[
+				"veo",
+				2
+			],
+			[
+				"cosas",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"ramadan",
+				6
+			],
+			[
+				"gente",
+				5
+			],
+			[
+				"allah",
+				5
+			],
+			[
+				"solo",
+				4
+			],
+			[
+				"si",
+				4
+			],
+			[
+				"paso",
+				3
+			],
+			[
+				"cada",
+				3
+			],
+			[
+				"mas",
+				3
+			],
+			[
+				"verdad",
+				2
+			],
+			[
+				"alli",
+				2
+			]
+		]
 	},
-	'2018-05-09': {
-		'azra': Counter({
-			u 'Allah': 4,
-			u 'vez': 3,
-			u 'chicas': 2,
-			u 'necesidades': 2,
-			u 'hombre': 2,
-			u 'culpa': 2,
-			u 'cosas': 2,
-			u 'velo': 1,
-			u 'insegura': 1,
-			u 'hermanas': 1,
-			u 'ataque': 1,
-			u 'palabras': 1,
-			u 'paso': 1,
-			u 'ma\u02bfa': 1,
-			u 'provocativo': 1,
-			u 'epilepsia': 1,
-			u 's\xe1bados': 1,
-			u 'alaikum': 1,
-			u 'hijos': 1,
-			u 'musulman': 1,
-			u 'gente': 1,
-			u 'dudas': 1,
-			u 'madre': 1,
-			u 'hermano': 1,
-			u 'encontrarte': 1,
-			u 'deseo': 1,
-			u 'golpes': 1,
-			u 'noche': 1,
-			u 'bares': 1,
-			u 'fe': 1,
-			u 'familia': 1,
-			u 'sukria': 1,
-			u 'Assalam': 1,
-			u 'escuela': 1,
-			u 'd\xeda': 1,
-			u 'casa': 1,
-			u 'padre': 1,
-			u 'esperanza': 1,
-			u 'cor\xe1n': 1,
-			u 'mezquita': 1,
-			u 'vaqueros': 1,
-			u 'cari\xf1o': 1,
-			u 'paciencia': 1,
-			u 'acuerdo': 1,
-			u 'chico': 1,
-			u 'dec\xedas': 1
-		}),
-		'jawad': Counter({
-			u 'mujer': 6,
-			u 'hijos': 3,
-			u 'islam': 3,
-			u 'asi': 3,
-			u 'suerte': 3,
-			u 'allah': 2,
-			u 'cambio': 2,
-			u 'obligaciones': 2,
-			u 'lado': 2,
-			u 'InshaAllah': 2,
-			u 'hombre': 2,
-			u 'culpa': 2,
-			u 'final': 2,
-			u 'musulmanes': 2,
-			u 'grandeza': 1,
-			u 'ma\u02bfa': 1,
-			u 'deberes': 1,
-			u 'culaquier': 1,
-			u 'ejemplo': 1,
-			u 'entenderlas': 1,
-			u 'tenerte': 1,
-			u 'Estara': 1,
-			u 'sociedad': 1,
-			u 'paciencia': 1,
-			u 'ojo': 1,
-			u 'deber': 1,
-			u 'conocerlo': 1,
-			u 'parte': 1,
-			u 'musulman': 1,
-			u 'difundirlo': 1,
-			u 'aplicarlas': 1,
-			u 'manos': 1,
-			u 'objetivo': 1,
-			u 'AlhamduLillah': 1,
-			u 'Azra': 1,
-			u 'ayudas': 1,
-			u 'bien': 1,
-			u 'destino': 1,
-			u 'pena': 1,
-			u 'dias': 1,
-			u 'hermanos': 1,
-			u '\u0627\u0644\u062e\u064a\u0631': 1,
-			u 'mujeres': 1,
-			u 'hombres': 1,
-			u 'camino': 1,
-			u 'cuerpo': 1,
-			u 'fe': 1,
-			u 'puedas': 1,
-			u 'necesidades': 1,
-			u 'alma': 1,
-			u 'casa': 1,
-			u 'padre': 1,
-			u 'des': 1,
-			u 'aprenderlo': 1,
-			u 'ummah': 1,
-			u 'cosas': 1,
-			u 'base': 1,
-			u 'error': 1,
-			u 'SubhanaAllah': 1,
-			u 'vida': 1,
-			u 'modo': 1
-		})
+	"2018-05-09": {
+		"azra": [
+			[
+				"aqu\u00ed",
+				6
+			],
+			[
+				"allah",
+				4
+			],
+			[
+				"quer\u00eda",
+				4
+			],
+			[
+				"vez",
+				3
+			],
+			[
+				"as\u00ed",
+				3
+			],
+			[
+				"s\u00e9",
+				3
+			],
+			[
+				"quiero",
+				2
+			],
+			[
+				"necesidades",
+				2
+			],
+			[
+				"cosas",
+				2
+			],
+			[
+				"muchas",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"mujer",
+				6
+			],
+			[
+				"buena",
+				4
+			],
+			[
+				"solo",
+				4
+			],
+			[
+				"si",
+				4
+			],
+			[
+				"islam",
+				3
+			],
+			[
+				"hijos",
+				3
+			],
+			[
+				"ayudar",
+				3
+			],
+			[
+				"asi",
+				3
+			],
+			[
+				"final",
+				3
+			],
+			[
+				"suerte",
+				3
+			]
+		]
 	},
-	'2018-05-10': {
-		'azra': Counter({
-			u 'Allah': 5,
-			u 'semana': 3,
-			u 'fin': 3,
-			u 'hermanos': 3,
-			u 'Baraka': 2,
-			u 'fuerza': 2,
-			u 'consejos': 2,
-			u 'sukria': 2,
-			u 'ganas': 2,
-			u 'sentirnos': 1,
-			u 'lucha': 1,
-			u 'tiempo': 1,
-			u 'Radi': 1,
-			u 'alhamdulillah': 1,
-			u 'ssalamah': 1,
-			u 'voluntad': 1,
-			u 'combate': 1,
-			u 'intento': 1,
-			u 'hacerlo': 1,
-			u 'hogar': 1,
-			u 'detenimiento': 1,
-			u 'gente': 1,
-			u 'vez': 1,
-			u 'mensaje': 1,
-			u 'energ\xeda': 1,
-			u 'gobiernos': 1,
-			u 'nombre': 1,
-			u 'rezo': 1,
-			u 'persona': 1,
-			u 'camino': 1,
-			u 'azra': 1,
-			u 'leo': 1,
-			u 'd\xedas': 1,
-			u 'hermano': 1,
-			u 'amigos': 1,
-			u 'Annur': 1,
-			u 'gu\xeda': 1,
-			u 'veces': 1,
-			u 'indulgente': 1,
-			u 'miedo': 1,
-			u 'Anha': 1,
-			u 'Siria': 1,
-			u 'mezquita': 1,
-			u 'oraci\xf3n': 1,
-			u 'cosas': 1,
-			u 'error': 1,
-			u 'defenderlo': 1,
-			u 'situaci\xf3n': 1,
-			u 'Sbah': 1
-		}),
-		'jawad': Counter({
-			u 'hermana': 6,
-			u 'hermanos': 5,
-			u 'alli': 4,
-			u 'yihad': 3,
-			u 'hombre': 2,
-			u 'mundo': 2,
-			u 'noticias': 2,
-			u 'islam': 2,
-			u 'hogar': 2,
-			u 'tambien': 2,
-			u 'hermanas': 2,
-			u 'dia': 2,
-			u 'musulmanes': 2,
-			u 'ni\xf1os': 1,
-			u 'tiranos': 1,
-			u 'lucha': 1,
-			u 'alhamdulillah': 1,
-			u 'mision': 1,
-			u 'felicidad': 1,
-			u 'Buenos': 1,
-			u 'tardes': 1,
-			u 'll\xe0': 1,
-			u 'AlhamduLillah': 1,
-			u 'profeta': 1,
-			u 'mira': 1,
-			u 'ayuda': 1,
-			u '\u0627\u0644\u0643\u0628\u0631\u0649': 1,
-			u 'vida': 1,
-			u 'Allah': 1,
-			u 'httpsgulfuploadcomwe6ss12mkdoz': 1,
-			u 'Triste': 1,
-			u 'Azra': 1,
-			u '\u0633\u0648\u0631\u064a\u0651\u0629': 1,
-			u 'ricon': 1,
-			u 'precauci\xf3n': 1,
-			u 'cuiidan': 1,
-			u 'pilares': 1,
-			u 'espirtu': 1,
-			u 'dias': 1,
-			u 'justicia': 1,
-			u 'persona': 1,
-			u 'paciencia': 1,
-			u 'muyahidina': 1,
-			u 'yawmun': 1,
-			u 'alsham': 1,
-			u 'reverca': 1,
-			u 'encontraras': 1,
-			u 'Imaginate': 1,
-			u 'determinacion': 1,
-			u 'ira': 1,
-			u 'paciendia': 1,
-			u 'enfermera': 1,
-			u 'veces': 1,
-			u 'significados': 1,
-			u 'siglos': 1,
-			u 'InshaAllah': 1,
-			u 'Bismillah': 1,
-			u 'sera': 1,
-			u 'syria': 1,
-			u 'gente': 1,
-			u 'tierra': 1
-		})
+	"2018-05-10": {
+		"azra": [
+			[
+				"allah",
+				5
+			],
+			[
+				"fin",
+				3
+			],
+			[
+				"all\u00ed",
+				3
+			],
+			[
+				"puedo",
+				3
+			],
+			[
+				"semana",
+				3
+			],
+			[
+				"sukria",
+				3
+			],
+			[
+				"hermanos",
+				3
+			],
+			[
+				"ir",
+				3
+			],
+			[
+				"si",
+				3
+			],
+			[
+				"baraka",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"hermana",
+				6
+			],
+			[
+				"hermanos",
+				5
+			],
+			[
+				"alli",
+				4
+			],
+			[
+				"siempre",
+				4
+			],
+			[
+				"mas",
+				4
+			],
+			[
+				"comenzar",
+				3
+			],
+			[
+				"bien",
+				3
+			],
+			[
+				"tambien",
+				3
+			],
+			[
+				"yihad",
+				3
+			],
+			[
+				"islam",
+				2
+			]
+		]
 	},
-	'2018-05-15': {
-		'azra': Counter({
-			u 'hermanos': 4,
-			u 'd\xeda': 4,
-			u 'hermanas': 4,
-			u 'mezquita': 3,
-			u 'consejo': 2,
-			u 'palabras': 2,
-			u 'lucha': 2,
-			u 'Allah': 2,
-			u 'fuerza': 2,
-			u 'confianza': 2,
-			u 'iniciativa': 2,
-			u 'pueblo': 2,
-			u 'veces': 2,
-			u 'hombre': 2,
-			u 'abuso': 2,
-			u 'ma\u02bfa': 1,
-			u 'injusticias': 1,
-			u 'principio': 1,
-			u 'ejemplo': 1,
-			u 'Radi': 1,
-			u 'al\xe1': 1,
-			u 'noticias': 1,
-			u 'agradeceran': 1,
-			u 'verdad': 1,
-			u 'voluntad': 1,
-			u 'apoyo': 1,
-			u 'momento': 1,
-			u 'ataques': 1,
-			u 'pasos': 1,
-			u 'MashaAllah': 1,
-			u 'parte': 1,
-			u 'movimiento': 1,
-			u 'estilo': 1,
-			u 'cuenta': 1,
-			u 'intenci\xf3n': 1,
-			u 'Dios': 1,
-			u 'tristeza': 1,
-			u 'campa\xf1a': 1,
-			u 'escuela': 1,
-			u 'contigo': 1,
-			u 'poder': 1,
-			u 'vida': 1,
-			u 'occidente': 1,
-			u 'impotencia': 1,
-			u 'acuerdos': 1,
-			u 'dinero': 1,
-			u 'devoci\xf3n': 1,
-			u 'camino': 1,
-			u 'azra': 1,
-			u 'ramadan': 1,
-			u 'rabia': 1,
-			u 'miedo': 1,
-			u 'saca': 1,
-			u 'raz\xf3n': 1,
-			u 'sukria': 1,
-			u 'cuchillo': 1,
-			u 'pistolas': 1,
-			u 'amigas': 1,
-			u 'edad': 1,
-			u 'gracias': 1,
-			u 'mente': 1,
-			u 'Anha': 1,
-			u 'culpa': 1,
-			u 'gusto': 1,
-			u 'salam': 1,
-			u 'distra\xeddos': 1,
-			u 'entrega': 1,
-			u 'suerte': 1,
-			u 'ayuno': 1,
-			u 'amor': 1,
-			u 'seguridad': 1,
-			u 'propaganda': 1
-		}),
-		'jawad': Counter({
-			u 'hermanos': 7,
-			u 'islam': 6,
-			u 'allah': 5,
-			u 'hermana': 5,
-			u 'camino': 3,
-			u 'mundo': 2,
-			u 'voluntad': 2,
-			u 'musulman': 2,
-			u 'hombres': 2,
-			u 'yihad': 2,
-			u 'conocimiento': 2,
-			u 'llevas': 2,
-			u 'haram': 2,
-			u 'honor': 2,
-			u 'insha': 1,
-			u 'martir': 1,
-			u 'manera': 1,
-			u 'limitaciones': 1,
-			u 'haberte': 1,
-			u 'guerra': 1,
-			u 'ramadan': 1,
-			u 'alyihad': 1,
-			u 'verdad': 1,
-			u 'encontrarlos': 1,
-			u 'lcuha': 1,
-			u 'servicio': 1,
-			u 'pureza': 1,
-			u 'parte': 1,
-			u 'muyahidin': 1,
-			u 'nuestrosd': 1,
-			u 'vida': 1,
-			u 'seguridad': 1,
-			u 'ayudarlas': 1,
-			u 'alli': 1,
-			u 'actos': 1,
-			u 'palabras': 1,
-			u 'fuerza': 1,
-			u 'amigas': 1,
-			u 'tambien': 1,
-			u 'causa': 1,
-			u 'hermano': 1,
-			u 'obligacion': 1,
-			u 'contigo': 1,
-			u 'final': 1,
-			u 'occidente': 1,
-			u 'confianza': 1,
-			u 'falta': 1,
-			u 'mujeres': 1,
-			u 'assaum': 1,
-			u 'shaam': 1,
-			u 'hemnos': 1,
-			u 'realitdad': 1,
-			u 'cuuidas': 1,
-			u 'asi': 1,
-			u 'esfuerzo': 1,
-			u 'acciones': 1,
-			u 'palabra': 1,
-			u 'casa': 1,
-			u 'accion': 1,
-			u 'llevarlas': 1,
-			u 'mezquita': 1,
-			u 'dias': 1,
-			u 'musulmanes': 1,
-			u 'mente': 1,
-			u 'hermanas': 1,
-			u 'hoy': 1,
-			u 'saum': 1,
-			u 'modo': 1
-		})
+	"2018-05-15": {
+		"azra": [
+			[
+				"d\u00eda",
+				4
+			],
+			[
+				"hermanas",
+				4
+			],
+			[
+				"hermanos",
+				4
+			],
+			[
+				"bien",
+				3
+			],
+			[
+				"hablar",
+				3
+			],
+			[
+				"mezquita",
+				3
+			],
+			[
+				"siento",
+				3
+			],
+			[
+				"veo",
+				2
+			],
+			[
+				"c\u00f3mo",
+				2
+			],
+			[
+				"pueblo",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"hermanos",
+				7
+			],
+			[
+				"islam",
+				6
+			],
+			[
+				"ser",
+				6
+			],
+			[
+				"allah",
+				6
+			],
+			[
+				"si",
+				6
+			],
+			[
+				"hermana",
+				5
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"claro",
+				4
+			],
+			[
+				"buen",
+				4
+			],
+			[
+				"mas",
+				4
+			]
+		]
 	},
-	'2018-05-16': {
-		'azra': Counter({
-			u 'veces': 4,
-			u 'allah': 3,
-			u 'aditivos': 3,
-			u 'internet': 3,
-			u 'hermanos': 3,
-			u 'recetas': 3,
-			u 'chicas': 2,
-			u 'vaca': 2,
-			u 'madre': 2,
-			u 'edad': 2,
-			u 'hermanas': 2,
-			u 'cosas': 2,
-			u 'chica': 2,
-			u 'ma\u02bfa': 1,
-			u 'm\xfasica': 1,
-			u 'futbol': 1,
-			u 'encuentro': 1,
-			u 'ejemplo': 1,
-			u 'compra': 1,
-			u 'tiendas': 1,
-			u 'verdad': 1,
-			u 'frutas': 1,
-			u 'Barcelona': 1,
-			u 'superficialidad': 1,
-			u 'alcohol': 1,
-			u 'Jawad': 1,
-			u 'Allah': 1,
-			u 'energ\xeda': 1,
-			u 'ayudas': 1,
-			u 'yihad': 1,
-			u 'fuerza': 1,
-			u 'hueso': 1,
-			u 'intenci\xf3n': 1,
-			u 'tiempo': 1,
-			u 'persona': 1,
-			u 'coraz\xf3n': 1,
-			u 'mujeres': 1,
-			u 'suelo': 1,
-			u 'dinero': 1,
-			u 'posibilidades': 1,
-			u 'agua': 1,
-			u 'sabah': 1,
-			u 'd\xedas': 1,
-			u 'pecados': 1,
-			u 'rusia': 1,
-			u 'cerdo': 1,
-			u 'casa': 1,
-			u 'sukria': 1,
-			u 'visita': 1,
-			u 'barrio': 1,
-			u 'marahban': 1,
-			u 'escuela': 1,
-			u 'd\xeda': 1,
-			u 'ma': 1,
-			u 'padre': 1,
-			u 'cocina': 1,
-			u 'mezquita': 1,
-			u 'Al\xe1': 1,
-			u 'Rusia': 1,
-			u 'musulmanes': 1,
-			u 'alimentos': 1,
-			u 'informaci\xf3n': 1,
-			u 'dec\xedas': 1,
-			u 'mensaje': 1,
-			u 'sitios': 1
-		}),
-		'jawad': Counter({
-			u 'allah': 9,
-			u 'carne': 7,
-			u 'islam': 5,
-			u 'cerdo': 5,
-			u 'haram': 5,
-			u 'ejemplo': 5,
-			u 'ser': 4,
-			u 'from': 4,
-			u 'fuentes': 4,
-			u 'mujeres': 4,
-			u 'camino': 3,
-			u 'cosas': 3,
-			u 'futbol': 3,
-			u 'hacerlo': 2,
-			u 'aditivos': 2,
-			u 'lista': 2,
-			u 'hermanos': 2,
-			u 'fitnah': 2,
-			u 'sangre': 2,
-			u 'alhamdu': 2,
-			u 'veces': 2,
-			u 'hermanas': 2,
-			u 'resto': 2,
-			u 'or': 2,
-			u 'Glicerina': 2,
-			u 'comida': 2,
-			u 'hermana': 2,
-			u 'haraam': 2,
-			u 'En\xfameros': 2,
-			u 'and': 2,
-			u 'hombres': 2,
-			u 'ingredientes': 2,
-			u 'hombre': 2,
-			u 'the': 2,
-			u 'publicidad': 1,
-			u 'manera': 1,
-			u 'fuente': 1,
-			u 'alomejor': 1,
-			u 'menasje': 1,
-			u 'Comestible': 1,
-			u 'lados': 1,
-			u 'alternativa': 1,
-			u 'tira': 1,
-			u 'verguenza': 1,
-			u 'gente': 1,
-			u 'Muslim': 1,
-			u 'vez': 1,
-			u 'alli': 1,
-			u 'E120': 1,
-			u 'mujer': 1,
-			u 'assaum': 1,
-			u 'finalidad': 1,
-			u 'Cochinilla': 1,
-			u 'sucias': 1,
-			u 'compras': 1,
-			u 'ocaso': 1,
-			u 'insectos': 1,
-			u 'musulmanes': 1,
-			u 'cattle': 1,
-			u 'seo': 1,
-			u 'apoyo': 1,
-			u 'extract': 1,
-			u 'apuestas': 1,
-			u 'E483': 1,
-			u 'desvia': 1,
-			u 'ojos': 1,
-			u 'red': 1,
-			u 'tendria': 1,
-			u '\u2022Fosfato': 1,
-			u 'cuidarlo': 1,
-			u 'azra': 1,
-			u 'aditivo': 1,
-			u 'kufr': 1,
-			u 'asi': 1,
-			u 'lac': 1,
-			u 'obtained': 1,
-			u 'Este': 1,
-			u 'Cochineal': 1,
-			u 'cuidado': 1,
-			u 'Group': 1,
-			u 'voluntat': 1,
-			u 'escuchas': 1,
-			u 'consumo': 1,
-			u '\u2022La': 1,
-			u 'Shellac': 1,
-			u 'podria': 1,
-			u 'lliqaa\u2018': 1,
-			u 'Azra': 1,
-			u 'ingl\xe9s': 1,
-			u 'jovenes': 1,
-			u 'losingredientes': 1,
-			u 'idea': 1,
-			u 'Phosphate': 1,
-			u 'dios': 1,
-			u 'encuientras': 1,
-			u 'Consumer': 1,
-			u 'espejo': 1,
-			u '\u2022Cochinilla': 1,
-			u 'mezquita': 1,
-			u 'vicio': 1,
-			u 'mirarlo': 1,
-			u 'ropa': 1,
-			u '\u2022Glicerol': 1,
-			u 'of': 1,
-			u 'lujuria': 1,
-			u 'mundo': 1,
-			u 'Hueso': 1,
-			u 'bones': 1,
-			u 'profeta': 1,
-			u 'ADITIVOS': 1,
-			u 'mensaje': 1,
-			u 'cuenta': 1,
-			u 'castellano': 1,
-			u 'occidente': 1,
-			u 'nivel': 1,
-			u 'noche': 1,
-			u 'Edible': 1,
-			u 'Gelatina': 1,
-			u 'Gelatine': 1,
-			u 'insect': 1,
-			u 'harram': 1,
-			u 'alejandolos': 1,
-			u 'obligaciones': 1,
-			u 'Bone': 1,
-			u 'comas': 1,
-			u 'escarabajo': 1,
-			u 'animales': 1,
-			u 'padre': 1,
-			u '\u2022Emulsores': 1,
-			u 'interes': 1,
-			u 'conozcas': 1,
-			u 'noches': 1,
-			u 'mezcla': 1
-		})
+	"2018-05-16": {
+		"azra": [
+			[
+				"allah",
+				4
+			],
+			[
+				"veces",
+				4
+			],
+			[
+				"habla",
+				3
+			],
+			[
+				"hermanos",
+				3
+			],
+			[
+				"internet",
+				3
+			],
+			[
+				"aditivos",
+				3
+			],
+			[
+				"hablar",
+				3
+			],
+			[
+				"recetas",
+				3
+			],
+			[
+				"all\u00ed",
+				3
+			],
+			[
+				"hace",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"",
+				14
+			],
+			[
+				"haram",
+				9
+			],
+			[
+				"allah",
+				9
+			],
+			[
+				"carne",
+				7
+			],
+			[
+				"ser",
+				7
+			],
+			[
+				"haraam",
+				7
+			],
+			[
+				"si",
+				7
+			],
+			[
+				"halal",
+				6
+			],
+			[
+				"islam",
+				5
+			],
+			[
+				"cerdo",
+				5
+			]
+		]
 	},
-	'2018-05-17': {
-		'azra': Counter({
-			u 'internet': 4,
-			u 'hombre': 3,
-			u 'paso': 2,
-			u 'BarakAllahu': 1,
-			u 'musulman': 1,
-			u 'ah': 1,
-			u 'allah': 1,
-			u 'ramadan': 1,
-			u 'Radi': 1,
-			u 'FataBarakAllah': 1,
-			u 'rusia': 1,
-			u 'verdad': 1,
-			u 'chicas': 1,
-			u 'verlos': 1,
-			u 'lla': 1,
-			u 'pasos': 1,
-			u 'q': 1,
-			u 'MashaAllah': 1,
-			u 'alegr\xeda': 1,
-			u 'FiAmanAllah': 1,
-			u 'gente': 1,
-			u 'inshallah': 1,
-			u 'sonrisa': 1,
-			u 'destino': 1,
-			u 'Feekum': 1,
-			u 'ojos': 1,
-			u 'verano': 1,
-			u 'lill\u0101h': 1,
-			u 'ruisa': 1,
-			u 'hermanos': 1,
-			u 'tiempo': 1,
-			u 'D': 1,
-			u 'miedo': 1,
-			u 'posibilidades': 1,
-			u 'labass': 1,
-			u 'casa': 1,
-			u 'cara': 1,
-			u 'escuela': 1,
-			u 'coraz\xf3n': 1,
-			u 'intenci\xf3n': 1,
-			u 'ma\xf1ana': 1,
-			u 'Allah': 1,
-			u 'salam': 1,
-			u 'Al\u1e25amdu': 1,
-			u 'hermanito': 1,
-			u 'chica': 1,
-			u 'cabeza': 1,
-			u 'dolor': 1,
-			u 'acuerdo': 1,
-			u 'momento': 1,
-			u 'Anhu': 1
-		}),
-		'jawad': Counter({
-			u 'alli': 8,
-			u 'allah': 6,
-			u 'hombre': 6,
-			u 'hermanas': 3,
-			u 'islam': 3,
-			u 'hermanos': 3,
-			u 'musulman': 3,
-			u 'insha': 2,
-			u 'foto': 2,
-			u 'verdad': 2,
-			u 'mira': 2,
-			u 'sitio': 2,
-			u 'ell': 2,
-			u 'causa': 2,
-			u 'hermano': 2,
-			u 'mujer': 2,
-			u 'azra': 2,
-			u 'momentos': 1,
-			u 'voluntat': 1,
-			u 'pro': 1,
-			u 'valiente': 1,
-			u 'amiga': 1,
-			u 'httpzonacerocomsitesdefaultfilesstyles480x269public2016103fotoestadoislamicopropagandajpg': 1,
-			u 'paciencia': 1,
-			u 'et': 1,
-			u 'silam': 1,
-			u 'apoyo': 1,
-			u 'httpss13favimcomorig160606ramadanmubarakimageshd2016ramzankareemwallpapersFavimcom4381978jpeg': 1,
-			u 'cosas': 1,
-			u 'ense\xf1o': 1,
-			u 'aeropuerto': 1,
-			u 'fuerzas': 1,
-			u 'objetivo': 1,
-			u 'httpss2eestaticcom20160804mundoeuropaEuropa145247465112828901706x960jpg': 1,
-			u 'destino': 1,
-			u 'ayudaes': 1,
-			u 'veras': 1,
-			u 'preparate': 1,
-			u 'tiempo': 1,
-			u 'D': 1,
-			u 'segundo': 1,
-			u 'hombres': 1,
-			u 'nio': 1,
-			u 'internet': 1,
-			u 'camino': 1,
-			u 'ramadan': 1,
-			u 'fuerte': 1,
-			u 'familia': 1,
-			u 'califato': 1,
-			u 'piensalo': 1,
-			u 'tendras': 1,
-			u 'obligaciones': 1,
-			u 'sta': 1,
-			u 'recuerdalo': 1,
-			u 'aqui': 1,
-			u 'debilidad': 1,
-			u 'califat': 1,
-			u 'vez': 1,
-			u 'shaam': 1,
-			u 'dudas': 1,
-			u 'musulmanes': 1,
-			u 'httpscdnurgente24comsitesdefaultfilesnotas20140630abubakralbaghdadi5jpg': 1,
-			u 'muhammad': 1,
-			u 'viviras': 1,
-			u 'saum': 1
-		})
+	"2018-05-17": {
+		"azra": [
+			[
+				"internet",
+				4
+			],
+			[
+				"all\u00ed",
+				3
+			],
+			[
+				"hombre",
+				3
+			],
+			[
+				"ir",
+				3
+			],
+			[
+				"bueno",
+				2
+			],
+			[
+				"allah",
+				2
+			],
+			[
+				"solo",
+				2
+			],
+			[
+				"peque\u00f1o",
+				2
+			],
+			[
+				"claro",
+				2
+			],
+			[
+				"luchar",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"alli",
+				9
+			],
+			[
+				"allah",
+				8
+			],
+			[
+				"ademas",
+				6
+			],
+			[
+				"hombre",
+				6
+			],
+			[
+				"si",
+				5
+			],
+			[
+				"mejor",
+				4
+			],
+			[
+				"mas",
+				4
+			],
+			[
+				"islam",
+				3
+			],
+			[
+				"hermanos",
+				3
+			],
+			[
+				"musulman",
+				3
+			]
+		]
 	},
-	'2018-05-22': {
-		'azra': Counter({
-			u 'allah': 4,
-			u 'ah': 3,
-			u 'rusia': 2,
-			u 'felicidad': 2,
-			u 'amiga': 2,
-			u 'ingl\xe9s': 2,
-			u 'mujer': 2,
-			u 'd\xedas': 2,
-			u 'londres': 2,
-			u 'familia': 2,
-			u 'padre': 2,
-			u 'chats': 1,
-			u 'muhaidin': 1,
-			u 'hermanas': 1,
-			u 'Way': 1,
-			u 'Sharia': 1,
-			u 'encuentro': 1,
-			u 'emocion': 1,
-			u 'Radi': 1,
-			u 'termino': 1,
-			u 'chat': 1,
-			u 'alaikum': 1,
-			u 'castigos': 1,
-			u 'regalo': 1,
-			u 'Masha': 1,
-			u 'aditivos': 1,
-			u 'burka': 1,
-			u 'Get': 1,
-			u 'to': 1,
-			u 'destino': 1,
-			u 'hecho': 1,
-			u 'atenci\xf3n': 1,
-			u 'escuela': 1,
-			u 'libro': 1,
-			u 'lugar': 1,
-			u 'D': 1,
-			u 'vegetales': 1,
-			u 'dinero': 1,
-			u 'azra': 1,
-			u 'maa': 1,
-			u 'hombre': 1,
-			u 'a\xf1o': 1,
-			u 'sukria': 1,
-			u 'Jawad': 1,
-			u 'Assalam': 1,
-			u 'verano': 1,
-			u 'coraz\xf3n': 1,
-			u 'veces': 1,
-			u 'miedo': 1,
-			u 'Anha': 1,
-			u 'barcelona': 1,
-			u 'Allah': 1,
-			u 'mohammed': 1,
-			u 'recetas': 1,
-			u 'indulgente': 1,
-			u 'gloria': 1,
-			u 'protegernos': 1
-		}),
-		'jawad': Counter({
-			u 'allah': 6,
-			u 'alli': 5,
-			u 'hermana': 4,
-			u 'islam': 3,
-			u 'hermanos': 3,
-			u 'azra': 3,
-			u 'voluntad': 3,
-			u 'occidente': 3,
-			u 'verdad': 2,
-			u 'libro': 2,
-			u 'mohammed': 2,
-			u 'palabra': 2,
-			u 'kufr': 2,
-			u 'ayuda': 2,
-			u 'problemas': 2,
-			u 'hombre': 2,
-			u 'padre': 2,
-			u 'Sharia': 1,
-			u 'lli': 1,
-			u 'palabrea': 1,
-			u 'hcerlo': 1,
-			u 'vida': 1,
-			u 'to': 1,
-			u 'mujer': 1,
-			u 'ye': 1,
-			u 'camino': 1,
-			u 'dels': 1,
-			u 'tierra': 1,
-			u 'hecerlo': 1,
-			u 'ganas': 1,
-			u 'cosa': 1,
-			u 'hare': 1,
-			u 'yihad': 1,
-			u 'httpswwwaljazeeracommritemsimagecachembdxxlargemritemsImages201842904b78db1e3f5426e80149b4478d3240f18jpg': 1,
-			u 'hablare': 1,
-			u 'burka': 1,
-			u 'contigo': 1,
-			u 'foto': 1,
-			u 'asu': 1,
-			u 'dinero': 1,
-			u 'asi': 1,
-			u 'fotp': 1,
-			u 'viaje': 1,
-			u 'aqui': 1,
-			u 'shariah': 1,
-			u 'adaptarte': 1,
-			u 'hermanas': 1,
-			u 'maneras': 1,
-			u 'sabilillah': 1,
-			u 'vces': 1,
-			u 'ahi': 1,
-			u 'Azra': 1,
-			u 'Way': 1,
-			u 'amigos': 1,
-			u 'Get': 1,
-			u 'amiga': 1,
-			u 'deseos': 1,
-			u 'Fi': 1,
-			u 'PENSABAS': 1,
-			u 'queria': 1,
-			u 'mira': 1,
-			u 'persecuci\xf3n': 1,
-			u 'doto': 1,
-			u 'ramas': 1,
-			u 'bienes': 1,
-			u 'verte': 1,
-			u 'Allah': 1,
-			u 'entenderas': 1,
-			u 'alSham': 1,
-			u 'salam': 1,
-			u 'musulmanes': 1,
-			u 'sera': 1,
-			u 'cuesti\xf3n': 1,
-			u 'veras': 1,
-			u 'Alhamdulillah': 1,
-			u 'voz': 1,
-			u 'profeta': 1,
-			u 'sitio': 1,
-			u 'conocerle': 1,
-			u 'dejerte': 1,
-			u 'conocerte': 1,
-			u 'buscarte': 1,
-			u 'tiempo': 1,
-			u 'ilam': 1,
-			u 'prepararte': 1,
-			u 'Samira': 1,
-			u 'maa': 1,
-			u 'caminos': 1,
-			u 'normas': 1,
-			u 'obligaciones': 1,
-			u 'parte': 1,
-			u 'oportunidades': 1
-		})
+	"2018-05-22": {
+		"azra": [
+			[
+				"allah",
+				5
+			],
+			[
+				"ah",
+				4
+			],
+			[
+				"mujer",
+				2
+			],
+			[
+				"d\u00f3nde",
+				2
+			],
+			[
+				"all\u00ed",
+				2
+			],
+			[
+				"bien",
+				2
+			],
+			[
+				"londres",
+				2
+			],
+			[
+				"felicidad",
+				2
+			],
+			[
+				"hablar",
+				2
+			],
+			[
+				"amiga",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"si",
+				11
+			],
+			[
+				"allah",
+				7
+			],
+			[
+				"bien",
+				7
+			],
+			[
+				"alli",
+				5
+			],
+			[
+				"hacer",
+				5
+			],
+			[
+				"hermana",
+				4
+			],
+			[
+				"azra",
+				4
+			],
+			[
+				"islam",
+				3
+			],
+			[
+				"hermanos",
+				3
+			],
+			[
+				"muchas",
+				3
+			]
+		]
 	},
-	'2018-05-23': {
-		'azra': Counter({
-			u 'allah': 9,
-			u 'hermanos': 4,
-			u 'veces': 4,
-			u 'fuerza': 3,
-			u 'camino': 3,
-			u 'rabia': 3,
-			u 'ah': 2,
-			u 'hijos': 2,
-			u 'corazon': 2,
-			u 'madre': 2,
-			u 'lugar': 2,
-			u 'rezo': 2,
-			u 'hermanas': 2,
-			u 'jawad': 2,
-			u 'direcci\xf3n': 1,
-			u 'manera': 1,
-			u 'rusia': 1,
-			u 'Assal\u0101mu': 1,
-			u 'voluntad': 1,
-			u 'apoyo': 1,
-			u 'regalo': 1,
-			u 'ayuda': 1,
-			u 'calmarla': 1,
-			u 'gente': 1,
-			u 'vez': 1,
-			u 'ayudas': 1,
-			u 'sacrificio': 1,
-			u 'destino': 1,
-			u 'maa': 1,
-			u 'intento': 1,
-			u 'internet': 1,
-			u 'hermano': 1,
-			u 'deseo': 1,
-			u 'muhaidines': 1,
-			u 'Masha': 1,
-			u 'mujeres': 1,
-			u 'mofas': 1,
-			u 'lahum': 1,
-			u 'dinero': 1,
-			u 'm\xe1rtires': 1,
-			u 'Barcelona': 1,
-			u 'd\xedas': 1,
-			u 'gracias': 1,
-			u 'familia': 1,
-			u 'risas': 1,
-			u 'kufr': 1,
-			u 'fi': 1,
-			u 'majadih': 1,
-			u 'problema': 1,
-			u 'verano': 1,
-			u 'yihad': 1,
-			u 'd\xeda': 1,
-			u 'muhammed': 1,
-			u 'alaykum': 1,
-			u 'recuerdo': 1,
-			u 'pensabas': 1,
-			u 'ayuno': 1,
-			u 'acuerdo': 1,
-			u 'paz': 1,
-			u 'modo': 1
-		}),
-		'jawad': Counter({
-			u 'allah': 8,
-			u 'hermanos': 7,
-			u 'shahid': 5,
-			u 'hermanas': 4,
-			u 'islam': 3,
-			u 'Azra': 3,
-			u 'madre': 3,
-			u 'ayuda': 2,
-			u 'mujer': 2,
-			u 'Masha': 2,
-			u 'hombres': 2,
-			u 'hombre': 2,
-			u 'ley': 2,
-			u 'asi': 2,
-			u 'honor': 2,
-			u 'masalama': 1,
-			u 'manera': 1,
-			u 'responsabilidad': 1,
-			u 'laah': 1,
-			u 'todavia': 1,
-			u 'mujahideens': 1,
-			u 'assalatu': 1,
-			u 'lucha': 1,
-			u 'Alhamdulillah': 1,
-			u 'impuros': 1,
-			u 'opcion': 1,
-			u 'castigarla': 1,
-			u 'obedeciendole': 1,
-			u 'felicidad': 1,
-			u 'alli': 1,
-			u 'semana': 1,
-			u 'quieres': 1,
-			u 'hijos': 1,
-			u 'hacerselo': 1,
-			u 'Massah': 1,
-			u 'profeta': 1,
-			u 'tenerlo': 1,
-			u 'claroq': 1,
-			u 'httpswwwrepublicacomwpcontentuploads201502womenislamicstate600x330jpg': 1,
-			u 'saber': 1,
-			u 'musulman': 1,
-			u 'solucion': 1,
-			u 'cobijo': 1,
-			u 'errores': 1,
-			u 'Russia': 1,
-			u 'formaci\xf3n': 1,
-			u 'ganas': 1,
-			u 'viaje': 1,
-			u 'esposa': 1,
-			u 'billetes': 1,
-			u 'ojos': 1,
-			u 'obligacion': 1,
-			u 'final': 1,
-			u 'aqui': 1,
-			u 'posibilidad': 1,
-			u 'alaihi': 1,
-			u 'queria': 1,
-			u 'mujeres': 1,
-			u 'paro': 1,
-			u 'alcanzarla': 1,
-			u 'hermana': 1,
-			u 'camino': 1,
-			u 'ayudas': 1,
-			u 'hablare': 1,
-			u 'formarte': 1,
-			u 'kufr': 1,
-			u 'deseos': 1,
-			u 'sitio': 1,
-			u 'acciones': 1,
-			u 'yihad': 1,
-			u 'mente': 1,
-			u 'accion': 1,
-			u 'amor': 1,
-			u 'consecuencias': 1,
-			u 'algun': 1,
-			u 'Allah': 1,
-			u 'dia': 1,
-			u 'foto': 1,
-			u 'salam': 1,
-			u 'padreas': 1,
-			u 'verdad': 1,
-			u 'injusticia': 1,
-			u 'protagonismo': 1,
-			u 'gloria': 1,
-			u 'martir': 1
-		})
+	"2018-05-23": {
+		"azra": [
+			[
+				"allah",
+				9
+			],
+			[
+				"hermanos",
+				4
+			],
+			[
+				"ser",
+				4
+			],
+			[
+				"puedo",
+				4
+			],
+			[
+				"veces",
+				4
+			],
+			[
+				"camino",
+				3
+			],
+			[
+				"all\u00ed",
+				3
+			],
+			[
+				"bien",
+				3
+			],
+			[
+				"fuerza",
+				3
+			],
+			[
+				"hablar",
+				3
+			]
+		],
+		"jawad": [
+			[
+				"si",
+				11
+			],
+			[
+				"allah",
+				9
+			],
+			[
+				"puedes",
+				9
+			],
+			[
+				"hermanos",
+				7
+			],
+			[
+				"ayudar",
+				7
+			],
+			[
+				"claro",
+				7
+			],
+			[
+				"mas",
+				7
+			],
+			[
+				"veo",
+				6
+			],
+			[
+				"shahid",
+				6
+			],
+			[
+				"ser",
+				5
+			]
+		]
 	},
-	'2018-05-24': {
-		'azra': Counter({
-			u 'acuerdo': 3,
-			u 'ah': 2,
-			u 'ganas': 2,
-			u 'viaje': 2,
-			u 'massalama': 1,
-			u 'Masha': 1,
-			u 'alegr\xeda': 1,
-			u 'ayudarle': 1,
-			u 'fenomenal': 1,
-			u 'allah': 1,
-			u 'mohammed': 1,
-			u 'idea': 1,
-			u 'Salam': 1,
-			u 'rusia': 1,
-			u 'messenger': 1,
-			u 'syria': 1,
-			u 'jawad': 1,
-			u 'verano': 1
-		}),
-		'jawad': Counter({
-			u 'telegram': 3,
-			u 'azra': 3,
-			u 'mohammed': 3,
-			u 'allah': 2,
-			u 'cuenta': 2,
-			u 'conocerte': 2,
-			u 'contacto': 2,
-			u 'correo': 2,
-			u 'ganas': 2,
-			u 'dejandolo': 1,
-			u 'escribas': 1,
-			u 'borradores': 1,
-			u 'manera': 1,
-			u 'Alhamdulillah': 1,
-			u 'noticias': 1,
-			u 'estes': 1,
-			u 'massalama': 1,
-			u 'hables': 1,
-			u 'tmemohammed240518T': 1,
-			u 'canales': 1,
-			u 'fuerzas': 1,
-			u 'bien': 1,
-			u 'causa': 1,
-			u 'musulmanes': 1,
-			u 'fin': 1,
-			u 'hoy': 1,
-			u 'hermanos': 1,
-			u 'seguridad': 1,
-			u 'mira': 1,
-			u 'Salam': 1,
-			u 'movimientos': 1,
-			u 'mail': 1,
-			u 'kufr': 1,
-			u 'apollo': 1,
-			u 'dia': 1,
-			u 'cosas': 1,
-			u 'esperanzas': 1
-		})
+	"2018-05-24": {
+		"azra": [
+			[
+				"bien",
+				3
+			],
+			[
+				"puedo",
+				3
+			],
+			[
+				"acuerdo",
+				3
+			],
+			[
+				"ah",
+				2
+			],
+			[
+				"viaje",
+				2
+			],
+			[
+				"si",
+				2
+			],
+			[
+				"ganas",
+				2
+			],
+			[
+				"muchas",
+				2
+			],
+			[
+				"massalama",
+				1
+			],
+			[
+				"mohammed",
+				1
+			]
+		],
+		"jawad": [
+			[
+				"mohammed",
+				3
+			],
+			[
+				"bien",
+				3
+			],
+			[
+				"azra",
+				3
+			],
+			[
+				"hoy",
+				3
+			],
+			[
+				"telegram",
+				3
+			],
+			[
+				"si",
+				3
+			],
+			[
+				"correo",
+				2
+			],
+			[
+				"creo",
+				2
+			],
+			[
+				"ganas",
+				2
+			],
+			[
+				"bueno",
+				2
+			]
+		]
 	},
-	'2018-05-29': {
-		'azra': Counter({
-			u 'allah': 4,
-			u 'd\xedas': 3,
-			u 'mohammed': 3,
-			u 'jawad': 3,
-			u 'rusia': 2,
-			u 'asi': 2,
-			u 'padres': 2,
-			u 'hombre': 2,
-			u 'Ulitza': 1,
-			u 'ah': 1,
-			u 'noticias': 1,
-			u 'papeles': 1,
-			u 'felicidad': 1,
-			u 'radi': 1,
-			u 'alaikum': 1,
-			u 'vacaciones': 1,
-			u 'anhu': 1,
-			u 'fin': 1,
-			u 'baraka': 1,
-			u 'alhamdulillah': 1,
-			u 'alli': 1,
-			u 'ilusi\xf3n': 1,
-			u 'destino': 1,
-			u 'fik': 1,
-			u 'obligacion': 1,
-			u 'contigo': 1,
-			u 'deseo': 1,
-			u 'tiempo': 1,
-			u 'Lozovaya': 1,
-			u 'sura': 1,
-			u 'aman': 1,
-			u 'camino': 1,
-			u 'azra': 1,
-			u 'fenomenal': 1,
-			u 'obra': 1,
-			u 'grupo': 1,
-			u 'ummah': 1,
-			u 'casa': 1,
-			u 'env\xedo': 1,
-			u 'direcci\xf3n': 1,
-			u 'mirarlo': 1,
-			u 'Samara': 1,
-			u 'planes': 1,
-			u 'recuerdas': 1,
-			u 'assalam': 1,
-			u 'revisare': 1
-		}),
-		'jawad': Counter({
-			u 'hermanos': 8,
-			u 'grupo': 3,
-			u 'islam': 3,
-			u 'dias': 3,
-			u 'compromiso': 3,
-			u 'mohammed': 2,
-			u 'felicidad': 2,
-			u 'sitio': 2,
-			u 'Azra': 2,
-			u 'hermana': 2,
-			u 'material': 2,
-			u 'azra': 2,
-			u 'coche': 2,
-			u 'allah': 2,
-			u 'Allah': 2,
-			u 'billete': 1,
-			u 'palabras': 1,
-			u 'hammed': 1,
-			u 'ahi': 1,
-			u 'cuentas': 1,
-			u 'alomejor': 1,
-			u 'mundo': 1,
-			u 'guialo': 1,
-			u 'obra': 1,
-			u 'alli': 1,
-			u 'semana': 1,
-			u 'logres': 1,
-			u 'asuntos': 1,
-			u 'conoceras': 1,
-			u 'regalo': 1,
-			u 'necesitas': 1,
-			u 'hablare': 1,
-			u 'musulmanes': 1,
-			u 'vida': 1,
-			u 'inshallah': 1,
-			u 'passaporte': 1,
-			u 'alhamdulillah': 1,
-			u 'direccion': 1,
-			u 'gobiernos': 1,
-			u 'viaje': 1,
-			u 'tambien': 1,
-			u 'billetes': 1,
-			u 'encargo': 1,
-			u 'obligaciones': 1,
-			u 'A': 1,
-			u 'enviamelo': 1,
-			u 'telegram': 1,
-			u 'instrucciones': 1,
-			u 'lado': 1,
-			u 'mira': 1,
-			u 'ahcerte': 1,
-			u 'devoci\xf3n': 1,
-			u 'hombre': 1,
-			u 'puedas': 1,
-			u 'casa': 1,
-			u 'asi': 1,
-			u 'Salam': 1,
-			u 'Piensa': 1,
-			u 'camino': 1,
-			u 'curarlos': 1,
-			u 'atenci\xf3n': 1,
-			u 'conocerras': 1,
-			u 'i': 1,
-			u 'musulmana\xe7': 1,
-			u 'preparate': 1,
-			u 'honor': 1,
-			u 'damela': 1,
-			u 'tmejoinchatsafasFREFWERTWER32412asdFRRFREaDADWE': 1,
-			u 'allahu': 1,
-			u 'datos': 1,
-			u 'suerte': 1,
-			u 'sera': 1,
-			u 'acuerdo': 1,
-			u 'verdad': 1,
-			u 'exito': 1,
-			u 'organizaros': 1,
-			u 'russia': 1
-		})
+	"2018-05-29": {
+		"azra": [
+			[
+				"allah",
+				6
+			],
+			[
+				"si",
+				5
+			],
+			[
+				"aun",
+				3
+			],
+			[
+				"mohammed",
+				3
+			],
+			[
+				"d\u00edas",
+				3
+			],
+			[
+				"jawad",
+				3
+			],
+			[
+				"gran",
+				2
+			],
+			[
+				"solo",
+				2
+			],
+			[
+				"asi",
+				2
+			],
+			[
+				"masha",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"si",
+				9
+			],
+			[
+				"hermanos",
+				8
+			],
+			[
+				"mas",
+				6
+			],
+			[
+				"allah",
+				4
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"azra",
+				4
+			],
+			[
+				"islam",
+				3
+			],
+			[
+				"pues",
+				3
+			],
+			[
+				"dias",
+				3
+			],
+			[
+				"compromiso",
+				3
+			]
+		]
 	},
-	'2018-05-30': {
-		'azra': Counter({
-			u 'allah': 4,
-			u 'detalles': 2,
-			u 'cosas': 2,
-			u 'insha': 1,
-			u 'ma\u02bfa': 1,
-			u 'botiquiin': 1,
-			u 'estonia': 1,
-			u 'botiqu\xedn': 1,
-			u 'tawak': 1,
-			u 'vuelo': 1,
-			u 'Assalamu': 1,
-			u 'verdad': 1,
-			u 'barcelona': 1,
-			u 'apoyo': 1,
-			u 'profeta': 1,
-			u 'baraka': 1,
-			u 'alla': 1,
-			u 'castigo': 1,
-			u 'alhamdulillah': 1,
-			u 'destino': 1,
-			u 'fechas': 1,
-			u 'fik': 1,
-			u 'contacto': 1,
-			u 'alaihi': 1,
-			u 'material': 1,
-			u 'camino': 1,
-			u 'tambien': 1,
-			u 'coche': 1,
-			u 'mundo': 1,
-			u 'hombre': 1,
-			u 'documentos': 1,
-			u 'problema': 1,
-			u 'yihad': 1,
-			u 'veces': 1,
-			u 'masha': 1,
-			u 'pilar': 1,
-			u 'mohammed': 1,
-			u 'aviones': 1,
-			u 'ganas': 1,
-			u 'Alaikum': 1,
-			u 'jawad': 1,
-			u 'honor': 1,
-			u 'gloria': 1
-		}),
-		'jawad': Counter({
-			u 'islam': 4,
-			u 'mohammed': 4,
-			u 'hermanos': 3,
-			u 'hermanas': 2,
-			u 'ahi': 2,
-			u 'amiga': 2,
-			u 'alhamdulillah': 2,
-			u 'hermana': 2,
-			u 'causa': 2,
-			u 'coche': 2,
-			u 'inshaallah': 2,
-			u 'viaje': 2,
-			u 'russia': 2,
-			u 'grandeza': 1,
-			u 'pra': 1,
-			u 'estonia': 1,
-			u 'deberes': 1,
-			u 'veras': 1,
-			u 'alomejor': 1,
-			u 'despues': 1,
-			u 'conocimiento': 1,
-			u 'telegram': 1,
-			u 'hijos': 1,
-			u 'apoyo': 1,
-			u 'deber': 1,
-			u 'voz': 1,
-			u 'amigo': 1,
-			u 'cargo': 1,
-			u 'par': 1,
-			u 'encontraras': 1,
-			u 'aqui': 1,
-			u 'musulman': 1,
-			u 'ilaha': 1,
-			u 'paz': 1,
-			u 'inshallah': 1,
-			u 'avion': 1,
-			u 'alli': 1,
-			u 'direccion': 1,
-			u 'detalles': 1,
-			u 'Rasulullah': 1,
-			u 'moscu': 1,
-			u 'Iras': 1,
-			u 'acciones': 1,
-			u 'fin': 1,
-			u 'dias': 1,
-			u 'occidente': 1,
-			u 'casad': 1,
-			u 'tiempo': 1,
-			u 'allah': 1,
-			u 'paciencia': 1,
-			u 'pena': 1,
-			u 'hombres': 1,
-			u 'Salam': 1,
-			u 'alguin': 1,
-			u 'vieje': 1,
-			u 'tines': 1,
-			u 'Allahu': 1,
-			u 'kufr': 1,
-			u 'iras': 1,
-			u 'punto': 1,
-			u 'martires': 1,
-			u 'significado': 1,
-			u 'venganza': 1,
-			u 'casa': 1,
-			u 'Estonia': 1,
-			u 'mujahid': 1,
-			u 'Muhammadur': 1,
-			u 'des': 1,
-			u 'mollebeck': 1,
-			u 'maasalamah': 1,
-			u 'encuetro': 1,
-			u 'esperanzas': 1,
-			u 'illallah': 1,
-			u 'comodidad': 1,
-			u 'primos': 1,
-			u 'intoxicaciones': 1,
-			u 'Azra': 1,
-			u 'cosa': 1
-		})
+	"2018-05-30": {
+		"azra": [
+			[
+				"allah",
+				6
+			],
+			[
+				"si",
+				3
+			],
+			[
+				"detalles",
+				2
+			],
+			[
+				"importante",
+				2
+			],
+			[
+				"mision",
+				2
+			],
+			[
+				"cosas",
+				2
+			],
+			[
+				"gran",
+				2
+			],
+			[
+				"muchas",
+				2
+			],
+			[
+				"bien",
+				2
+			],
+			[
+				"tambien",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"islam",
+				4
+			],
+			[
+				"mohammed",
+				4
+			],
+			[
+				"hermanos",
+				3
+			],
+			[
+				"si",
+				3
+			],
+			[
+				"ves",
+				2
+			],
+			[
+				"alli",
+				2
+			],
+			[
+				"hermana",
+				2
+			],
+			[
+				"importante",
+				2
+			],
+			[
+				"belgica",
+				2
+			],
+			[
+				"causa",
+				2
+			]
+		]
 	},
-	'2018-05-31': {
-		'azra': Counter({
-			u 'allah': 6,
-			u 'mohammed': 4,
-			u 'voluntad': 3,
-			u 'masha': 3,
-			u 'cosas': 3,
-			u 'insha': 2,
-			u 'entradas': 2,
-			u 'rusia': 2,
-			u 'alhamdulillah': 2,
-			u 'tiempo': 2,
-			u 'miedo': 2,
-			u 'hombre': 2,
-			u 'jannah': 2,
-			u 'jawad': 2,
-			u 'ma\u02bfa': 1,
-			u 'claves': 1,
-			u 'encuentro': 1,
-			u 'khair': 1,
-			u 'dia': 1,
-			u 'despues': 1,
-			u 'momento': 1,
-			u 'alli': 1,
-			u 'margen': 1,
-			u 'salida': 1,
-			u 'anhu': 1,
-			u 'baraka': 1,
-			u 'corazon': 1,
-			u 'fuerzas': 1,
-			u 'radi': 1,
-			u 'estare': 1,
-			u 'fuerza': 1,
-			u 'nuetra': 1,
-			u 'fechas': 1,
-			u 'utilidad': 1,
-			u 'tendra': 1,
-			u 'botiquin': 1,
-			u 'paciencia': 1,
-			u 'problema': 1,
-			u 'lado': 1,
-			u 'camino': 1,
-			u 'punto': 1,
-			u 'experiencia': 1,
-			u 'plan': 1,
-			u 'barccelona': 1,
-			u 'salaam': 1,
-			u 'asi': 1,
-			u 'martires': 1,
-			u 'viaje': 1,
-			u 'mente': 1,
-			u 'jazak': 1,
-			u 'marcha': 1,
-			u 'hermanas': 1,
-			u 'bedicion': 1,
-			u 'marahba': 1,
-			u 'musulmanes': 1,
-			u 'primos': 1
-		}),
-		'jawad': Counter({
-			u 'inshallah': 4,
-			u 'Azra': 3,
-			u 'allah': 3,
-			u 'hermanos': 2,
-			u 'sitio': 2,
-			u 'camino': 2,
-			u 'paso': 2,
-			u 'kufr': 2,
-			u 'mohammed': 2,
-			u 'dia': 2,
-			u 'Allah': 1,
-			u 'madrid': 1,
-			u 'telegram': 1,
-			u 'hombre': 1,
-			u 'lucha': 1,
-			u 'verdad': 1,
-			u 'alli': 1,
-			u 'osn': 1,
-			u 'apoyo': 1,
-			u 'inseguridades': 1,
-			u 'deber': 1,
-			u 'illa': 1,
-			u 'islam': 1,
-			u 'recordad': 1,
-			u 'muyahidin': 1,
-			u 'decision': 1,
-			u 'objetivo': 1,
-			u 'alhamdulillah': 1,
-			u 'mal': 1,
-			u 'oidio': 1,
-			u 'ganas': 1,
-			u 'pena': 1,
-			u 'hermana': 1,
-			u 'billetes': 1,
-			u 'ira': 1,
-			u 'obligacion': 1,
-			u 'hoy': 1,
-			u 'documenacion': 1,
-			u 'falta': 1,
-			u 'mujeres': 1,
-			u 'hombres': 1,
-			u 'partido': 1,
-			u 'Salam': 1,
-			u 'coche': 1,
-			u 'saldra': 1,
-			u 'esposas': 1,
-			u 'asi': 1,
-			u 'FFCC': 1,
-			u 'vosotras': 1,
-			u 'marcha': 1,
-			u 'padre': 1,
-			u 'caso': 1,
-			u 'martir': 1,
-			u 'dudas': 1,
-			u 'trayacto': 1,
-			u 'gloria': 1,
-			u 'sera': 1,
-			u 'primos': 1,
-			u 'estacion': 1,
-			u 'honor': 1,
-			u 'cometido': 1
-		})
+	"2018-05-31": {
+		"azra": [
+			[
+				"allah",
+				11
+			],
+			[
+				"si",
+				7
+			],
+			[
+				"mohammed",
+				6
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"masha",
+				4
+			],
+			[
+				"jannah",
+				3
+			],
+			[
+				"cosas",
+				3
+			],
+			[
+				"alli",
+				3
+			],
+			[
+				"voluntad",
+				3
+			],
+			[
+				"mal",
+				3
+			]
+		],
+		"jawad": [
+			[
+				"si",
+				7
+			],
+			[
+				"claro",
+				5
+			],
+			[
+				"allah",
+				4
+			],
+			[
+				"inshallah",
+				4
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"mas",
+				4
+			],
+			[
+				"recuerda",
+				3
+			],
+			[
+				"azra",
+				3
+			],
+			[
+				"puedes",
+				3
+			],
+			[
+				"hacia",
+				2
+			]
+		]
 	},
-	'2018-06-04': {
-		'azra': Counter({
-			u 'q': 15,
-			u 'allah': 7,
-			u 'castigo': 3,
-			u 'mohammed': 3,
-			u 'hombre': 2,
-			u 'anhu': 2,
-			u 'radi': 2,
-			u 'mandato': 2,
-			u 'obligacion': 2,
-			u 'material': 2,
-			u 'asi': 2,
-			u 'ummah': 2,
-			u 'masha': 2,
-			u 'primos': 2,
-			u 'jawad': 2,
-			u 'gloria': 2,
-			u 'baaka': 1,
-			u 'protegerlo': 1,
-			u 'bien': 1,
-			u 'khair': 1,
-			u 'timepo': 1,
-			u 'verdad': 1,
-			u 'sospechas': 1,
-			u 'voluntad': 1,
-			u 'impacto': 1,
-			u 'guia': 1,
-			u 'temperatura': 1,
-			u 'hermanos': 1,
-			u 'contacto': 1,
-			u 'presente': 1,
-			u 'hombres': 1,
-			u 'alhamdulillah': 1,
-			u 'energia': 1,
-			u 'chica': 1,
-			u 'paquetes': 1,
-			u 'alternativa': 1,
-			u 'hermano': 1,
-			u 'lieja': 1,
-			u 'acuerdo': 1,
-			u 'tiempo': 1,
-			u 'fik': 1,
-			u 'problema': 1,
-			u 'manos': 1,
-			u 'envio': 1,
-			u 'bendici\xf3n': 1,
-			u 'camino': 1,
-			u 'rabia': 1,
-			u 'miedo': 1,
-			u 'ira': 1,
-			u 'viaje': 1,
-			u 'gracias': 1,
-			u 'mezquita': 1,
-			u 'cambios': 1,
-			u 'jazak': 1,
-			u 'Assalamu': 1,
-			u 'sera': 1,
-			u 'Alaikum': 1
-		}),
-		'jawad': Counter({
-			u 'allah': 4,
-			u 'mujer': 4,
-			u 'asi': 4,
-			u 'ejemplo': 3,
-			u 'hermanos': 2,
-			u 'sahid': 2,
-			u 'instrucciones': 2,
-			u 'hermana': 2,
-			u 'verdad': 2,
-			u 'azra': 2,
-			u 'semana': 1,
-			u 'conocimiento': 1,
-			u 'madrid': 1,
-			u 'mashalama': 1,
-			u 'preocuparte': 1,
-			u 'entradas': 1,
-			u 'lli': 1,
-			u 'mision': 1,
-			u 'momento': 1,
-			u 'espada': 1,
-			u 'sobretod': 1,
-			u 'voluntad': 1,
-			u 'soldados': 1,
-			u 'deber': 1,
-			u 'conocerlo': 1,
-			u 'Khair': 1,
-			u 'parte': 1,
-			u 'practiques': 1,
-			u 'inshallah': 1,
-			u 'vez': 1,
-			u 'alhamdulillah': 1,
-			u 'Azra': 1,
-			u 'tenerlo': 1,
-			u 'vincularte': 1,
-			u 'ahciedno': 1,
-			u 'casos': 1,
-			u 'dias': 1,
-			u 'trabajo': 1,
-			u 'occidente': 1,
-			u 'muhadid': 1,
-			u 'cabeza': 1,
-			u 'm': 1,
-			u 'Salam': 1,
-			u 'intenciones': 1,
-			u 'hombre': 1,
-			u 'kufr': 1,
-			u 'sitio': 1,
-			u 'viaje': 1,
-			u 'acciones': 1,
-			u 'coses': 1,
-			u 'pblligacion': 1,
-			u 'apoyales': 1,
-			u 'serpiete': 1,
-			u 'mezquita': 1,
-			u 'Allah': 1,
-			u 'mohammed': 1,
-			u 'golpe': 1,
-			u 'Jazak': 1,
-			u 'suerte': 1,
-			u 'todavia': 1,
-			u 'gren': 1,
-			u 'alli': 1,
-			u 'honor': 1
-		})
+	"2018-06-04": {
+		"azra": [
+			[
+				"q",
+				16
+			],
+			[
+				"allah",
+				13
+			],
+			[
+				"mohammed",
+				4
+			],
+			[
+				"masha",
+				4
+			],
+			[
+				"castigo",
+				3
+			],
+			[
+				"material",
+				3
+			],
+			[
+				"claro",
+				3
+			],
+			[
+				"si",
+				3
+			],
+			[
+				"anhu",
+				2
+			],
+			[
+				"obligacion",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"bien",
+				6
+			],
+			[
+				"allah",
+				5
+			],
+			[
+				"si",
+				5
+			],
+			[
+				"mujer",
+				4
+			],
+			[
+				"asi",
+				4
+			],
+			[
+				"bueno",
+				3
+			],
+			[
+				"ejemplo",
+				3
+			],
+			[
+				"azra",
+				3
+			],
+			[
+				"sabes",
+				3
+			],
+			[
+				"inteligente",
+				2
+			]
+		]
 	},
-	'2018-06-05': {
-		'azra': Counter({
-			u 'q': 13,
-			u 'allah': 6,
-			u 'veces': 4,
-			u 'hermanos': 3,
-			u 'acuerdo': 3,
-			u 'jawad': 3,
-			u 'lucha': 2,
-			u 'castigo': 2,
-			u 'madre': 2,
-			u 'kufr': 2,
-			u 'gracias': 2,
-			u 'rusia': 2,
-			u 'cosas': 2,
-			u 'insha': 1,
-			u 'armas': 1,
-			u 'enemigos': 1,
-			u 'tienda': 1,
-			u 'esfuerzo': 1,
-			u 'noticias': 1,
-			u 'primos': 1,
-			u 'momento': 1,
-			u 'confusi\xf3n': 1,
-			u 'distracciones': 1,
-			u 'ayuda': 1,
-			u 'intento': 1,
-			u 'Alaihi': 1,
-			u 'paz': 1,
-			u 'errores': 1,
-			u 'alli': 1,
-			u 'direccion': 1,
-			u 'gobiernos': 1,
-			u 'fuerza': 1,
-			u 'confianza': 1,
-			u 'acciones': 1,
-			u 'sangre': 1,
-			u 'dias': 1,
-			u 'tiempo': 1,
-			u 'hacerlo': 1,
-			u 'hermanitos': 1,
-			u 'lado': 1,
-			u 'tambien': 1,
-			u 'coche': 1,
-			u 'Syria': 1,
-			u 'ummah': 1,
-			u 'escuela': 1,
-			u 'aqui': 1,
-			u 'masha': 1,
-			u 'caso': 1,
-			u 'hermanas': 1,
-			u 'razon': 1,
-			u 'cambio': 1,
-			u 'cabeza': 1,
-			u 'ignoro': 1,
-			u 'vida': 1
-		}),
-		'jawad': Counter({
-			u 'allah': 8,
-			u 'mohammed': 5,
-			u 'azra': 4,
-			u 'ramadan': 2,
-			u 'seras': 2,
-			u 'islam': 2,
-			u 'informacion': 2,
-			u 'tiempo': 2,
-			u 'russia': 2,
-			u 'tareas': 2,
-			u 'cosas': 2,
-			u 'Azra': 1,
-			u 'saberlo': 1,
-			u 'instrucciones': 1,
-			u 'alalhamdulillah': 1,
-			u 'mashalama': 1,
-			u 'ma\xf1na': 1,
-			u 'despues': 1,
-			u 'estudios': 1,
-			u 'hablas': 1,
-			u 'chicos': 1,
-			u 'garndes': 1,
-			u 'dudo': 1,
-			u 'granb': 1,
-			u 'vida': 1,
-			u 'inshallah': 1,
-			u 'dudas': 1,
-			u 'alli': 1,
-			u 'crees': 1,
-			u 'religion': 1,
-			u 'bien': 1,
-			u 'ganas': 1,
-			u 'marido': 1,
-			u 'hermana': 1,
-			u 'colegio': 1,
-			u 'estes': 1,
-			u 'honor': 1,
-			u 'sierva': 1,
-			u 'dias': 1,
-			u 'taqqiyah': 1,
-			u 'herramientas': 1,
-			u 'justicia': 1,
-			u 'hermanos': 1,
-			u 'tienda': 1,
-			u 'lado': 1,
-			u 'gracias': 1,
-			u 'taqqiya': 1,
-			u 'facll': 1,
-			u 'compa\xf1eras': 1,
-			u 'coche': 1,
-			u 'rasulullah': 1,
-			u 'encontrareis': 1,
-			u 'familia': 1,
-			u 'asi': 1,
-			u 'Inshallah': 1,
-			u 'illallah': 1,
-			u 'detalle': 1,
-			u 'escuela': 1,
-			u 'veces': 1,
-			u 'utilidad': 1,
-			u 'salam': 1,
-			u 'fustracion': 1,
-			u 'mandatorio': 1,
-			u 'prioridades': 1,
-			u 'redcuerdalo': 1,
-			u 'proximo': 1,
-			u 'suerte': 1,
-			u 'planes': 1,
-			u 'primos': 1,
-			u 'exito': 1,
-			u 'discreccion': 1,
-			u 'continaun': 1,
-			u 'trnaquilo': 1,
-			u 'actitud': 1
-		})
+	"2018-06-05": {
+		"azra": [
+			[
+				"q",
+				14
+			],
+			[
+				"allah",
+				10
+			],
+			[
+				"mejor",
+				6
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"veces",
+				4
+			],
+			[
+				"s\u00e9",
+				4
+			],
+			[
+				"intento",
+				4
+			],
+			[
+				"hermanos",
+				3
+			],
+			[
+				"solo",
+				3
+			],
+			[
+				"acuerdo",
+				3
+			]
+		],
+		"jawad": [
+			[
+				"mas",
+				10
+			],
+			[
+				"allah",
+				8
+			],
+			[
+				"si",
+				7
+			],
+			[
+				"mohammed",
+				5
+			],
+			[
+				"azra",
+				5
+			],
+			[
+				"bien",
+				4
+			],
+			[
+				"recuerda",
+				3
+			],
+			[
+				"seras",
+				3
+			],
+			[
+				"tener",
+				2
+			],
+			[
+				"ramadan",
+				2
+			]
+		]
 	},
-	'2018-06-07': {
-		'azra': Counter({
-			u 'q': 8,
-			u 'acuerdo': 5,
-			u 'allah': 4,
-			u 'estadio': 3,
-			u 'patrones': 2,
-			u 'plan': 2,
-			u 'asi': 2,
-			u 'masha': 2,
-			u 'jawad': 2,
-			u 'mohammed': 2,
-			u 'insha': 1,
-			u 'costura': 1,
-			u 'buzon': 1,
-			u 'alaikum': 1,
-			u 'anhu': 1,
-			u 'intento': 1,
-			u 'video': 1,
-			u 'radi': 1,
-			u 'labor': 1,
-			u 'detalles': 1,
-			u 'favor': 1,
-			u 'energia': 1,
-			u 'causa': 1,
-			u 'mail': 1,
-			u 'conmohammed': 1,
-			u 'lugares': 1,
-			u 'entrada': 1,
-			u 'herramientas': 1,
-			u 'lugar': 1,
-			u 'aman': 1,
-			u 'voluntad': 1,
-			u 'modods': 1,
-			u 'hablare': 1,
-			u 'maquina': 1,
-			u 'primos': 1,
-			u 'dire': 1,
-			u 'plano': 1,
-			u 'contacto': 1,
-			u 'necesitas': 1,
-			u 'sabi': 1,
-			u 'p\xe1gina': 1,
-			u 'momento': 1,
-			u 'hoy': 1
-		}),
-		'jawad': Counter({
-			u 'azra': 4,
-			u 'asi': 3,
-			u 'cosa': 2,
-			u 'allah': 2,
-			u 'verdad': 2,
-			u 'ayuda': 2,
-			u 'paso': 2,
-			u 'mira': 2,
-			u 'conmigo': 2,
-			u 'mohammed': 2,
-			u 'cosas': 2,
-			u 'importancia': 1,
-			u 'redes': 1,
-			u 'apra': 1,
-			u 'detallles': 1,
-			u 'instrucciones': 1,
-			u 'mail': 1,
-			u 'alhamdulillah': 1,
-			u 'correo': 1,
-			u 'encontraras': 1,
-			u 'despues': 1,
-			u 'cuenta': 1,
-			u 'principio': 1,
-			u 'sahid': 1,
-			u 'ayudas': 1,
-			u 'kaifaka': 1,
-			u 'islam': 1,
-			u 'instragram': 1,
-			u 'trnaquila': 1,
-			u 'parte': 1,
-			u 'soldado': 1,
-			u 'httpspccd656hfgh': 1,
-			u 'opresion': 1,
-			u 'httpsxgobzasd45sf': 1,
-			u 'Azra': 1,
-			u 'direccion': 1,
-			u 'detalles': 1,
-			u 'mailinatorcom': 1,
-			u 'correos': 1,
-			u 'tambien': 1,
-			u 'telegram': 1,
-			u 'nombre': 1,
-			u 'hazmelo': 1,
-			u 'dias': 1,
-			u 'contrase\xf1as': 1,
-			u 'vestimentas': 1,
-			u 'hermanos': 1,
-			u 'yaiid': 1,
-			u 'hombres': 1,
-			u 'direcciones': 1,
-			u 'maquina': 1,
-			u 'resultados': 1,
-			u 'masalamah': 1,
-			u 'concentrate': 1,
-			u 'ishallah': 1,
-			u 'sabias': 1,
-			u 'httpsibbcoiv2kxof': 1,
-			u 'aqui': 1,
-			u 'indicaciones': 1,
-			u 'tendras': 1,
-			u 'httpswwwmediafirecomfileasdfasfaflahuasdasd': 1,
-			u 'casa': 1,
-			u 'facbook': 1,
-			u 'tediga': 1,
-			u 'usuario': 1,
-			u 'txto': 1,
-			u 'patronescostura70062018': 1,
-			u 'salam': 1,
-			u 'cideo': 1,
-			u 'pagina': 1,
-			u 'mente': 1,
-			u 'sera': 1,
-			u 'primos': 1,
-			u 'video': 1,
-			u 'httpsarchiveorgdownloaddearaeraerasdfasfafasfgbvnbn': 1,
-			u 'kufr': 1,
-			u 'honor': 1,
-			u 'httpsmymailruinboxasfsdf345234523dgfsdgfsg': 1,
-			u 'duda': 1
-		})
+	"2018-06-07": {
+		"azra": [
+			[
+				"q",
+				9
+			],
+			[
+				"allah",
+				5
+			],
+			[
+				"acuerdo",
+				5
+			],
+			[
+				"tambien",
+				4
+			],
+			[
+				"har\u00e9",
+				3
+			],
+			[
+				"bien",
+				3
+			],
+			[
+				"mohammed",
+				3
+			],
+			[
+				"estadio",
+				3
+			],
+			[
+				"si",
+				3
+			],
+			[
+				"mail",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"si",
+				7
+			],
+			[
+				"azra",
+				5
+			],
+			[
+				"perfecto",
+				4
+			],
+			[
+				"importante",
+				4
+			],
+			[
+				"necesito",
+				4
+			],
+			[
+				"tendras",
+				3
+			],
+			[
+				"dare",
+				3
+			],
+			[
+				"asi",
+				3
+			],
+			[
+				"aqui",
+				3
+			],
+			[
+				"ayuda",
+				3
+			]
+		]
 	},
-	'2018-06-08': {
-		'azra': Counter({
-			u 'q': 8,
-			u 'alhamdulillah': 3,
-			u 'jawad': 3,
-			u 'allah': 2,
-			u 'bien': 2,
-			u 'verdad': 2,
-			u 'masha': 2,
-			u 'insha': 1,
-			u 'uqe': 1,
-			u 'httpsusercloudcomasfasdfASDFASF344': 1,
-			u 'medios': 1,
-			u 'video': 1,
-			u 'mujer': 1,
-			u 'httpsuptoboxcomfasdf345gsdgsdfgsd': 1,
-			u 'httpszuploadws1234234213ASDFASDFASFASDf': 1,
-			u 'baraka': 1,
-			u 'parte': 1,
-			u 'preguntas': 1,
-			u 'objetivo': 1,
-			u 'esfuerzos': 1,
-			u 'confianza': 1,
-			u 'httpsmegaupnetASDFASDF7KJ': 1,
-			u 'fik': 1,
-			u 'fin': 1,
-			u 'httpsthevidnetvASDFAFAWERFaAFASDF': 1,
-			u 'hermanos': 1,
-			u 'noche': 1,
-			u 'aman': 1,
-			u 'maquina': 1,
-			u 'papel': 1,
-			u 'maa': 1,
-			u 'httpsclouddisrootorgsASDFRFQ\xb7SDFGSDG': 1,
-			u 'link': 1,
-			u 'asi': 1,
-			u 'httpsrisalagaasfasfadf': 1,
-			u 'mensaje': 1,
-			u 'mohammed': 1,
-			u 'httpsfilerioinafafasdfhgdghdfgh': 1,
-			u 'sere': 1,
-			u 'acuerdo': 1,
-			u 'patrones': 1,
-			u 'env\xedo': 1
-		}),
-		'jawad': Counter({
-			u 'azra': 5,
-			u 'fotos': 3,
-			u 'trabajo': 3,
-			u 'mohammed': 3,
-			u 'dia': 3,
-			u 'primos': 3,
-			u 'vosotros': 2,
-			u 'inshallah': 2,
-			u 'allah': 2,
-			u 'MashaAllah': 2,
-			u 'yihad': 2,
-			u 'costura': 1,
-			u 'guerra': 1,
-			u 'cuidado': 1,
-			u 'permiso': 1,
-			u 'mundo': 1,
-			u 'FataBarakAllah': 1,
-			u 'pieza': 1,
-			u 'costuras': 1,
-			u 'reunion': 1,
-			u 'alandalus': 1,
-			u 'alaalhamdulillah': 1,
-			u 'kaifaka': 1,
-			u 'porximo': 1,
-			u 'duda': 1,
-			u 'FiAmanAllah': 1,
-			u 'canales': 1,
-			u 'alhamdulillah': 1,
-			u 'Azra': 1,
-			u 'proximo': 1,
-			u 'enviarlo': 1,
-			u 'nopoemo': 1,
-			u 'telegram': 1,
-			u 'confianza': 1,
-			u 'fin': 1,
-			u 'contrase\xf1as': 1,
-			u 'redes': 1,
-			u 'noche': 1,
-			u 'yaiid': 1,
-			u 'partida': 1,
-			u 'envio': 1,
-			u 'instrucciones': 1,
-			u 'verdad': 1,
-			u 'hermana': 1,
-			u 'Salam': 1,
-			u 'resultados': 1,
-			u 'enviare': 1,
-			u 'enviame': 1,
-			u 'du': 1,
-			u 'fronteras': 1,
-			u 'demuestras': 1,
-			u 'jamas': 1,
-			u 'compromiso': 1,
-			u 'sero': 1,
-			u 'SubhanaAllah': 1,
-			u 'partes': 1
-		})
+	"2018-06-08": {
+		"azra": [
+			[
+				"q",
+				8
+			],
+			[
+				"allah",
+				5
+			],
+			[
+				"alhamdulillah",
+				4
+			],
+			[
+				"ver",
+				3
+			],
+			[
+				"bien",
+				3
+			],
+			[
+				"parece",
+				3
+			],
+			[
+				"jawad",
+				3
+			],
+			[
+				"verdad",
+				2
+			],
+			[
+				"habia",
+				2
+			],
+			[
+				"si",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"perfecto",
+				6
+			],
+			[
+				"azra",
+				6
+			],
+			[
+				"recuerda",
+				3
+			],
+			[
+				"mohammed",
+				3
+			],
+			[
+				"allah",
+				3
+			],
+			[
+				"dia",
+				3
+			],
+			[
+				"trabajo",
+				3
+			],
+			[
+				"primos",
+				3
+			],
+			[
+				"fotos",
+				3
+			],
+			[
+				"si",
+				3
+			]
+		]
 	},
-	'2018-06-11': {
-		'azra': Counter({
-			u 'allah': 5,
-			u 'q': 4,
-			u 'jawad': 3,
-			u 'FiAmanAllah': 2,
-			u 'costura': 1,
-			u 'ma\u02bfa': 1,
-			u 'martir': 1,
-			u 'az20ra04': 1,
-			u 'mail': 1,
-			u 'hombre': 1,
-			u 'telegram': 1,
-			u 'cuentas': 1,
-			u 'correo': 1,
-			u 'bondad': 1,
-			u 'persona': 1,
-			u 'voluntad': 1,
-			u 'alaikum': 1,
-			u 'vacaciones': 1,
-			u 'ayuda': 1,
-			u 'regalo': 1,
-			u 'movil': 1,
-			u 'InnaLillahiWaInnaIlaihi': 1,
-			u 'Alaihi': 1,
-			u 'usuarios': 1,
-			u 'fotos': 1,
-			u 'parte': 1,
-			u 'refuerzos': 1,
-			u 'fuerzas': 1,
-			u 'alhamdulillah': 1,
-			u 'ummah': 1,
-			u 'hermano': 1,
-			u 'cerr\xe9': 1,
-			u 'contrase\xf1as': 1,
-			u 'botiquin': 1,
-			u 'vosotros': 1,
-			u 'fik': 1,
-			u 'mapas': 1,
-			u 'Khair': 1,
-			u '235679arx': 1,
-			u 'pr\xe1ctica': 1,
-			u 'd\xedas': 1,
-			u 'paraiso': 1,
-			u 'Rajiun': 1,
-			u 'padres': 1,
-			u 'IN': 1,
-			u 'baraka': 1,
-			u 'asi': 1,
-			u 'password': 1,
-			u 'Assalam': 1,
-			u 'viaje': 1,
-			u 'accion': 1,
-			u 'gu\xeda': 1,
-			u 'contigo': 1,
-			u 'aqui': 1,
-			u 'masha': 1,
-			u 'miedo': 1,
-			u 'estadio': 1,
-			u 'caso': 1,
-			u 'Allah': 1,
-			u 'mohammed': 1,
-			u 'honor': 1,
-			u 'Jazak': 1,
-			u 'estate': 1,
-			u 'acuerdo': 1,
-			u 'demas': 1,
-			u 'vida': 1,
-			u 'sabeis': 1
-		}),
-		'jawad': Counter({
-			u 'mohammed': 8,
-			u 'allah': 6,
-			u 'primos': 5,
-			u 'Azra': 3,
-			u 'envio': 3,
-			u 'inshallah': 2,
-			u 'telegram': 2,
-			u 'correo': 2,
-			u 'momento': 2,
-			u 'verdad': 2,
-			u 'camino': 2,
-			u 'Allah': 2,
-			u 'pasamelas': 2,
-			u 'sims': 1,
-			u 'Aman': 1,
-			u 'ayudes': 1,
-			u 'qneu': 1,
-			u 'FataBarakAllah': 1,
-			u 'cuentas': 1,
-			u 'alhamdulillah': 1,
-			u 'muhammad': 1,
-			u 'mision': 1,
-			u 'exito': 1,
-			u 'palabra': 1,
-			u 'matricula': 1,
-			u 'gestionarlas': 1,
-			u 'illa': 1,
-			u 'gmail': 1,
-			u 'canal': 1,
-			u 'encontraras': 1,
-			u 'fotos': 1,
-			u 'documentacion': 1,
-			u 'duda': 1,
-			u 'borradores': 1,
-			u 'preocuparte': 1,
-			u 'Ilaha': 1,
-			u 'peudes': 1,
-			u 'recuerdales': 1,
-			u 'fervor': 1,
-			u 'hermana': 1,
-			u 'confia': 1,
-			u 'contacto': 1,
-			u 'contigo': 1,
-			u 'deseo': 1,
-			u 'compromiso': 1,
-			u 'Il': 1,
-			u 'redes': 1,
-			u 'be': 1,
-			u '\u0639\u0644\u0649': 1,
-			u 'vosotros': 1,
-			u 'respuesta': 1,
-			u 'instrucciones': 1,
-			u 'internet': 1,
-			u 'azra': 1,
-			u 'Salam': 1,
-			u 'coche': 1,
-			u 'padres': 1,
-			u 'MashaAllah': 1,
-			u 'tambien': 1,
-			u 'jaid': 1,
-			u 'problema': 1,
-			u 'quin': 1,
-			u 'aqui': 1,
-			u 'excacto': 1,
-			u 'caso': 1,
-			u 'dias': 1,
-			u 'siguie': 1,
-			u 'cometido': 1,
-			u 'suerte': 1,
-			u 'mercedes': 1,
-			u 'SubhanaAllah': 1,
-			u 'russia': 1,
-			u 'ahota': 1
-		})
+	"2018-06-11": {
+		"azra": [
+			[
+				"allah",
+				8
+			],
+			[
+				"q",
+				5
+			],
+			[
+				"jawad",
+				3
+			],
+			[
+				"as\u00ed",
+				2
+			],
+			[
+				"conf\u00edo",
+				2
+			],
+			[
+				"mail",
+				2
+			],
+			[
+				"perfecto",
+				2
+			],
+			[
+				"gran",
+				2
+			],
+			[
+				"ser",
+				2
+			],
+			[
+				"contrase\u00f1a",
+				2
+			]
+		],
+		"jawad": [
+			[
+				"mohammed",
+				8
+			],
+			[
+				"allah",
+				8
+			],
+			[
+				"primos",
+				7
+			],
+			[
+				"si",
+				6
+			],
+			[
+				"mas",
+				5
+			],
+			[
+				"",
+				4
+			],
+			[
+				"claro",
+				4
+			],
+			[
+				"recuerda",
+				4
+			],
+			[
+				"preocupes",
+				4
+			],
+			[
+				"azra",
+				4
+			]
+		]
 	}
 }

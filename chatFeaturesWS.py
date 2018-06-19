@@ -140,10 +140,10 @@ class ChatFeatures:
 
 				for messageUser in messagesUser:
 					for word in messageUser:
-						#if word.lower() not in stopwordList:
+						if word.lower() not in stopwordList:
 							relevantWordsPerUser[day][user].append(word.lower())
 					
-				relevantWordsPerUser[day][user] = Counter(relevantWordsPerUser[day][user])
+				relevantWordsPerUser[day][user] = Counter(relevantWordsPerUser[day][user]).most_common(10)
 
 		return relevantWordsPerUser
 

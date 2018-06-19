@@ -1,0 +1,200 @@
+09:57:04 jawad : me encanta cuando dices lo de que si no puedes ir al estado islamico
+09:57:10 jawad : que la yihad no tiene fronteras
+09:57:17 jawad : hacer la yihad donde esteis
+
+1	me	yo	yo	PRON	PRON	Number=Sing|Person=1|PronType=Prs	Number=Sing|Person=1|PronType=Prs	2	2	obj	obj	_	_	
+2	encanta	encantar	encantar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	0	root	root	_	_	
+3	cuando	cuando	cuando	SCONJ	SCONJ	_	_	4	4	mark	mark	_	_	
+4	dices	decir	decir	VERB	VERB	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	2	conj	conj	_	_	
+5	lo	él	él	PRON	PRON	Definite=Def|Number=Sing|PronType=Art	Definite=Def|Number=Sing|PronType=Art	4	4	obj	obj	_	_	
+6	de	de	de	ADP	ADP	AdpType=Prep	AdpType=Prep	11	11	mark	mark	_	_	
+7	que	que	que	SCONJ	SCONJ	_	_	11	11	mark	mark	_	_	
+8	si	si	si	SCONJ	SCONJ	_	_	11	11	mark	mark	_	_	
+9	no	no	no	ADV	ADV	Polarity=Neg	Polarity=Neg	11	11	advmod	advmod	_	_	
+10	puedes	poder	poder	AUX	AUX	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	11	11	aux	aux	_	_	
+11	ir	ir	ir	VERB	VERB	VerbForm=Inf	VerbForm=Inf	2	2	csubj	csubj	_	_	
+12	a	a	a	ADP	ADP	_	_	14	14	case	case	_	_	
+13	el	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	14	det	det	_	_	
+14	estado	estado	estado	NOUN	NOUN	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	11	11	obl	obl	_	_	
+15	islamico	islamico	islamico	ADJ	ADJ	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	14	14	amod	amod	_	_	
+
+1	que	que	que	SCONJ	SCONJ	PronType=Rel	PronType=Rel	5	5	mark	mark	_	_	
+2	la	el	el	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	3	det	det	_	_	
+3	yihad	yihad	yihad	NOUN	NOUN	_	_	5	5	nsubj	nsubj	_	_	
+4	no	no	no	ADV	ADV	Polarity=Neg	Polarity=Neg	5	5	advmod	advmod	_	_	
+5	tiene	tener	tener	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	0	root	root	_	_	
+6	fronteras	frontera	frontera	NOUN	NOUN	Gender=Fem|Number=Plur	Gender=Fem|Number=Plur	5	5	obj	obj	_	_	
+
+
+1	hacer	hacer	hacer	VERB	VERB	VerbForm=Inf	VerbForm=Inf	5	5	csubj	csubj	_	_	
+2	la	el	el	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	3	det	det	_	_	
+3	yihad	yihad	yihad	NOUN	NOUN	_	_	1	1	obj	obj	_	_	
+4	donde	donde	donde	PRON	PRON	_	_	5	5	obl	obl	_	_	
+5	esteis	estei	estei	VERB	VERB	_	_	0	0	root	root	_	_	
+
+10:03:43 azra : decidir en su corazón empezar a cambiar ya muestra que una persona ha hecho la intención de allah
+10:04:23 azra : qué otras cosas son haraam? decías antes que había más cosas
+10:06:16 azra : fumar, robar no es algo que yo haga tampoco ni que vea que hacen mis hermanas
+
+
+1	decidir	decidir	decidir	VERB	VERB	VerbForm=Inf	VerbForm=Inf	9	9	advcl	advcl	_	_	
+2	en	en	en	ADP	ADP	AdpType=Prep	AdpType=Prep	4	4	case	case	_	_	
+3	su	su	su	DET	DET	Number=Sing|Person=3|Poss=Yes|PronType=Prs	Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	4	det	det	_	_	
+4	corazón	corazón	corazón	NOUN	NOUN	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	1	1	obl	obl	_	_	
+5	empezar	empezar	empezar	AUX	AUX	VerbForm=Inf	VerbForm=Inf	7	7	aux	aux	_	_	
+6	a	a	a	ADP	ADP	AdpType=Prep	AdpType=Prep	7	7	mark	mark	_	_	
+7	cambiar	cambiar	cambiar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	1	1	xcomp	xcomp	_	_	
+8	ya	ya	ya	ADV	ADV	_	_	7	7	advmod	advmod	_	_	
+9	muestra	mostrar	mostrar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	0	root	root	_	_	
+10	que	que	que	SCONJ	SCONJ	PronType=Rel	PronType=Rel	14	14	mark	mark	_	_	
+11	una	uno	uno	DET	DET	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	12	det	det	_	_	
+12	persona	persona	persona	NOUN	NOUN	Gender=Fem|Number=Sing	Gender=Fem|Number=Sing	14	14	nsubj	nsubj	_	_	
+13	ha	haber	haber	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	14	aux	aux	_	_	
+14	hecho	hacer	hacer	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	9	ccomp	ccomp	_	_	
+15	la	el	el	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	16	det	det	_	_	
+16	intención	intención	intención	NOUN	NOUN	Gender=Fem|Number=Sing	Gender=Fem|Number=Sing	14	14	obj	obj	_	_	
+17	de	de	de	ADP	ADP	AdpType=Prep	AdpType=Prep	18	18	case	case	_	_	
+18	allah	allah	allah	NOUN	NOUN	Gender=Masc|Number=Sing|PronType=Dem	Gender=Masc|Number=Sing|PronType=Dem	16	16	nmod	nmod	_	_	
+
+
+1	qué	qué	qué	DET	DET	Number=Sing|PronType=Int	Number=Sing|PronType=Int	3	3	det	det	_	_	
+2	otras	otro	otro	DET	DET	Gender=Fem|Number=Plur|PronType=Ind	Gender=Fem|Number=Plur|PronType=Ind	1	1	det	det	_	_	
+3	cosas	cosa	cosa	NOUN	NOUN	Gender=Fem|Number=Plur	Gender=Fem|Number=Plur	5	5	nsubj	nsubj	_	_	
+4	son	ser	ser	AUX	AUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	5	cop	cop	_	_	
+5	haraam	haraam	haraam	ADJ	ADJ	_	_	0	0	root	root	_	_	
+6	?	?	?	PUNCT	PUNCT	PunctSide=Fin|PunctType=Qest	PunctSide=Fin|PunctType=Qest	5	5	punct	punct	_	_	
+
+
+1	decías	decía	decía	PROPN	PROPN	Gender=Fem|Number=Plur	Gender=Fem|Number=Plur	6	6	nsubj	nsubj	_	_	
+2	antes	antes	antes	ADV	ADV	_	_	6	6	advmod	advmod	_	_	
+3	que	que	que	SCONJ	SCONJ	PronType=Rel	PronType=Rel	6	6	mark	mark	_	_	
+4	había	haber	haber	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	6	cop	cop	_	_	
+5	más	más	más	ADV	ADV	_	_	6	6	advmod	advmod	_	_	
+6	cosas	cosa	cosa	NOUN	NOUN	Gender=Fem|Number=Plur	Gender=Fem|Number=Plur	0	0	root	root	_	_	
+
+
+1	fumar	fumar	fumar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	6	6	csubj	csubj	_	_	
+2	,	,	,	PUNCT	PUNCT	PunctType=Comm	PunctType=Comm	6	6	punct	punct	_	_	
+3	robar	robar	robar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	6	6	csubj	csubj	_	_	
+4	no	no	no	ADV	ADV	Polarity=Neg	Polarity=Neg	6	6	advmod	advmod	_	_	
+5	es	ser	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	6	cop	cop	_	_	
+6	algo	algo	algo	PRON	PRON	Number=Sing|PronType=Ind	Number=Sing|PronType=Ind	0	0	root	root	_	_	
+7	que	que	que	PRON	PRON	PronType=Rel	PronType=Rel	9	9	nsubj	nsubj	_	_	
+8	yo	yo	yo	PRON	PRON	Case=Nom|Number=Sing|Person=1|PronType=Prs	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	9	nsubj	nsubj	_	_	
+9	haga	hacer	hacer	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	6	acl	acl	_	_	
+10	tampoco	tampoco	tampoco	ADV	ADV	_	_	9	9	advmod	advmod	_	_	
+11	ni	ni	ni	CCONJ	CCONJ	_	_	13	13	cc	cc	_	_	
+12	que	que	que	SCONJ	SCONJ	_	_	11	11	fixed	fixed	_	_	
+13	vea	ver	ver	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	9	advcl	advcl	_	_	
+14	que	que	que	SCONJ	SCONJ	_	_	15	15	mark	mark	_	_	
+15	hacen	hacer	hacer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	13	ccomp	ccomp	_	_	
+16	mis	mi	mi	DET	DET	Number=Plur|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	Number=Plur|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	17	17	det	det	_	_	
+17	hermanas	hermana	hermana	NOUN	NOUN	Gender=Fem|Number=Plur	Gender=Fem|Number=Plur	15	15	obj	obj	_	_	
+
+
+10:06:47 azra : es muy dificil
+10:07:16 azra : en rusia no habra nada que nos detenga
+10:07:58 azra : crees q podría encontrar ayuda aqui?
+10:08:27 azra : antes de ir a rusia, hacerles pagar
+10:09:32 azra : ya me entiendes, ahora es un buen momoento para hacer pagar a los kufr
+10:09:58 azra : los gobiernos occidentales estan desequilibrados
+10:10:28 azra : hay q aprovechar este momento de confusión para darles su castigo
+10:11:37 azra : ellos nos maltratan, nos silencian, nos ridiculizan, matan a nuestros hermanos
+10:11:48 azra : venden armas a nuestro enemigos
+10:12:01 azra : merecen un gran castigo
+
+
+1	es	ser	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	3	cop	cop	_	_	
+2	muy	mucho	mucho	ADV	ADV	_	_	3	3	advmod	advmod	_	_	
+3	dificil	dificil	dificil	ADJ	ADJ	_	_	0	0	root	root	_	_	
+
+1	en	en	en	ADP	ADP	AdpType=Prep	AdpType=Prep	2	2	case	case	_	_	
+2	rusia	rusia	rusia	NOUN	NOUN	_	_	4	4	obl	obl	_	_	
+3	no	no	no	ADV	ADV	Polarity=Neg	Polarity=Neg	4	4	advmod	advmod	_	_	
+4	habra	habrar	habrar	VERB	VERB	_	_	0	0	root	root	_	_	
+5	nada	nada	nada	PRON	PRON	Number=Sing|PronType=Ind	Number=Sing|PronType=Ind	4	4	obj	obj	_	_	
+6	que	que	que	PRON	PRON	PronType=Rel	PronType=Rel	8	8	nsubj	nsubj	_	_	
+7	nos	yo	yo	PRON	PRON	Number=Plur|Person=1|PronType=Prs	Number=Plur|Person=1|PronType=Prs	8	8	obj	obj	_	_	
+8	detenga	detener	detener	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	5	acl	acl	_	_	
+
+1	crees	cree	cree	PROPN	PROPN	Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	4	nsubj	nsubj	_	_	
+2	q	q	q	PROPN	PROPN	_	_	1	1	flat	flat	_	_	
+3	podría	poder	poder	AUX	AUX	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	4	aux	aux	_	_	
+4	encontrar	encontrar	encontrar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	0	0	root	root	_	_	
+5	ayuda	ayuda	ayuda	NOUN	NOUN	Gender=Fem|Number=Sing	Gender=Fem|Number=Sing	4	4	obj	obj	_	_	
+6	aqui	aqui	aqui	ADJ	ADJ	_	_	5	5	amod	amod	_	_	
+7	?	?	?	PUNCT	PUNCT	PunctSide=Fin|PunctType=Qest	PunctSide=Fin|PunctType=Qest	4	4	punct	punct	_	_	
+
+1	antes	antes	antes	ADV	ADV	_	_	8	8	advmod	advmod	_	_	
+2	de	de	de	ADP	ADP	AdpType=Prep	AdpType=Prep	3	3	mark	mark	_	_	
+3	ir	ir	ir	VERB	VERB	VerbForm=Inf	VerbForm=Inf	1	1	advcl	advcl	_	_	
+4	a	a	a	ADP	ADP	AdpType=Prep	AdpType=Prep	5	5	case	case	_	_	
+5	rusia	rusia	rusia	PROPN	PROPN	_	_	3	3	obl	obl	_	_	
+6	,	,	,	PUNCT	PUNCT	PunctType=Comm	PunctType=Comm	1	1	punct	punct	_	_	
+7	hacerles	hacer	hacer	PROPN	PROPN	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	8	8	nsubj	nsubj	_	_	
+8	pagar	pagar	pagar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	0	0	root	root	_	_	
+
+1	ya	ya	ya	ADV	ADV	_	_	3	3	advmod	advmod	_	_	
+2	me	yo	yo	PRON	PRON	Number=Sing|Person=1|PronType=Prs	Number=Sing|Person=1|PronType=Prs	3	3	obj	obj	_	_	
+3	entiendes	entiende	entiende	VERB	VERB	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	9	9	csubj	csubj	_	_	
+4	,	,	,	PUNCT	PUNCT	PunctType=Comm	PunctType=Comm	9	9	punct	punct	_	_	
+5	ahora	ahora	ahora	ADV	ADV	_	_	9	9	advmod	advmod	_	_	
+6	es	ser	ser	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	9	cop	cop	_	_	
+7	un	uno	uno	DET	DET	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	9	det	det	_	_	
+8	buen	buen	buen	ADJ	ADJ	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	9	9	amod	amod	_	_	
+9	momoento	momoento	momoento	NOUN	NOUN	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	0	0	root	root	_	_	
+10	para	para	para	ADP	ADP	AdpType=Prep	AdpType=Prep	12	12	mark	mark	_	_	
+11	hacer	hacer	hacer	AUX	AUX	VerbForm=Inf	VerbForm=Inf	12	12	aux	aux	_	_	
+12	pagar	pagar	pagar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	9	9	acl	acl	_	_	
+13	a	a	a	ADP	ADP	AdpType=Prep	AdpType=Prep	15	15	case	case	_	_	
+14	los	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	15	det	det	_	_	
+15	kufr	kufr	kufr	NOUN	NOUN	_	_	12	12	obl	obl	_	_	
+
+1	los	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	2	det	det	_	_	
+2	gobiernos	gobierno	gobierno	NOUN	NOUN	Gender=Masc|Number=Plur	Gender=Masc|Number=Plur	0	0	root	root	_	_	
+3	occidentales	occidental	occidental	ADJ	ADJ	Number=Plur	Number=Plur	2	2	amod	amod	_	_	
+4	estan	estar	estar	ADJ	ADJ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	2	amod	amod	_	_	
+5	desequilibrados	desequilibrado	desequilibrado	PUNCT	PUNCT	Gender=Masc|Number=Plur|VerbForm=Part	Gender=Masc|Number=Plur|VerbForm=Part	2	2	punct	punct	_	_	
+
+1	hay	haber	haber	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	3	advcl	advcl	_	_	
+2	q	q	q	NOUN	NOUN	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	1	1	obj	obj	_	_	
+3	aprovechar	aprovechar	aprovechar	VERB	VERB	VerbForm=Inf	VerbForm=Inf	0	0	root	root	_	_	
+4	este	este	este	DET	DET	Gender=Masc|Number=Sing|PronType=Dem	Gender=Masc|Number=Sing|PronType=Dem	5	5	det	det	_	_	
+5	momento	momento	momento	NOUN	NOUN	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	3	3	obj	obj	_	_	
+6	de	de	de	ADP	ADP	AdpType=Prep	AdpType=Prep	7	7	case	case	_	_	
+7	confusión	confusión	confusión	NOUN	NOUN	Gender=Fem|Number=Sing	Gender=Fem|Number=Sing	5	5	nmod	nmod	_	_	
+8	para	para	para	ADP	ADP	AdpType=Prep	AdpType=Prep	9	9	mark	mark	_	_	
+9	darles	dar	dar	VERB	VERB	Number=Plur	Number=Plur	3	3	advcl	advcl	_	_	
+10	su	su	su	DET	DET	Number=Sing|Person=3|Poss=Yes|PronType=Prs	Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	11	det	det	_	_	
+11	castigo	castigo	castigo	NOUN	NOUN	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	9	9	obj	obj	_	_	
+
+1	ellos	él	él	PRON	PRON	Gender=Masc|Number=Plur|Person=3|PronType=Prs	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	3	nsubj	nsubj	_	_	
+2	nos	yo	yo	PRON	PRON	Number=Plur|Person=1|PronType=Prs	Number=Plur|Person=1|PronType=Prs	3	3	obj	obj	_	_	
+3	maltratan	maltratar	maltratar	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	11	advcl	advcl	_	_	
+4	,	,	,	PUNCT	PUNCT	PunctType=Comm	PunctType=Comm	11	11	punct	punct	_	_	
+5	nos	yo	yo	PRON	PRON	Number=Plur|Person=1|PronType=Prs	Number=Plur|Person=1|PronType=Prs	6	6	obj	obj	_	_	
+6	silencian	silenciar	silenciar	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	11	advcl	advcl	_	_	
+7	,	,	,	PUNCT	PUNCT	PunctType=Comm	PunctType=Comm	6	6	punct	punct	_	_	
+8	nos	yo	yo	PRON	PRON	Number=Plur|Person=1|PronType=Prs	Number=Plur|Person=1|PronType=Prs	9	9	obj	obj	_	_	
+9	ridiculizan	ridiculizar	ridiculizar	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	6	advcl	advcl	_	_	
+10	,	,	,	PUNCT	PUNCT	PunctType=Comm	PunctType=Comm	6	6	punct	punct	_	_	
+11	matan	matar	matar	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	0	root	root	_	_	
+12	a	a	a	ADP	ADP	AdpType=Prep	AdpType=Prep	14	14	case	case	_	_	
+13	nuestros	nuestro	nuestro	DET	DET	Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	14	14	det	det	_	_	
+14	hermanos	hermano	hermano	NOUN	NOUN	Gender=Masc|Number=Plur	Gender=Masc|Number=Plur	11	11	obl	obl	_	_	
+
+1	venden	vender	vender	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	5	csubj	csubj	_	_	
+2	armas	arma	arma	NOUN	NOUN	Gender=Fem|Number=Plur	Gender=Fem|Number=Plur	1	1	obj	obj	_	_	
+3	a	a	a	ADP	ADP	_	_	5	5	case	case	_	_	
+4	nuestro	nuestro	nuestro	DET	DET	Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	5	5	det	det	_	_	
+5	enemigos	enemigo	enemigo	NOUN	NOUN	_	_	0	0	root	root	_	_	
+
+1	merecen	merecer	merecer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	0	root	root	_	_	
+2	un	uno	uno	DET	DET	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	4	det	det	_	_	
+3	gran	gran	gran	ADJ	ADJ	Number=Sing	Number=Sing	4	4	amod	amod	_	_	
+4	castigo	castigo	castigo	NOUN	NOUN	Gender=Masc|Number=Sing	Gender=Masc|Number=Sing	1	1	obj	obj	_	_	
+
+
+
+
+
