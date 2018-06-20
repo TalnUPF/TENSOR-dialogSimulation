@@ -8,6 +8,7 @@ import string
 from nltk.tag.stanford import StanfordPOSTagger
 from nltk.corpus import stopwords
 from collections import Counter
+import copy
 
 class ChatFeatures:
 
@@ -21,7 +22,24 @@ class ChatFeatures:
 		self.msg = self.tree.xpath("/transcript/messages/message/body//text()")
 		self.dates = self.tree.xpath("/transcript/messages/message/date//text()")
 		self.dictMsgPerDay = {}
+		self.loadDicts()
 
+	def loadDicts(self):
+		pathBase = "./dicts/"
+		self.victoria = codecs.open(pathBase+"victoria.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+		self.terrorismo = codecs.open(pathBase+"terrorismo.txt","r", encoding="utf-8").read().strip().split("\r\n")
+		self.emocion = codecs.open(pathBase+"emocion.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+		self.consejo = codecs.open(pathBase+"consejo.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+		self.enemigo = codecs.open(pathBase+"enemigo.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+		self.religion = codecs.open(pathBase+"religion.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+		self.alabanza = codecs.open(pathBase+"alabanza.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+		self.domainWords = copy.copy(self.victoria)
+		self.domainWords.extend(self.terrorismo)
+		self.domainWords.extend(self.emocion)
+		self.domainWords.extend(self.consejo)
+		self.domainWords.extend(self.enemigo)
+		self.domainWords.extend(self.religion)
+		self.domainWords.extend(self.alabanza)
 
 	def clean_words(self, tokens):
 		cleanTokens = []
@@ -99,6 +117,17 @@ class ChatFeatures:
 			
 			i+=1
 
+	def computeRolesPerDay(self):
+		msgPerDayUser, turnsPerDayUser = self.turnsPerDay()
+		relevantWordsPerDayUser = self.wordsPerDay()
+
+		days = msgPerDayUser.keys()
+
+
+
+
+
+
 	def turnsPerDay(self):
 		self.turnsPerDayUser = {}
 		self.msgPerDayUser = {}
@@ -126,6 +155,56 @@ class ChatFeatures:
 
 		return self.msgPerDayUser, self.turnsPerDayUser
 
+	def domainWordsPerDay(self):
+		domainWordsPerDay = {}
+
+		for day, dictDay in self.dictMsgPerDay.iteritems():
+			if day not in domainWordsPerDay:
+				domainWordsPerDay[day] = {}
+
+			for user, messagesUser in dictDay.iteritems():
+				if user not in domainWordsPerDay[day]:
+					domainWordsPerDay[day][user] ={}
+					domainWordsPerDay[day][user]["victoria"] = 0
+					domainWordsPerDay[day][user]["emocion"] = 0
+					domainWordsPerDay[day][user]["terrorismo"] = 0
+					domainWordsPerDay[day][user]["dominio"] = 0
+					domainWordsPerDay[day][user]["religion"] = 0
+					domainWordsPerDay[day][user]["alabanza"] = 0
+					domainWordsPerDay[day][user]["consejo"] = 0
+					domainWordsPerDay[day][user]["enemigo"] = 0
+
+				for messageUser in messagesUser:
+					for word in messageUser:
+						word = word.lower()
+						if word in self.domainWords:
+							domainWordsPerDay[day][user]["dominio"]+=1
+						if word in self.victoria:
+							domainWordsPerDay[day][user]["victoria"]+=1
+						if word in self.emocion:
+							domainWordsPerDay[day][user]["emocion"]+=1
+						if word in self.terrorismo:
+							domainWordsPerDay[day][user]["terrorismo"]+=1
+						if word in self.religion:
+							domainWordsPerDay[day][user]["religion"]+=1
+						if word in self.alabanza:
+							domainWordsPerDay[day][user]["alabanza"]+=1
+						if word in self.consejo:
+							domainWordsPerDay[day][user]["consejo"]+=1
+						if word in self.enemigo:
+							domainWordsPerDay[day][user]["enemigo"]+=1
+		
+		sortedDays = sorted(domainWordsPerDay.keys())
+		for day in sortedDays:
+			print "--------"
+			print day
+			for user, dictCategory in domainWordsPerDay[day].iteritems():
+				print user
+				for category, count in dictCategory.iteritems():
+					print "\t",category, count
+
+		return domainWordsPerDay
+
 	def wordsPerDay(self):
 		stopwordList = stopwords.words('spanish')
 		relevantWordsPerUser = {}
@@ -147,3 +226,8 @@ class ChatFeatures:
 
 		return relevantWordsPerUser
 
+if __name__ == '__main__':
+	iChat = ChatFeatures(None)
+	iChat.process()
+	iChat.computeRolesPerDay()
+	iChat.domainWordsPerDay()

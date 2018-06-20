@@ -9,6 +9,7 @@ profeta
 cristianos
 navidad
 Allah
+sukria
 alma
 islam
 indulgente
@@ -17,12 +18,17 @@ mensaje
 oración
 as-saum
 haram
+haraam
+Alhamdu-Lillah
+alhamdulillah
 halal
 cocina
 aditivo
 permisible
 vestido
 voluntad
+ramadan
+musulman
 familia
 intención
 sharia
@@ -36,3 +42,5 @@ leer
 devoción
 obedecer
 servir
+Muhammadur
+Rasulullah

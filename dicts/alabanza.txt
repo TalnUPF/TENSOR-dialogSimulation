@@ -1,6 +1,7 @@
 sensata
 fuerte
-buena mujer
+buena
+mujer
 proteger
 amar
 suerte
@@ -9,9 +10,12 @@ agradecer
 correcto
 preparada
 lista
+listo
 inteligente
 útil
+util
 generoso
+generosa
 valiente
 responsabilidad
 protagonismo
@@ -21,3 +25,13 @@ decisión
 confiar
 ayudar
 orgullosa
+indulgente
+misericordioso
+Bismillah
+Alhamdu-Lillah
+alhamdulillah
+Masha-Allah
+alhamdu
+lilah
+Fi-Aman-Allah
+Fata-Barak-Allah
