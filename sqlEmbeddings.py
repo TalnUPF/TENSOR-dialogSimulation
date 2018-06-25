@@ -1,4 +1,9 @@
+# -*- coding: utf-8 -*-
+
 import MySQLdb
+import utils
+import numpy as np
+from scipy.spatial.distance import cdist
 
 class SQLEmbeddings:
 
@@ -15,14 +20,55 @@ class SQLEmbeddings:
 		dims = ",".join(dimList)
 		strQuery = "SELECT "+dims+" FROM "+tableName + " WHERE word='"+word+"'"
 		cursor.execute(strQuery)
-		results = cursor.fetchone()
 		vector = []
-		for dim in results:
-			vector.append(float(dim))
+
+		if cursor.rowcount > 0:
+			results = cursor.fetchone()
+			for dim in results:
+				vector.append(float(dim))
+		else:
+			vector = None
 
 		return vector
 
+	def getMsgVector(self, msg, tableName ="joseembeddings" ,nDims = 400):
+		cleanMsg = utils.clean_words(msg.split())
+		vectors = []
+
+		for token in cleanMsg:
+			vector = self.getWordVector(token,tableName,nDims)
+			if vector:
+				vectors.append(vector)
+		
+		avgVector = np.mean(vectors,axis=0)
+		return avgVector
+
+	def getNormVector(self, vector):
+		return np.linalg.norm(vector)
+
+	def distance(self, A, B, distance = "cosine"):
+		return cdist([A],[B],distance)
 
 if __name__ == '__main__':
+	
 	iSQL = SQLEmbeddings()
-	print iSQL.getWordVector("hola")
+
+	#Coran vs Coran	
+	a = iSQL.getMsgVector("Decretamos en la Escritura respecto a los Hijos de Israel: Ciertamente, corromperéis en la tierra dos veces y os conduciréis con gran altivez.")
+	b = iSQL.getMsgVector("Dimos a Moisés la Escritura e hicimos de ella dirección para los Hijos de Israel: «¡No toméis protector fuera de Mí")
+	print iSQL.distance(a,b) 
+
+	#Gasolina vs Coran
+	a = iSQL.getMsgVector("Mamita yo sé que tú no te me va a quitar (duro) Lo que me gusta es que tú te dejas llevar (duro) Todos los weekends ella sale a vacilar (duro) Mi gata no para de janguear porque (yeah)")
+	b = iSQL.getMsgVector("Dimos a Moisés la Escritura e hicimos de ella dirección para los Hijos de Israel: «¡No toméis protector fuera de Mí")
+	print iSQL.distance(a,b) 
+
+	#Deportes vs Deportes
+	a = iSQL.getMsgVector("Juventus y Manchester City han puesto sus ojos en el joven Daniel Arzani, internacional australiano de 19 años. Según The Sun, el joven delantero del Melbourne City les ha impresionado en el Mundial.")
+	b = iSQL.getMsgVector("Mario Barco ha fichado por el Cádiz para las próximas tres temporadas. La temporada pasada militó en el Lugo, donde consiguió anotar cinco goles.")
+	print iSQL.distance(a,b) 
+
+	#Deportes vs Coran
+	a = iSQL.getMsgVector("Juventus y Manchester City han puesto sus ojos en el joven Daniel Arzani, internacional australiano de 19 años. Según The Sun, el joven delantero del Melbourne City les ha impresionado en el Mundial.")
+	b = iSQL.getMsgVector("Decretamos en la Escritura respecto a los Hijos de Israel: Ciertamente, corromperéis en la tierra dos veces y os conduciréis con gran altivez.")
+	print iSQL.distance(a,b)
