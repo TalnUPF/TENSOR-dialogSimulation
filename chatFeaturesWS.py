@@ -110,6 +110,13 @@ class ChatFeatures:
 			
 			i+=1
 
+	def topicAnalysis(self):
+		for date, listMsgs in self.conversation.iteritems():
+			for dictMsg in listMsgs:
+				text = dictMsg["text"]
+				
+
+
 	def computeRolesPerDay(self):
 		msgPerDayUser, turnsPerDayUser = self.turnsPerDay()
 		relevantWordsPerDayUser = self.domainWordsPerDay()
@@ -121,10 +128,7 @@ class ChatFeatures:
 
 		for day in days:
 			scoresPerDayUser[day] = {}
-			print day
 			for user in self.setUsers:
-				scoresPerDayUser[day][user] = 0
-
 				numMsg = msgPerDayUser[day][user]
 				msgRatio = numMsg*1.0 / self.totalMsgPerDay[day]
 
@@ -135,8 +139,11 @@ class ChatFeatures:
 				totalWords = len(contentWordsPerDayUser[day][user])
 				dangerRatio = dangerWords*1.0/totalWords
 
-				score = msgRatio + turnRatio + dangerRatio
-				print "\t", user, score, msgPerTurnDayUser[day][user]
+				score = msgRatio + turnRatio + dangerRatio + msgPerTurnDayUser[day][user]*0.3
+				scoresPerDayUser[day][user] = score
+
+		return scoresPerDayUser
+
 
 	def msgPerTurn(self):
 
