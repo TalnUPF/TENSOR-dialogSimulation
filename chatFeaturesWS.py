@@ -9,6 +9,7 @@ from collections import Counter
 import copy
 import utils
 import numpy as np
+from sqlEmbeddings import SQLEmbeddings
 
 class ChatFeatures:
 
@@ -111,12 +112,21 @@ class ChatFeatures:
 			i+=1
 
 	def topicAnalysis(self):
-		for date, listMsgs in self.conversation.iteritems():
-			for dictMsg in listMsgs:
-				text = dictMsg["text"]
-				
+		iSQL = SQLEmbeddings()
+		#for date, listMsgs in self.conversation.iteritems():
+		listMsgs = self.conversation["2018-05-15"]	
 
-
+		lastVector = None
+		for idx, dictMsg in enumerate(listMsgs):
+			text = dictMsg["text"]
+			vector = iSQL.getMsgVector(text)
+			if lastVector and vector:
+				print idx
+				print iSQL.distance(vector,lastVector)
+				lastVector = vector
+			elif not lastVector and vector:
+				lastVector = vector
+	
 	def computeRolesPerDay(self):
 		msgPerDayUser, turnsPerDayUser = self.turnsPerDay()
 		relevantWordsPerDayUser = self.domainWordsPerDay()
@@ -289,4 +299,5 @@ class ChatFeatures:
 if __name__ == '__main__':
 	iChat = ChatFeatures(None)
 	iChat.process()
-	iChat.computeRolesPerDay()
+	#iChat.computeRolesPerDay()
+	iChat.topicAnalysis()

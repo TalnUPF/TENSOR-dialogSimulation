@@ -8,7 +8,7 @@ from scipy.spatial.distance import cdist
 class SQLEmbeddings:
 
 	def __init__(self, dbname="Embeddings"):
-		self.db = MySQLdb.connect(host="localhost", user="root", passwd="pany8491", db=dbname, use_unicode=True) 
+		self.db = MySQLdb.connect(host="10.80.28.153", user="monica", passwd="joanGuapete", db=dbname, use_unicode=True) 
 
 
 	def getWordVector(self, word, tableName ="joseembeddings" ,nDims = 400):
@@ -19,7 +19,10 @@ class SQLEmbeddings:
 
 		dims = ",".join(dimList)
 		strQuery = "SELECT "+dims+" FROM "+tableName + " WHERE word='"+word+"'"
-		cursor.execute(strQuery)
+		try:
+			cursor.execute(strQuery)
+		except:
+			return None
 		vector = []
 
 		if cursor.rowcount > 0:
@@ -40,8 +43,11 @@ class SQLEmbeddings:
 			if vector:
 				vectors.append(vector)
 		
-		avgVector = np.mean(vectors,axis=0)
-		return avgVector
+		if vectors:
+			avgVector = np.mean(vectors,axis=0)
+			return avgVector.tolist()
+		else:
+			return None
 
 	def getNormVector(self, vector):
 		return np.linalg.norm(vector)
