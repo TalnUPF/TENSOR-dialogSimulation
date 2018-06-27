@@ -283,7 +283,7 @@ class ChatFeatures:
 						else:
 							linkFeatsDayUser[date][user].append((url,"web"))
 
-		print linkFeatsDayUser
+		return linkFeatsDayUser
 
 
 if __name__ == '__main__':

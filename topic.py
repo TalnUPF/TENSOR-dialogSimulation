@@ -43,12 +43,12 @@ class Topic:
 
 	def relevantDayDetection(self, precomputed=True):
 		if precomputed:
-			lines = open("./stats/distances.tsv").read().split("\r\n")
+			lines = open("./stats/distances.tsv").read().split("\n")
 			distances = []
 			minDist = 100
 			maxDist = 0
 			for line in lines:
-				date1, date2, dist = line.split("\t")
+				date1, date2, dist = line.strip().split("\t")
 				distFloat = float(dist)
 				if distFloat < minDist:
 					minDist = distFloat
@@ -97,7 +97,7 @@ class Topic:
 
 		ranking = {}
 		for date, categoryDict in relevantDates.iteritems():
-			score = 0.8 * categoryDict["high"]+ 0.6 * categoryDict["midhigh"]+0.2*categoryDict["midlow"]+0.05*categoryDict["low"]
+			score = categoryDict["high"]+ 0.8 * categoryDict["midhigh"]+0.4*categoryDict["midlow"]+0.05*categoryDict["low"]
 			ranking[date] = score
 
 		pprint(relevantDates)
