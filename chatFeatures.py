@@ -10,6 +10,8 @@ import copy
 import utils
 import numpy as np
 from sqlEmbeddings import SQLEmbeddings
+import re
+
 
 class ChatFeatures:
 
@@ -255,9 +257,36 @@ class ChatFeatures:
 
 		return relevantWordsPerUser
 
+	def linkAnalysis(self):
+		linkFeatsDayUser = {}
+
+		for date, listMsgs in self.conversation.iteritems():		
+			for dictMsg in listMsgs:
+				user = dictMsg["user"]
+				text = dictMsg["text"]
+				urls = re.findall(r"^(ftp?|http?|https?:?\/?\/?[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)+.*)$", text)
+				if urls:
+					if date not in linkFeatsDayUser:
+						linkFeatsDayUser[date] = {}
+					if user not in linkFeatsDayUser[date]:
+						linkFeatsDayUser[date][user] = []
+
+					for url in urls:
+						if url.startswith("t.me") or "telegram" in url:
+							linkFeatsDayUser[date][user].append((url,"telegram"))
+						elif url.endswith(".jpg") or url.endswith(".jpeg") or url.endswith(".png") or url.endswith(".gif"):
+							linkFeatsDayUser[date][user].append((url,"image"))
+						elif "mail" in url:
+							linkFeatsDayUser[date][user].append((url,"mail"))
+						elif "upload" in url or "mega" in url or "cloud" in url or "file" in url or "download" in url:
+							linkFeatsDayUser[date][user].append((url,"download"))
+						else:
+							linkFeatsDayUser[date][user].append((url,"web"))
+
+		print linkFeatsDayUser
+
+
 if __name__ == '__main__':
 	iChat = ChatFeatures(None)
 	iChat.process()
-	#iChat.computeRolesPerDay()
-	#iChat.topicAnalysis()
-	iChat.conversationEvolution()
+	iChat.linkAnalysis()	

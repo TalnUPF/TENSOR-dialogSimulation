@@ -1,6 +1,8 @@
 from chatFeatures import ChatFeatures
 from sqlEmbeddings import SQLEmbeddings
 import utils
+from pprint import pprint
+from operator import itemgetter
 
 class Topic:
 
@@ -8,7 +10,7 @@ class Topic:
 		self.iChat = ChatFeatures(None)
 		self.iChat.process()
 		self.iSQL = SQLEmbeddings()
-		self.conversationEvolution()
+		#self.conversationEvolution()
 		
 	def conversationEvolution(self):
 		vectorPerDay = {}
@@ -34,28 +36,96 @@ class Topic:
 					inserted.add((date1,date2))
 					distances.append((date1,date2,dist))
 
-		for distance in distances:
-			print distance[0],"\t",distance[1],"\t",distance[2]
-
+		#for distance in distances:
+		#	print distance[0],"\t",distance[1],"\t",distance[2]
 
 		return distances
 
+	def relevantDayDetection(self, precomputed=True):
+		if precomputed:
+			lines = open("./stats/distances.tsv").read().split("\r\n")
+			distances = []
+			minDist = 100
+			maxDist = 0
+			for line in lines:
+				date1, date2, dist = line.split("\t")
+				distFloat = float(dist)
+				if distFloat < minDist:
+					minDist = distFloat
+				if distFloat > maxDist:
+					maxDist = distFloat
+
+				distances.append((date1, date2, distFloat))
+		else:
+			distances = self.conversationEvolution()
+
+		rng = maxDist - minDist
+		quartileInc = rng*1.0/4
+
+		quartiles = {}
+		quartiles["low"] = []
+		quartiles["midlow"] = []
+		quartiles["midhigh"] = []
+		quartiles["high"] = []
+
+		for date1, date2, distance in distances:
+			if distance > minDist and distance <= minDist+quartileInc:
+				quartiles["low"].append(date1)
+				quartiles["low"].append(date2)
+			elif distance > minDist+quartileInc and distance <= minDist+2*quartileInc:
+				quartiles["midlow"].append(date1)
+				quartiles["midlow"].append(date2)
+			elif distance > minDist+2*quartileInc and distance <= minDist+3*quartileInc:
+				quartiles["midhigh"].append(date1)
+				quartiles["midhigh"].append(date2)
+			elif distance > minDist+3*quartileInc and distance <= maxDist:
+				quartiles["high"].append(date1)
+				quartiles["high"].append(date2)
+
+		relevantDates = {}
+
+		for category, listDates in quartiles.iteritems():
+			for date in listDates:
+				if date not in relevantDates:
+					relevantDates[date] = {}
+					relevantDates[date]["low"] = 0
+					relevantDates[date]["midlow"] = 0
+					relevantDates[date]["midhigh"] = 0
+					relevantDates[date]["high"] = 0
+
+				relevantDates[date][category]+=1
+
+		ranking = {}
+		for date, categoryDict in relevantDates.iteritems():
+			score = 0.8 * categoryDict["high"]+ 0.6 * categoryDict["midhigh"]+0.2*categoryDict["midlow"]+0.05*categoryDict["low"]
+			ranking[date] = score
+
+		pprint(relevantDates)
+		lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
+		for t in lst: print '%s : %0.1f' % (t[0], t[1])
 
 	def topicAnalysis(self):
+		MIN_TOKENS = 20
+
 		#for date, listMsgs in self.conversation.iteritems():
 		listMsgs = self.iChat.conversation["2018-05-15"]	
 
 		lastVector = None
+		acumTokens = 0
+		acumText = []
+		textBlocks = []
+
 		for idx, dictMsg in enumerate(listMsgs):
+			
 			text = dictMsg["text"]
+			cleanTokens = utils.clean_words(text.split())
+			acumTokens+=len(cleanTokens)
+			acumText.extend(cleanTokens)
+
 			vector = self.iSQL.getMsgVector(text)
-			if lastVector and vector:
-				print idx
-				print self.iSQL.distance(vector,lastVector)
-				lastVector = vector
-			elif not lastVector and vector:
-				lastVector = vector
+
 	
 if __name__ == '__main__':
 	
 	iTopic = Topic()
+	iTopic.relevantDayDetection()

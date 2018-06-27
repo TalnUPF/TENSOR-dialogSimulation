@@ -18,7 +18,7 @@ def clean_words(tokens, filterStopwords=False, filterPos=None):
 			res = tagger.tag([cleanToken])
 			if len(res)>0:
 				word, pos = res[0]
-				if pos.startswith("n"):
+				if pos[0] in filterPos:
 					cleanTokens.append(cleanToken)
 		
 		elif filterStopwords and not filterPos:
