@@ -41,9 +41,49 @@ class Topic:
 
 		return distances
 
-	def relevantDayDetection(self, precomputed=True):
-		if precomputed:
-			lines = open("./stats/distances.tsv").read().split("\n")
+
+	def conversationEvolutionPerUser(self):
+		distancesPerUser = {}
+		for user in self.iChat.userSet:
+			vectorPerDay = {}
+
+			for date, listMsgs in self.iChat.conversation.iteritems():
+				listMsgs = self.iChat.conversation[date]
+				acumText = ""
+				for dictMsg in listMsgs:
+					if dictMsg["user"] == user:
+						acumText += " "+dictMsg["text"]
+
+				cleanText = " ".join(utils.clean_words(acumText.split(), True, ["n","v","a"]))
+
+				vector = self.iSQL.getMsgVector(cleanText)
+				vectorPerDay[date] = vector
+
+			distances = []
+
+			inserted = set()
+			for date1, vector1 in vectorPerDay.iteritems():
+				for date2, vector2 in vectorPerDay.iteritems():
+					if date1!=date2 and (date2,date1) not in inserted:
+						dist = str(self.iSQL.distance(vector1, vector2)[0][0]).replace(".",",")
+						inserted.add((date1,date2))
+						distances.append((date1,date2,dist))
+
+			distancesPerUser[user] = distances
+			#for distance in distances:
+			#	print distance[0],"\t",distance[1],"\t",distance[2]
+
+		for user in self.iChat.userSet:
+			distances = distancesPerUser[user]
+			print user
+			for distance in distances:
+				print distance[0],"\t",distance[1],"\t",distance[2]
+
+		return distances
+
+	def relevantDayDetection(self, path="./stats/distances.tsv"):
+		if path:
+			lines = open(path).read().split("\n")
 			distances = []
 			minDist = 100
 			maxDist = 0
@@ -104,6 +144,7 @@ class Topic:
 		lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
 		for t in lst: print '%s : %0.1f' % (t[0], t[1])
 
+		return ranking
 
 	'''
 		1 - determinar bloques
@@ -114,6 +155,7 @@ class Topic:
 	'''
 	def topicAnalysis(self):
 		MIN_TOKENS = 20
+		THRESHOLD = 0.6
 
 		#for date, listMsgs in self.conversation.iteritems():
 		listMsgs = self.iChat.conversation["2018-05-15"]	
@@ -122,18 +164,31 @@ class Topic:
 		acumTokens = 0
 		acumText = []
 		textBlocks = []
-
+		blockVector = None
 		for idx, dictMsg in enumerate(listMsgs):
 			
 			text = dictMsg["text"]
-			cleanTokens = utils.clean_words(text.split())
+			cleanTokens = utils.clean_words(text.split(), True, ["n","v","a"])
 			acumTokens+=len(cleanTokens)
 			acumText.extend(cleanTokens)
 
-			vector = self.iSQL.getMsgVector(text)
+			if acumTokens >= MIN_TOKENS:
+				print acumText
+				if not blockVector:
+					vector = self.iSQL.getMsgVector(" ".join(acumText))
+					blockVector = vector
+				else:
+					vector = self.iSQL.getMsgVector(text)
+					distance = self.iSQL.distance(vector, blockVector)
+					if distance > THRESHOLD:
+						pass
+						#STORE BLOCK VECTOR, REINITIALIZE BLOCK
+					else:
+						pass
+						#AGGREGATE VECTOR
 
 	
 if __name__ == '__main__':
 	
 	iTopic = Topic()
-	iTopic.relevantDayDetection()
+	iTopic.conversationEvolutionPerUser()

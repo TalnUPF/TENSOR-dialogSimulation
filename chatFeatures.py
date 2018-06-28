@@ -257,6 +257,10 @@ class ChatFeatures:
 
 		return relevantWordsPerUser
 
+	def quranCites(self):
+		pass
+
+
 	def linkAnalysis(self):
 		linkFeatsDayUser = {}
 
