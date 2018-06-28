@@ -46,6 +46,8 @@ class ChatFeatures:
 		self.domainWords.extend(self.enemigo)
 		self.domainWords.extend(self.religion)
 		self.domainWords.extend(self.alabanza)
+		self.viajes = codecs.open(pathBase+"viajes.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
+
 
 	#### Computes and stores the tokens
 	def getTokens(self, text, date, user):
@@ -195,6 +197,7 @@ class ChatFeatures:
 					domainWordsPerDay[day][user]["alabanza"] = 0
 					domainWordsPerDay[day][user]["consejo"] = 0
 					domainWordsPerDay[day][user]["enemigo"] = 0
+					domainWordsPerDay[day][user]["viajes"] = 0
 
 				for messageUser in messagesUser:
 					for word in messageUser:
@@ -215,6 +218,8 @@ class ChatFeatures:
 							domainWordsPerDay[day][user]["consejo"]+=1
 						if word in self.enemigo:
 							domainWordsPerDay[day][user]["enemigo"]+=1
+						if word in self.viajes:
+							domainWordsPerDay[day][user]["viajes"]+=1
 		
 		'''
 		sortedDays = sorted(domainWordsPerDay.keys())
@@ -257,9 +262,43 @@ class ChatFeatures:
 
 		return relevantWordsPerUser
 
-	def quranCites(self):
-		pass
+	def getQuranContent(self, idx):
+		parts = idx.split(":")
+		sura = parts[0]
+		verse = parts[1]
 
+		while len(sura) < 3 or len(verse) < 3:
+			if len(sura)<3:
+				sura = "0"+sura
+
+			if len(verse)<3:
+				verse = "0"+verse
+
+		content = open("./quran/filePerVerse/"+sura+"-"+verse+".txt","r").read()
+		return content
+
+
+	def quranCites(self):
+		dictCites = {}
+
+		for date, listMsgs in self.conversation.iteritems():	
+				
+			for dictMsg in listMsgs:
+				user = dictMsg["user"]
+				text = dictMsg["text"]
+				cites = re.findall(r'([0-9]+:[0-9]+)',text)
+				if cites:
+					for cite in cites:
+						if date not in dictCites:
+							dictCites[date] = {}
+						if user not in dictCites[date]:
+							dictCites[date][user] = []
+						
+						citeContent = self.getQuranContent(cite)
+						tuplCite = (text, cite, citeContent)
+						dictCites[date][user] = tuplCite
+
+		return dictCites
 
 	def linkAnalysis(self):
 		linkFeatsDayUser = {}
@@ -293,4 +332,4 @@ class ChatFeatures:
 if __name__ == '__main__':
 	iChat = ChatFeatures(None)
 	iChat.process()
-	iChat.linkAnalysis()	
+	print iChat.quranCites()	

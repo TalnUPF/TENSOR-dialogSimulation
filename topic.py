@@ -140,9 +140,9 @@ class Topic:
 			score = categoryDict["high"]+ 0.8 * categoryDict["midhigh"]+0.4*categoryDict["midlow"]+0.05*categoryDict["low"]
 			ranking[date] = score
 
-		pprint(relevantDates)
-		lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
-		for t in lst: print '%s : %0.1f' % (t[0], t[1])
+		#pprint(relevantDates)
+		#lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
+		#for t in lst: print '%s : %0.1f' % (t[0], t[1])
 
 		return ranking
 
