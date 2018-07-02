@@ -3,10 +3,15 @@ from sqlEmbeddings import SQLEmbeddings
 import utils
 from pprint import pprint
 from operator import itemgetter
+import os
+
 
 class Topic:
 
 	def __init__(self):
+
+		self.seeds = None
+
 		self.iChat = ChatFeatures(None)
 		self.iChat.process()
 		self.iSQL = SQLEmbeddings()
@@ -140,9 +145,9 @@ class Topic:
 			score = categoryDict["high"]+ 0.8 * categoryDict["midhigh"]+0.4*categoryDict["midlow"]+0.05*categoryDict["low"]
 			ranking[date] = score
 
-		pprint(relevantDates)
-		lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
-		for t in lst: print '%s : %0.1f' % (t[0], t[1])
+		#pprint(relevantDates)
+		#lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
+		#for t in lst: print '%s : %0.1f' % (t[0], t[1])
 
 		return ranking
 
@@ -153,43 +158,99 @@ class Topic:
 		2- con los bloques determinados, crear seeds de cada tema y hacer clustering.
 
 	'''
-	def topicAnalysis(self):
+	def buildTextBlocks(self):
 		MIN_TOKENS = 20
-		THRESHOLD = 0.6
+		THRESHOLD = 0.5
 
-		#for date, listMsgs in self.conversation.iteritems():
-		listMsgs = self.iChat.conversation["2018-05-15"]	
+		textBlocksPerDay = {}
+		blockVectorsPerDay = {}
 
-		lastVector = None
-		acumTokens = 0
-		acumText = []
-		textBlocks = []
-		blockVector = None
-		for idx, dictMsg in enumerate(listMsgs):
+		for date, listMsgs in self.iChat.conversation.iteritems():
+			#print date
 			
-			text = dictMsg["text"]
-			cleanTokens = utils.clean_words(text.split(), True, ["n","v","a"])
-			acumTokens+=len(cleanTokens)
-			acumText.extend(cleanTokens)
+			textBlocksPerDay[date] = []
+			blockVectorsPerDay[date] = []
 
-			if acumTokens >= MIN_TOKENS:
-				print acumText
-				if not blockVector:
-					vector = self.iSQL.getMsgVector(" ".join(acumText))
-					blockVector = vector
-				else:
-					vector = self.iSQL.getMsgVector(text)
-					distance = self.iSQL.distance(vector, blockVector)
-					if distance > THRESHOLD:
-						pass
-						#STORE BLOCK VECTOR, REINITIALIZE BLOCK
+			listMsgs = self.iChat.conversation[date]	
+			#print "Num msg",len(listMsgs)
+			lastVector = None
+			acumTokens = 0
+			acumText = []
+			textBlocks = []
+			blockVector = None
+			blockVectors = []
+			for idx, dictMsg in enumerate(listMsgs):
+				
+				text = dictMsg["text"]
+				cleanTokens = utils.clean_text(text)
+				acumTokens+=len(cleanTokens)
+				acumText.extend(cleanTokens)
+
+				if acumTokens >= MIN_TOKENS:
+					if not blockVector:
+						vector = self.iSQL.getMsgVector(" ".join(acumText))
+						blockVector = vector
 					else:
-						pass
-						#AGGREGATE VECTOR
+						vector = self.iSQL.getMsgVector(text)
+						if not vector:
+							continue
+						
+						distance = self.iSQL.distance(vector, blockVector)
+						#print distance
+						if distance > THRESHOLD:
+							textBlocks.append(acumText)
+							blockVectors.append(blockVector)
+							blockVector = vector
+							#print acumText
+							acumText = cleanTokens
+							acumTokens = len(cleanTokens)
+						else:
+							#print "aggregating"
+							blockVector = self.iSQL.aggregateVectors(blockVector,vector)
+			print blockVectors
+			print textBlocks
+			exit()
 
-	
+			blockVectorsPerDay[date] = blockVectors
+			textBlocksPerDay[date] = textBlocks
+			#print len(textBlocks)
+
+		return vectorBlocksPerDay, textBlocksPerDay
+
+
+	def load_seeds(self):
+		self.seeds = {}
+		pathBase = "./seeds/"
+		for fname in os.listdir(pathBase):
+			textSeed = open(pathBase+fname)
+			self.seeds[category] = self.iSQL.getMsgVector(textSeed)
+
+
+	def topicClustering(self):
+		self.load_seeds()
+		vectorBlocksPerDay, textBlocksPerDay = self.buildTextBlocks()
+		dictResults = {}
+
+		for date, listVec in vectorBlocksPerDay.iteritems():
+			for idx, vec in enumerate(listVec):
+				minDist = 1000
+				minText = None
+				selectedCategory = None
+				for category, seedVector in self.seeds.iteritems():
+					if category not in dictResults:
+						dictResults[category] = []
+
+					distance = self.iSQL.distance(vec,seedVector)
+					if distance < minDist:
+						minDist = distance
+						minText = textBlocksPerDay[date][idx]
+						selectedCategory = category
+
+				dictResults[selectedCategory].append((minText, minDist))
+
 if __name__ == '__main__':
 	
 	iTopic = Topic()
 	#iTopic.relevantDayDetection("./stats/distancesJawad.tsv")
-	iTopic.relevantDayDetection("./stats/distancesAzra.tsv")
+	#iTopic.relevantDayDetection("./stats/distancesAzra.tsv")
+	iTopic.topicClustering()

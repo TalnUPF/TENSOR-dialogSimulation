@@ -46,8 +46,7 @@ class ChatFeatures:
 		self.domainWords.extend(self.enemigo)
 		self.domainWords.extend(self.religion)
 		self.domainWords.extend(self.alabanza)
-		self.viajes = codecs.open(pathBase+"viajes.txt","r", encoding="utf-8").read().strip().lower().split("\r\n")
-
+		self.viajes = codecs.open(pathBase+"viajes.txt","r", encoding="utf-8").read().strip().lower().split("\n")
 
 	#### Computes and stores the tokens
 	def getTokens(self, text, date, user):
@@ -221,21 +220,20 @@ class ChatFeatures:
 						if word in self.viajes:
 							domainWordsPerDay[day][user]["viajes"]+=1
 		
-		'''
+		
 		sortedDays = sorted(domainWordsPerDay.keys())
 		for day in sortedDays:
-			print "--------"
 			print day
 			for user, dictCategory in domainWordsPerDay[day].iteritems():
 				print user
 				for category, count in dictCategory.iteritems():
-					print "\t",category, count
-		'''
-
+					if category!="dominio":
+						print "\t",count
+		
+		
 		return domainWordsPerDay
 
 	def wordsPerDay(self):
-		stopwordList = stopwords.words('spanish')
 		relevantWordsPerUser = {}
 		self.totalMsgPerDay ={}
 
@@ -258,7 +256,7 @@ class ChatFeatures:
 					for word in messageUser:
 						relevantWordsPerUser[day][user].append(word.lower())
 
-				#relevantWordsPerUser[day][user] = Counter(relevantWordsPerUser[day][user]).most_common(10)
+				relevantWordsPerUser[day][user] = len(relevantWordsPerUser[day][user])
 
 		return relevantWordsPerUser
 
@@ -332,4 +330,4 @@ class ChatFeatures:
 if __name__ == '__main__':
 	iChat = ChatFeatures(None)
 	iChat.process()
-	print iChat.quranCites()	
+	iChat.domainWordsPerDay()	

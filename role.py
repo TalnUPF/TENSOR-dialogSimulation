@@ -27,7 +27,7 @@ class Role:
 				turnRatio = turns * 1.0 / self.iChat.totalTurnsPerDay[day]
 
 				dangerWords = relevantWordsPerDayUser[day][user]["dominio"]
-				totalWords = len(contentWordsPerDayUser[day][user])
+				totalWords = contentWordsPerDayUser[day][user]
 				dangerRatio = dangerWords*1.0/totalWords
 
 				score = msgRatio + turnRatio + dangerRatio + msgPerTurnDayUser[day][user]*0.3

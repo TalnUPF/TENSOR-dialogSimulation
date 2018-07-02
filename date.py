@@ -18,21 +18,29 @@ class Date:
 		#generalRelevance[date] = score
 		self.generalRelevanceDay = self.iTopic.relevantDayDetection()
 		
-		'''
+		
 		self.userRelevanceDay = {}
 		for user in self.iChat.userSet:
-			self.userRelevanceDay[user] = self.iTopic.relevantDayDetection("./stats/distances"+user+".tsv")
-		'''
+			self.userRelevanceDay[user] = self.iTopic.relevantDayDetection("./stats/distances"+user[0].upper()+user[1:]+".tsv")
+		
 
 		self.iRole = Role()
 		self.roleScoresDayUser = self.iRole.computeRolesPerDay()
+		self.wordsPerDayUser = self.iChat.wordsPerDay()
+
 
 	def dayReport(self):
 
-		for date, score in self.generalRelevanceDay.iteritems():
+		sortedDates = sorted(self.generalRelevanceDay.keys())
+		for date in sortedDates:
+			score = self.generalRelevanceDay[date]
+
 			print "\n===================================="
 			print "REPORT FOR DAY " + date,"\n"
 			print "Day Relevance Score " + str(score)
+
+			for user in self.iChat.userSet:
+				print "   Relevance Score of "+user+" :"+str(self.userRelevanceDay[user][date])
 
 			'''
 				LINK INFO
@@ -66,6 +74,10 @@ class Date:
 					print "\t",user
 					for category, frequency in dictCategory.iteritems():
 						print "\t\t",category,frequency
+
+			for user in self.iChat.userSet:
+				print "\nNumber of Words\n"
+				print  "\t",user,str(self.wordsPerDayUser[date][user])
 
 			'''
 				ROLE SCORES

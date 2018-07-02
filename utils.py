@@ -66,3 +66,13 @@ def clean_text(text, filterStopwords=False, filterPos=None):
 			cleanTokens.append(token.text)
 	
 	return cleanTokens
+
+def clean_get_lemmas(text):
+	nlp = spacy.load('es_core_news_sm')
+	cleanTokens = []
+	doc = nlp(text.decode("utf8"))
+
+	for token in doc:
+		cleanTokens.append(token.lemma_)
+
+	return cleanTokens
