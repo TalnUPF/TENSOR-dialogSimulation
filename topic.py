@@ -21,7 +21,7 @@ class Topic:
 			for dictMsg in listMsgs:
 				acumText += " "+dictMsg["text"]
 
-			cleanText = " ".join(utils.clean_words(acumText.split(), True, ["n","v","a"]))
+			cleanText = " ".join(utils.clean_text(acumText, True, ["NOUN","VERB","ADJ"]))
 
 			vector = self.iSQL.getMsgVector(cleanText)
 			vectorPerDay[date] = vector
@@ -54,7 +54,7 @@ class Topic:
 					if dictMsg["user"] == user:
 						acumText += " "+dictMsg["text"]
 
-				cleanText = " ".join(utils.clean_words(acumText.split(), True, ["n","v","a"]))
+				cleanText = " ".join(utils.clean_text(acumText, True, ["NOUN","VERB","ADJ"]))
 
 				vector = self.iSQL.getMsgVector(cleanText)
 				vectorPerDay[date] = vector
@@ -140,9 +140,9 @@ class Topic:
 			score = categoryDict["high"]+ 0.8 * categoryDict["midhigh"]+0.4*categoryDict["midlow"]+0.05*categoryDict["low"]
 			ranking[date] = score
 
-		#pprint(relevantDates)
-		#lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
-		#for t in lst: print '%s : %0.1f' % (t[0], t[1])
+		pprint(relevantDates)
+		lst = sorted(ranking.iteritems(), key=itemgetter(1),reverse=True)
+		for t in lst: print '%s : %0.1f' % (t[0], t[1])
 
 		return ranking
 
@@ -191,4 +191,5 @@ class Topic:
 if __name__ == '__main__':
 	
 	iTopic = Topic()
-	iTopic.conversationEvolutionPerUser()
+	#iTopic.relevantDayDetection("./stats/distancesJawad.tsv")
+	iTopic.relevantDayDetection("./stats/distancesAzra.tsv")

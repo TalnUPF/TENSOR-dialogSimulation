@@ -1,6 +1,11 @@
+import sys  
+reload(sys)  
+sys.setdefaultencoding('utf8')
 import string
 from nltk.tag.stanford import StanfordPOSTagger
 from nltk.corpus import stopwords
+import spacy
+from spacy.lang.es.examples import sentences
 
 def clean_words(tokens, filterStopwords=False, filterPos=None):
 	cleanTokens = []
@@ -34,5 +39,30 @@ def clean_words(tokens, filterStopwords=False, filterPos=None):
 
 		elif not filterStopwords and not filterPos:
 			cleanTokens.append(cleanToken)
+	
+	return cleanTokens
+
+def clean_text(text, filterStopwords=False, filterPos=None):
+
+	nlp = spacy.load('es_core_news_sm')
+	cleanTokens = []
+	stopwordList = stopwords.words('spanish')
+	doc = nlp(text.decode("utf8"))
+
+	for token in doc:
+		if filterPos and not filterStopwords:
+			if token.pos_ in filterPos:
+				cleanTokens.append(token.text)
+		
+		elif filterStopwords and not filterPos:
+			if token.text not in stopwordList:
+				cleanTokens.append(token.text)
+		
+		elif filterStopwords and filterPos:
+			if token.text not in stopwordList and token.pos_ in filterPos:
+				cleanTokens.append(token.text)
+
+		elif not filterStopwords and not filterPos:
+			cleanTokens.append(token.text)
 	
 	return cleanTokens
