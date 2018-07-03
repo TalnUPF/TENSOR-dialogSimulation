@@ -15,6 +15,7 @@ class Topic:
 		self.iChat = ChatFeatures(None)
 		self.iChat.process()
 		self.iSQL = SQLEmbeddings()
+		
 		#self.conversationEvolution()
 		
 	def conversationEvolution(self):
@@ -207,50 +208,77 @@ class Topic:
 						else:
 							#print "aggregating"
 							blockVector = self.iSQL.aggregateVectors(blockVector,vector)
-			print blockVectors
-			print textBlocks
-			exit()
 
 			blockVectorsPerDay[date] = blockVectors
 			textBlocksPerDay[date] = textBlocks
 			#print len(textBlocks)
 
-		return vectorBlocksPerDay, textBlocksPerDay
+		return blockVectorsPerDay, textBlocksPerDay
 
 
 	def load_seeds(self):
 		self.seeds = {}
 		pathBase = "./seeds/"
 		for fname in os.listdir(pathBase):
-			textSeed = open(pathBase+fname)
-			self.seeds[category] = self.iSQL.getMsgVector(textSeed)
+			textSeed = open(pathBase+fname).read()
+			self.seeds[fname] = self.iSQL.getMsgVector(textSeed)
 
+	def buildTopicHierarchy(self):
+		self.seedHierarchy =[["Form","Content"], [["Question","Short_Turn","Long_Turn"],["Religion","News","Yihad"]]]
+		
 
 	def topicClustering(self):
+		self.buildTopicHierarchy()
+		print "loading seeds"
 		self.load_seeds()
+		print "loaded, building blocks"
 		vectorBlocksPerDay, textBlocksPerDay = self.buildTextBlocks()
-		dictResults = {}
+		print "blocks built"
 
+		results = {}
+		print "clustering"
 		for date, listVec in vectorBlocksPerDay.iteritems():
 			for idx, vec in enumerate(listVec):
 				minDist = 1000
 				minText = None
 				selectedCategory = None
-				for category, seedVector in self.seeds.iteritems():
-					if category not in dictResults:
-						dictResults[category] = []
+				i = 0
+				idx = str(idx)
+				selectedSubList = -1
+				
+				results[date+"_"+idx] = {}
+				results[date+"_"+idx]["categories"] = []
+				results[date+"_"+idx]["text"] = " ".join(textBlocksPerDay[date][int(idx)])
+				results[date+"_"+idx]["distances"] = []
 
-					distance = self.iSQL.distance(vec,seedVector)
-					if distance < minDist:
-						minDist = distance
-						minText = textBlocksPerDay[date][idx]
-						selectedCategory = category
+				while i < len(self.seedHierarchy):
+					if selectedSubList == -1:
+						categories = self.seedHierarchy[i]
+					else:
+						categories = self.seedHierarchy[i][selectedSubList]
 
-				dictResults[selectedCategory].append((minText, minDist))
+					for idxCat, category in enumerate(categories):
+						print category
+						seedVector = self.seeds[category]
+						distance = self.iSQL.distance(vec,seedVector)
+						if distance < minDist:
+							minDist = distance[0]
+							selectedCategory = category
+							selectedSubList = idxCat
+
+					results[date+"_"+idx]["distances"].append(minDist)
+					results[date+"_"+idx]["categories"].append(selectedCategory)
+					minDist = 1000
+					minText = None
+					selectedCategory = None
+
+					i+=1
+
+		return results
 
 if __name__ == '__main__':
 	
 	iTopic = Topic()
 	#iTopic.relevantDayDetection("./stats/distancesJawad.tsv")
 	#iTopic.relevantDayDetection("./stats/distancesAzra.tsv")
-	iTopic.topicClustering()
+	pprint(iTopic.topicClustering())
