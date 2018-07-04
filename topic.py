@@ -159,16 +159,19 @@ class Topic:
 		2- con los bloques determinados, crear seeds de cada tema y hacer clustering.
 
 	'''
-	def buildTextBlocks(self):
-		MIN_TOKENS = 20
-		THRESHOLD = 0.5
+	def buildTextBlocks(self, filterPos=None, days_to_avoid=None):
+		MIN_TOKENS = 15
+		THRESHOLD = 0.4
 
 		textBlocksPerDay = {}
 		blockVectorsPerDay = {}
 
 		for date, listMsgs in self.iChat.conversation.iteritems():
 			#print date
-			
+			if days_to_avoid:
+				if date in days_to_avoid:
+					continue
+
 			textBlocksPerDay[date] = []
 			blockVectorsPerDay[date] = []
 
@@ -183,7 +186,11 @@ class Topic:
 			for idx, dictMsg in enumerate(listMsgs):
 				
 				text = dictMsg["text"]
-				cleanTokens = utils.clean_text(text)
+				if not filterPos:
+					cleanTokens = utils.clean_text(text)
+				else:
+					cleanTokens = utils.clean_text(text, True, filterPos)
+
 				acumTokens+=len(cleanTokens)
 				acumText.extend(cleanTokens)
 
@@ -201,10 +208,10 @@ class Topic:
 						if distance > THRESHOLD:
 							textBlocks.append(acumText)
 							blockVectors.append(blockVector)
-							blockVector = vector
+							blockVector = []
 							#print acumText
-							acumText = cleanTokens
-							acumTokens = len(cleanTokens)
+							acumText = []
+							acumTokens = 0
 						else:
 							#print "aggregating"
 							blockVector = self.iSQL.aggregateVectors(blockVector,vector)
@@ -216,28 +223,34 @@ class Topic:
 		return blockVectorsPerDay, textBlocksPerDay
 
 
-	def load_seeds(self):
+	def load_seeds(self, dictSeeds):
 		self.seeds = {}
-		pathBase = "./seeds/"
+		if not dictSeeds:
+			pathBase = "./seeds/"
+		else:
+			pathBase = "./dictSeeds/"
+
 		for fname in os.listdir(pathBase):
 			textSeed = open(pathBase+fname).read()
 			self.seeds[fname] = self.iSQL.getMsgVector(textSeed)
 
 	def buildTopicHierarchy(self):
-		self.seedHierarchy =[["Form","Content"], [["Question","Short_Turn","Long_Turn"],["Religion","News","Yihad"]]]
+		#self.seedHierarchy =[["question","conversation","emotions","religion","news","yijad","trips","suspActivities"]]
+		self.seedHierarchy =[["emotions","religion","news","yijad","trips","suspActivities"]]
 		
 
-	def topicClustering(self):
+	def topicClustering(self, dictSeeds=False, filterPos=None):
 		self.buildTopicHierarchy()
-		print "loading seeds"
-		self.load_seeds()
-		print "loaded, building blocks"
-		vectorBlocksPerDay, textBlocksPerDay = self.buildTextBlocks()
-		print "blocks built"
+		self.load_seeds(dictSeeds)
+
+		days_to_avoid = ["2018-05-15","2018-05-31"]
+		vectorBlocksPerDay, textBlocksPerDay = self.buildTextBlocks(filterPos,days_to_avoid)
 
 		results = {}
-		print "clustering"
 		for date, listVec in vectorBlocksPerDay.iteritems():
+			if date in days_to_avoid:
+				continue
+
 			for idx, vec in enumerate(listVec):
 				minDist = 1000
 				minText = None
@@ -258,7 +271,6 @@ class Topic:
 						categories = self.seedHierarchy[i][selectedSubList]
 
 					for idxCat, category in enumerate(categories):
-						print category
 						seedVector = self.seeds[category]
 						distance = self.iSQL.distance(vec,seedVector)
 						if distance < minDist:
@@ -281,4 +293,11 @@ if __name__ == '__main__':
 	iTopic = Topic()
 	#iTopic.relevantDayDetection("./stats/distancesJawad.tsv")
 	#iTopic.relevantDayDetection("./stats/distancesAzra.tsv")
-	pprint(iTopic.topicClustering())
+	
+	#With full seeds
+	#print "FULL SEEDS"
+	#pprint(iTopic.topicClustering())
+
+	#With dictSeeds filtering
+	print "DICT SEEDS WITH PoS FILTERING"
+	pprint(iTopic.topicClustering(True, ["NOUN","VERB","ADJ"]))
