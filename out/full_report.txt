@@ -1,0 +1,924 @@
+
+====================================
+REPORT FOR DAY 2018-05-07 
+
+Day Relevance Score 4.85
+   Relevance Score of jawad :5.7
+   Relevance Score of azra :5.2
+
+Domain Frequencies
+
+	jawad
+		viajes 3
+		consejo 6
+		emocion 1
+		victoria 5
+		religion 12
+		alabanza 3
+		dominio 26
+		enemigo 0
+		terrorismo 1
+	azra
+		viajes 5
+		consejo 2
+		emocion 5
+		victoria 4
+		religion 7
+		alabanza 5
+		dominio 24
+		enemigo 1
+		terrorismo 1
+
+Number of Words
+
+	jawad 369
+
+Number of Words
+
+	azra 329
+
+User Activity Score
+
+	jawad 1.4410308650713683
+	azra 1.757920039724337
+
+Messages per turn
+
+	jawad 1.4827586206896552
+	azra 2.0357142857142856
+
+====================================
+REPORT FOR DAY 2018-05-08 
+
+Day Relevance Score 5.95
+   Relevance Score of jawad :8.85
+   Relevance Score of azra :7.65
+
+Domain Frequencies
+
+	jawad
+		viajes 0
+		consejo 9
+		emocion 3
+		victoria 3
+		religion 22
+		alabanza 5
+		dominio 41
+		enemigo 2
+		terrorismo 0
+	azra
+		viajes 1
+		consejo 4
+		emocion 8
+		victoria 3
+		religion 16
+		alabanza 0
+		dominio 32
+		enemigo 1
+		terrorismo 0
+
+Number of Words
+
+	jawad 316
+
+Number of Words
+
+	azra 277
+
+User Activity Score
+
+	jawad 1.7274509170756909
+	azra 1.7053193840713181
+
+Messages per turn
+
+	jawad 1.9583333333333333
+	azra 2.0
+
+====================================
+REPORT FOR DAY 2018-05-09 
+
+Day Relevance Score 4.85
+   Relevance Score of jawad :8.35
+   Relevance Score of azra :5.95
+
+Domain Frequencies
+
+	jawad
+		viajes 0
+		consejo 24
+		emocion 4
+		victoria 6
+		religion 10
+		alabanza 16
+		dominio 55
+		enemigo 0
+		terrorismo 1
+	azra
+		viajes 0
+		consejo 14
+		emocion 4
+		victoria 0
+		religion 10
+		alabanza 4
+		dominio 30
+		enemigo 1
+		terrorismo 1
+
+Number of Words
+
+	jawad 413
+
+Number of Words
+
+	azra 357
+
+User Activity Score
+
+	jawad 1.9323091677348905
+	azra 1.7128963585434174
+
+Messages per turn
+
+	jawad 2.52
+	azra 2.24
+
+====================================
+REPORT FOR DAY 2018-05-10 
+
+Day Relevance Score 4.1
+   Relevance Score of jawad :7.5
+   Relevance Score of azra :5.55
+
+Link Info
+
+	jawad
+		https://gulfupload.com/we6ss12mkdoz download
+
+Domain Frequencies
+
+	jawad
+		viajes 2
+		consejo 10
+		emocion 4
+		victoria 8
+		religion 7
+		alabanza 5
+		dominio 39
+		enemigo 3
+		terrorismo 6
+	azra
+		viajes 1
+		consejo 7
+		emocion 6
+		victoria 4
+		religion 17
+		alabanza 1
+		dominio 36
+		enemigo 0
+		terrorismo 3
+
+Number of Words
+
+	jawad 370
+
+Number of Words
+
+	azra 321
+
+User Activity Score
+
+	jawad 2.0471150590531577
+	azra 1.7261711043589707
+
+Messages per turn
+
+	jawad 2.9130434782608696
+	azra 2.272727272727273
+
+====================================
+REPORT FOR DAY 2018-05-15 
+
+Day Relevance Score 6.0
+   Relevance Score of jawad :6.55
+   Relevance Score of azra :6.7
+
+Domain Frequencies
+
+	jawad
+		viajes 1
+		consejo 16
+		emocion 2
+		victoria 11
+		religion 25
+		alabanza 8
+		dominio 63
+		enemigo 1
+		terrorismo 4
+	azra
+		viajes 0
+		consejo 10
+		emocion 8
+		victoria 8
+		religion 13
+		alabanza 3
+		dominio 55
+		enemigo 6
+		terrorismo 7
+
+Number of Words
+
+	jawad 515
+
+Number of Words
+
+	azra 440
+
+User Activity Score
+
+	jawad 1.904787883203701
+	azra 1.610558408215661
+
+Messages per turn
+
+	jawad 2.3846153846153846
+	azra 1.8421052631578947
+
+====================================
+REPORT FOR DAY 2018-05-16 
+
+Day Relevance Score 12.2
+   Relevance Score of jawad :15.0
+   Relevance Score of azra :9.9
+
+Domain Frequencies
+
+	jawad
+		viajes 1
+		consejo 21
+		emocion 0
+		victoria 4
+		religion 43
+		alabanza 8
+		dominio 89
+		enemigo 14
+		terrorismo 1
+	azra
+		viajes 3
+		consejo 8
+		emocion 2
+		victoria 3
+		religion 12
+		alabanza 4
+		dominio 34
+		enemigo 3
+		terrorismo 4
+
+Number of Words
+
+	jawad 817
+
+Number of Words
+
+	azra 426
+
+User Activity Score
+
+	jawad 2.197476795185638
+	azra 1.436462847598411
+
+Messages per turn
+
+	jawad 3.125
+	azra 1.6923076923076923
+
+====================================
+REPORT FOR DAY 2018-05-17 
+
+Day Relevance Score 3.75
+   Relevance Score of jawad :4.45
+   Relevance Score of azra :7.0
+
+Link Info
+
+	jawad
+		https://favim.com/image/4381978/ web
+		https://s13.favim.com/orig/160606/ramadan-mubarak-images-hd-2016-ramzan-kareem-wallpapers-Favim.com-4381978.jpeg image
+		http://zonacero.com/sites/default/files//styles/480x269/public/2016/1/03/foto/estado_islamico_propaganda.jpg image
+		https://s2.eestatic.com/2016/08/04/mundo/europa/Europa_145247465_11282890_1706x960.jpg image
+		https://cdn.urgente24.com/sites/default/files/notas/2014/06/30/abu-bakr-al-baghdadi5.jpg image
+
+Domain Frequencies
+
+	jawad
+		viajes 4
+		consejo 13
+		emocion 5
+		victoria 11
+		religion 19
+		alabanza 9
+		dominio 54
+		enemigo 0
+		terrorismo 0
+	azra
+		viajes 1
+		consejo 3
+		emocion 5
+		victoria 2
+		religion 5
+		alabanza 1
+		dominio 18
+		enemigo 0
+		terrorismo 2
+
+Number of Words
+
+	jawad 458
+
+Number of Words
+
+	azra 246
+
+User Activity Score
+
+	jawad 2.3324608921563206
+	azra 1.4258551489923454
+
+Messages per turn
+
+	jawad 3.5
+	azra 1.7241379310344827
+
+====================================
+REPORT FOR DAY 2018-05-22 
+
+Day Relevance Score 3.75
+   Relevance Score of jawad :4.5
+   Relevance Score of azra :8.2
+
+Link Info
+
+	jawad
+		https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2018/4/29/04b78db1e3f5426e80149b4478d3240f_18.jpg image
+
+Domain Frequencies
+
+	jawad
+		viajes 3
+		consejo 10
+		emocion 2
+		victoria 9
+		religion 23
+		alabanza 8
+		dominio 58
+		enemigo 7
+		terrorismo 5
+	azra
+		viajes 6
+		consejo 4
+		emocion 5
+		victoria 5
+		religion 14
+		alabanza 6
+		dominio 36
+		enemigo 1
+		terrorismo 4
+
+Number of Words
+
+	jawad 555
+
+Number of Words
+
+	azra 313
+
+User Activity Score
+
+	jawad 2.2001573123769234
+	azra 1.470976069794282
+
+Messages per turn
+
+	jawad 3.129032258064516
+	azra 1.7096774193548387
+
+====================================
+REPORT FOR DAY 2018-05-23 
+
+Day Relevance Score 4.1
+   Relevance Score of jawad :6.3
+   Relevance Score of azra :4.8
+
+Link Info
+
+	jawad
+		https://www.republica.com/wp-content/uploads/2015/02/women-islamic-state-600x330.jpg image
+
+Domain Frequencies
+
+	jawad
+		viajes 4
+		consejo 27
+		emocion 1
+		victoria 14
+		religion 15
+		alabanza 16
+		dominio 82
+		enemigo 2
+		terrorismo 15
+	azra
+		viajes 2
+		consejo 12
+		emocion 12
+		victoria 6
+		religion 15
+		alabanza 3
+		dominio 52
+		enemigo 2
+		terrorismo 5
+
+Number of Words
+
+	jawad 582
+
+Number of Words
+
+	azra 421
+
+User Activity Score
+
+	jawad 1.8493170939508432
+	azra 1.5484251496027968
+
+Messages per turn
+
+	jawad 2.1555555555555554
+	azra 1.6222222222222222
+
+====================================
+REPORT FOR DAY 2018-05-24 
+
+Day Relevance Score 12.0
+   Relevance Score of jawad :12.6
+   Relevance Score of azra :13.4
+
+Domain Frequencies
+
+	jawad
+		viajes 0
+		consejo 5
+		emocion 3
+		victoria 3
+		religion 3
+		alabanza 0
+		dominio 24
+		enemigo 3
+		terrorismo 8
+	azra
+		viajes 4
+		consejo 4
+		emocion 4
+		victoria 0
+		religion 1
+		alabanza 1
+		dominio 10
+		enemigo 0
+		terrorismo 0
+
+Number of Words
+
+	jawad 245
+
+Number of Words
+
+	azra 111
+
+User Activity Score
+
+	jawad 2.330141839727093
+	azra 1.3579074340364663
+
+Messages per turn
+
+	jawad 3.533333333333333
+	azra 1.4666666666666666
+
+====================================
+REPORT FOR DAY 2018-05-29 
+
+Day Relevance Score 4.1
+   Relevance Score of jawad :5.15
+   Relevance Score of azra :7.2
+
+Quran Cites
+
+	azra
+		según la sura al abqara 2:154
+		2:154
+		And do not say of those who are killed in the cause of Allah, “Dead.” Rather, they are alive, but you do not perceive.
+
+Domain Frequencies
+
+	jawad
+		viajes 7
+		consejo 6
+		emocion 5
+		victoria 15
+		religion 10
+		alabanza 5
+		dominio 47
+		enemigo 3
+		terrorismo 5
+	azra
+		viajes 3
+		consejo 3
+		emocion 8
+		victoria 5
+		religion 7
+		alabanza 2
+		dominio 26
+		enemigo 0
+		terrorismo 2
+
+Number of Words
+
+	jawad 466
+
+Number of Words
+
+	azra 273
+
+User Activity Score
+
+	jawad 2.1040923576846353
+	azra 1.398689739653595
+
+Messages per turn
+
+	jawad 2.8421052631578947
+	azra 1.5135135135135136
+
+====================================
+REPORT FOR DAY 2018-05-30 
+
+Day Relevance Score 5.55
+   Relevance Score of jawad :7.1
+   Relevance Score of azra :8.4
+
+Domain Frequencies
+
+	jawad
+		viajes 14
+		consejo 9
+		emocion 5
+		victoria 7
+		religion 11
+		alabanza 2
+		dominio 40
+		enemigo 4
+		terrorismo 6
+	azra
+		viajes 6
+		consejo 5
+		emocion 1
+		victoria 5
+		religion 8
+		alabanza 4
+		dominio 30
+		enemigo 0
+		terrorismo 8
+
+Number of Words
+
+	jawad 340
+
+Number of Words
+
+	azra 239
+
+User Activity Score
+
+	jawad 1.9659376571141278
+	azra 1.538343525372814
+
+Messages per turn
+
+	jawad 2.5
+	azra 1.7037037037037037
+
+====================================
+REPORT FOR DAY 2018-05-31 
+
+Day Relevance Score 4.25
+   Relevance Score of jawad :7.2
+   Relevance Score of azra :7.25
+
+Domain Frequencies
+
+	jawad
+		viajes 7
+		consejo 14
+		emocion 7
+		victoria 9
+		religion 6
+		alabanza 3
+		dominio 43
+		enemigo 4
+		terrorismo 4
+	azra
+		viajes 5
+		consejo 3
+		emocion 6
+		victoria 10
+		religion 16
+		alabanza 4
+		dominio 40
+		enemigo 1
+		terrorismo 4
+
+Number of Words
+
+	jawad 391
+
+Number of Words
+
+	azra 352
+
+User Activity Score
+
+	jawad 1.940590640215111
+	azra 1.7012019661555002
+
+Messages per turn
+
+	jawad 2.6363636363636362
+	azra 2.090909090909091
+
+====================================
+REPORT FOR DAY 2018-06-04 
+
+Day Relevance Score 5.5
+   Relevance Score of jawad :4.75
+   Relevance Score of azra :9.2
+
+Quran Cites
+
+	azra
+		es nuestra obligacion al baqara 2:154
+		2:154
+		And do not say of those who are killed in the cause of Allah, “Dead.” Rather, they are alive, but you do not perceive.
+
+Domain Frequencies
+
+	jawad
+		viajes 2
+		consejo 9
+		emocion 2
+		victoria 5
+		religion 8
+		alabanza 10
+		dominio 38
+		enemigo 3
+		terrorismo 3
+	azra
+		viajes 3
+		consejo 6
+		emocion 3
+		victoria 7
+		religion 16
+		alabanza 2
+		dominio 41
+		enemigo 2
+		terrorismo 6
+
+Number of Words
+
+	jawad 355
+
+Number of Words
+
+	azra 368
+
+User Activity Score
+
+	jawad 1.998326267126569
+	azra 1.6070241911631413
+
+Messages per turn
+
+	jawad 2.6875
+	azra 1.935483870967742
+
+====================================
+REPORT FOR DAY 2018-06-05 
+
+Day Relevance Score 4.0
+   Relevance Score of jawad :7.1
+   Relevance Score of azra :5.8
+
+Domain Frequencies
+
+	jawad
+		viajes 4
+		consejo 6
+		emocion 2
+		victoria 2
+		religion 16
+		alabanza 6
+		dominio 33
+		enemigo 1
+		terrorismo 1
+	azra
+		viajes 4
+		consejo 6
+		emocion 3
+		victoria 4
+		religion 11
+		alabanza 5
+		dominio 38
+		enemigo 3
+		terrorismo 8
+
+Number of Words
+
+	jawad 417
+
+Number of Words
+
+	azra 410
+
+User Activity Score
+
+	jawad 2.085368199523222
+	azra 1.6614514179535287
+
+Messages per turn
+
+	jawad 3.09375
+	azra 2.15625
+
+====================================
+REPORT FOR DAY 2018-06-07 
+
+Day Relevance Score 9.75
+   Relevance Score of jawad :8.9
+   Relevance Score of azra :12.0
+
+Link Info
+
+	jawad
+		https://ibb.co/iv2kxof web
+		https://xgo.bz/asd45sf web
+		https://pc.cd/656hfgh web
+		https://www.mediafire.com/file/asdfasf/aflahuasdasd download
+		https://my.mail.ru/inbox/asfsdf345234523dgfsdgfsg mail
+		https://archive.org/download/dearaeraer/asdfasfafasfgbvnbn download
+
+Domain Frequencies
+
+	jawad
+		viajes 0
+		consejo 3
+		emocion 1
+		victoria 5
+		religion 4
+		alabanza 1
+		dominio 18
+		enemigo 1
+		terrorismo 4
+	azra
+		viajes 0
+		consejo 2
+		emocion 3
+		victoria 1
+		religion 6
+		alabanza 1
+		dominio 15
+		enemigo 0
+		terrorismo 2
+
+Number of Words
+
+	jawad 437
+
+Number of Words
+
+	azra 277
+
+User Activity Score
+
+	jawad 2.130797867108263
+	azra 1.406210355457255
+
+Messages per turn
+
+	jawad 3.111111111111111
+	azra 1.6944444444444444
+
+====================================
+REPORT FOR DAY 2018-06-08 
+
+Day Relevance Score 6.4
+   Relevance Score of jawad :9.75
+   Relevance Score of azra :9.8
+
+Link Info
+
+	azra
+		https://filerio.in/afafasdf/hgdghdfgh download
+		https://risala.ga/asfasfadf/ web
+		https://uptobox.com/fasdf345gsdgsdfgsd web
+		https://usercloud.com/asfasdfASDFASF344 download
+		https://thevid.net/v/ASDFAFAWERF/aAFASDF web
+		https://megaup.net/ASDFASDF7KJ&$&$%& download
+		https://zupload.ws/1234234213ASDFASDFASFASDf download
+		https://cloud.disroot.org/s/ASDFRFQ·$%SDFGSDG download
+
+Domain Frequencies
+
+	jawad
+		viajes 0
+		consejo 4
+		emocion 2
+		victoria 1
+		religion 4
+		alabanza 3
+		dominio 19
+		enemigo 0
+		terrorismo 6
+	azra
+		viajes 0
+		consejo 4
+		emocion 0
+		victoria 6
+		religion 10
+		alabanza 3
+		dominio 18
+		enemigo 0
+		terrorismo 0
+
+Number of Words
+
+	jawad 352
+
+Number of Words
+
+	azra 250
+
+User Activity Score
+
+	jawad 1.9663633260957312
+	azra 1.5251311880108518
+
+Messages per turn
+
+	jawad 2.689655172413793
+	azra 1.8620689655172413
+
+====================================
+REPORT FOR DAY 2018-06-11 
+
+Day Relevance Score 8.0
+   Relevance Score of jawad :10.25
+   Relevance Score of azra :11.2
+
+Domain Frequencies
+
+	jawad
+		viajes 3
+		consejo 12
+		emocion 4
+		victoria 1
+		religion 10
+		alabanza 2
+		dominio 33
+		enemigo 0
+		terrorismo 6
+	azra
+		viajes 1
+		consejo 6
+		emocion 3
+		victoria 6
+		religion 10
+		alabanza 3
+		dominio 32
+		enemigo 0
+		terrorismo 6
+
+Number of Words
+
+	jawad 468
+
+Number of Words
+
+	azra 303
+
+User Activity Score
+
+	jawad 1.95092650794898
+	azra 1.4424801717171978
+
+Messages per turn
+
+	jawad 2.522727272727273
+	azra 1.5348837209302326
