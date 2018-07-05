@@ -23,7 +23,7 @@ class SQLEmbeddings:
 		try:
 			cursor.execute(strQuery)
 		except:
-			return None
+			return np.zeros(400)
 		vector = []
 
 		if cursor.rowcount > 0:
@@ -31,24 +31,21 @@ class SQLEmbeddings:
 			for dim in results:
 				vector.append(float(dim))
 		else:
-			vector = None
+			vector = np.zeros(400)
 
 		return vector
 
 	def getMsgVector(self, msg, tableName ="joseembeddings" ,nDims = 400):
-		cleanMsg = utils.clean_words(msg.split())
+		cleanMsg = utils.clean_text(msg)
 		vectors = []
 
 		for token in cleanMsg:
 			vector = self.getWordVector(token,tableName,nDims)
-			if vector:
-				vectors.append(vector)
+			vectors.append(vector)
 		
-		if vectors:
-			avgVector = np.mean(vectors,axis=0)
-			return avgVector.tolist()
-		else:
-			return None
+		avgVector = np.mean(vectors,axis=0)
+		return avgVector.tolist()
+
 
 	def aggregateVectors(self, A, B):
 		C = []
