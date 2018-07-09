@@ -4,6 +4,9 @@ import MySQLdb
 import utils
 import numpy as np
 from scipy.spatial.distance import cdist
+import os
+from sklearn import preprocessing
+
 
 class SQLEmbeddings:
 
@@ -46,6 +49,25 @@ class SQLEmbeddings:
 		avgVector = np.mean(vectors,axis=0)
 		return avgVector.tolist()
 
+	def getWeightedMsgVector(self, msg, dictSeed, tableName ="joseembeddings" ,nDims = 400):
+		categoriesSupported = os.listdir("./dictSeeds/")
+		if dictSeed not in categoriesSupported:
+			return self.getMsgVector(msg)
+
+		cleanMsg = utils.clean_text(msg)
+		vectors = []
+		dictSeedTokens = open("./dictSeeds/"+dictSeed).read().split("\n")
+		weights = []
+		for token in cleanMsg:
+			vector = self.getWordVector(token,tableName,nDims)
+			vectors.append(vector)
+			weight = 1
+			if token in dictSeedTokens:
+				weight = 4
+			weights.append(weight)
+
+		avgVector = np.average(vectors,axis=0,weights=weights)
+		return avgVector.tolist()
 
 	def aggregateVectors(self, A, B):
 		C = []

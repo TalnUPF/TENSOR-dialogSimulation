@@ -316,6 +316,8 @@ class Topic:
 
 		results = self.topicClustering(False, None, updatedVectorBlocks, updatedTextBlocks)
 		'''
+		self.printResults(results)
+
 		return results
 
 
@@ -333,7 +335,35 @@ class Topic:
 	def buildTopicHierarchy(self):
 		self.seedHierarchy =[["question","conversation","emotions","religion","news","yijad","trips","suspActivities"]]
 		#self.seedHierarchy =[["emotions","religion","news","yijad","trips","suspActivities"]]
+	
+	def printResults(self,results):
+		orderedDates = []
+		for date, listMsgs in self.iChat.conversation.iteritems():
+			orderedDates.append(date)
+
+		orderedDates = sorted(orderedDates)
+		i = 0
+
+		updatedVectorBlocks = {}
+		updatedTextBlocks = {}
 		
+		for date in orderedDates:
+			key = date+"_"+str(i)
+			while key in results.keys():
+				dictDate = results[key]
+				categories = "" 
+				dists = dictDate["distances"]
+				for cat in dists:
+					categories+=cat[0]+" : "+cat[1]+" "
+
+				text = dictDate["text"]
+
+				print text,"\t",categories,"\n\n"
+
+				i+=1
+				key = date+"_"+str(i)
+
+			i=0
 
 	def topicClustering(self, dictSeeds=False, filterPos=None, vectorBlocksPerDay=None, textBlocksPerDay=None):
 		self.buildTopicHierarchy()
@@ -352,7 +382,7 @@ class Topic:
 				if not vec:
 					continue
 
-				minDist = 1000
+				minDist = 1000000000
 				minText = None
 				selectedCategory = None
 				i = 0
@@ -388,16 +418,17 @@ class Topic:
 
 		return results
 
-	def topicClusteringPrime(self):
+	def topicClusteringPrime(self, filterPos=None):
 		pathBase = "./seeds_prime/"
+		self.seeds = {}
 		for fname in os.listdir(pathBase):
 			textSeed = open(pathBase+fname).read()
-			self.seeds[fname] = self.iSQL.getMsgVector(textSeed)
+			self.seeds[fname] = self.iSQL.getWeightedMsgVector(textSeed, fname)
 
 		self.seedHierarchy =["conversation","emotions","religion","news","yijad","trips","suspActivities"]
 		days_to_avoid = ["2018-05-15","2018-05-31"]
 
-		vectorBlocksPerDay, textBlocksPerDay = self.turnBasedBlocks(False, days_to_avoid)
+		vectorBlocksPerDay, textBlocksPerDay = self.buildTextBlocks(filterPos,days_to_avoid)
 
 		results = {}
 		for date, listVec in vectorBlocksPerDay.iteritems():
@@ -417,22 +448,29 @@ class Topic:
 				results[date+"_"+idx]["text"] = " ".join(textBlocksPerDay[date][int(idx)])
 				results[date+"_"+idx]["distances"] = []
 
+				orderedDists = []
+
 				while i < len(self.seedHierarchy):
 					category = self.seedHierarchy[i]
 					seedVector = self.seeds[category]
 					distance = self.iSQL.distance(vec,seedVector)
-					if distance < minDist:
-						minDist = distance[0]
-						selectedCategory = category
-
+					if not orderedDists:
+						orderedDists.append((category,distance))
+					else:
+						j=0
+						while j< len(orderedDists):
+							if distance < orderedDists[j][0]:
+								orderedDists.insert(j,(category,distance))
+								break
+							j+=1
 					i+=1
 
-				results[date+"_"+idx]["distances"].append(minDist)
-				results[date+"_"+idx]["categories"].append(selectedCategory)
+				results[date+"_"+idx]["distances"].append(orderedDists)
 				minDist = 1000
 				minText = None
 				selectedCategory = None
-
+		
+		self.printResults(results)
 		return results
 
 if __name__ == '__main__':
@@ -448,4 +486,4 @@ if __name__ == '__main__':
 	#With dictSeeds filtering
 	#print "DICT SEEDS WITH PoS FILTERING"
 	#pprint(iTopic.topicClustering(True, ["NOUN","VERB","ADJ"]))
-	pprint(iTopic.topicClusteringAutoBlocks())
+	iTopic.topicClusteringPrime()
