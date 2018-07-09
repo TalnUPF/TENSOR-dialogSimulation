@@ -57,6 +57,12 @@ class SQLEmbeddings:
 		cleanMsg = utils.clean_text(msg)
 		vectors = []
 		dictSeedTokens = open("./dictSeeds/"+dictSeed).read().split("\n")
+
+		i = 0
+		while i<len(dictSeedTokens):
+			dictSeedTokens[i] = dictSeedTokens[i].strip()
+			i+=1
+
 		weights = []
 		for token in cleanMsg:
 			vector = self.getWordVector(token,tableName,nDims)

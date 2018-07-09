@@ -4,7 +4,7 @@ import utils
 from pprint import pprint
 from operator import itemgetter
 import os
-
+from sortedcontainers import SortedList
 
 class Topic:
 
@@ -353,12 +353,16 @@ class Topic:
 				dictDate = results[key]
 				categories = "" 
 				dists = dictDate["distances"]
+				catList = []
+
 				for cat in dists:
-					categories+=cat[0]+" : "+cat[1]+" "
+					categories+=cat[1]+" : "+str(cat[0])+" "
+					catList.append(cat[1])
 
 				text = dictDate["text"]
 
-				print text,"\t",categories,"\n\n"
+				print text,"\t",categories,"\n"
+				print "\t".join(catList),"\n\n"
 
 				i+=1
 				key = date+"_"+str(i)
@@ -448,24 +452,17 @@ class Topic:
 				results[date+"_"+idx]["text"] = " ".join(textBlocksPerDay[date][int(idx)])
 				results[date+"_"+idx]["distances"] = []
 
-				orderedDists = []
+				orderedDists = SortedList()
 
 				while i < len(self.seedHierarchy):
 					category = self.seedHierarchy[i]
 					seedVector = self.seeds[category]
-					distance = self.iSQL.distance(vec,seedVector)
-					if not orderedDists:
-						orderedDists.append((category,distance))
-					else:
-						j=0
-						while j< len(orderedDists):
-							if distance < orderedDists[j][0]:
-								orderedDists.insert(j,(category,distance))
-								break
-							j+=1
+					distance = self.iSQL.distance(vec,seedVector)[0][0]
+					orderedDists.add((distance, category))
+					
 					i+=1
 
-				results[date+"_"+idx]["distances"].append(orderedDists)
+				results[date+"_"+idx]["distances"] = orderedDists
 				minDist = 1000
 				minText = None
 				selectedCategory = None
