@@ -69,8 +69,18 @@ class SQLEmbeddings:
 			vectors.append(vector)
 			weight = 1
 			if token in dictSeedTokens:
+				idx = dictSeedTokens.index(token)
 				weight = 4
+				#dictSeedTokens.pop(idx)
+
 			weights.append(weight)
+
+		'''
+		for elem in dictSeedTokens:
+			vector = self.getWordVector(elem,tableName,nDims)
+			vectors.append(vector)
+			weights.append(0.2)
+		'''
 
 		avgVector = np.average(vectors,axis=0,weights=weights)
 		return avgVector.tolist()
