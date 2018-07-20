@@ -217,6 +217,7 @@ class Topic:
 
 			blockVectorsPerDay[date] = blockVectors
 			textBlocksPerDay[date] = textBlocks
+
 			#print len(textBlocks)
 
 		return blockVectorsPerDay, textBlocksPerDay
@@ -262,6 +263,10 @@ class Topic:
 
 			blockVectorsPerDay[date] = blockVectors
 			textBlocksPerDay[date] = textBlocks
+
+		for date, textList in textBlocksPerDay.iteritems():
+			for turn in textList:
+				print " ".join(turn),"\n\n"
 
 		return blockVectorsPerDay, textBlocksPerDay
 
@@ -356,13 +361,15 @@ class Topic:
 				catList = []
 
 				for cat in dists:
-					categories+=cat[1]+" : "+str(cat[0])+" "
+					#categories+=cat[1]+" : "+str(cat[0])+" "
 					catList.append(cat[1])
 
 				text = dictDate["text"]
+				catList = catList[:2]
+				catString = ",".join(catList)
 
-				print text,"\t",categories,"\n"
-				print "\t".join(catList),"\n\n"
+				print text,"\t",catString,"\n"
+				#print "\t".join(catList),"\n\n"
 
 				i+=1
 				key = date+"_"+str(i)
@@ -483,4 +490,7 @@ if __name__ == '__main__':
 	#With dictSeeds filtering
 	#print "DICT SEEDS WITH PoS FILTERING"
 	#pprint(iTopic.topicClustering(True, ["NOUN","VERB","ADJ"]))
-	iTopic.topicClusteringPrime()
+	
+	iTopic.turnBasedBlocks()
+
+	#iTopic.topicClusteringPrime()

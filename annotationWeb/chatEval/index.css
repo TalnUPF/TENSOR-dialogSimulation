@@ -1,0 +1,60 @@
+.imageClass{
+	width:300px;
+	height:300px;
+}
+
+.column{
+	text-align: center;
+	margin-top:10%;
+}
+
+.navvvv{
+	width:100%;
+	position:fixed;
+	z-index:999999;
+}
+#navbarNav{
+	font-size: 25px;
+}
+body{
+	background-color:  #e6f9ff;
+	overflow-x: hidden;
+}
+.chatConversation
+{
+	padding:100px;
+
+
+}
+.chatMsg{
+	margin-left:0px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td {
+   background-color:   #ffebe6
+
+;
+ }
+
+ .table-striped>tbody>tr:nth-child(even)>td {
+   background-color:  #e6ffe6
+;
+ }
+ .tableDiv{
+ 	position:relative;
+ 	top:75px;
+ 	overflow-x: hidden
+ }
+ .submitButton{
+
+ 	position:relative;
+ 	text-align: center;
+ }
+ .btn.btn-danger{
+ 	margin-top:100px;
+ 	margin-bottom:50px; 	width:100%;
+ 	font-size:40px;
+ }
+ table{
+ 	font-size:19px;
+ }
