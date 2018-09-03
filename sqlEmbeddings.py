@@ -26,7 +26,7 @@ class SQLEmbeddings:
 		try:
 			cursor.execute(strQuery)
 		except:
-			return np.zeros(400)
+			return np.zeros(nDims)
 		vector = []
 
 		if cursor.rowcount > 0:
@@ -34,11 +34,11 @@ class SQLEmbeddings:
 			for dim in results:
 				vector.append(float(dim))
 		else:
-			vector = np.zeros(400)
+			vector = np.zeros(nDims)
 
 		return vector
 
-	def getMsgVector(self, msg, tableName ="joseembeddings" ,nDims = 400):
+	def getMsgVector(self, msg, tableName ="joseembeddings" ,nDims = 400, lang="es"):
 		cleanMsg = utils.clean_text(msg)
 		vectors = []
 

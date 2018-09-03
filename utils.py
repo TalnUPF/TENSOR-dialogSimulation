@@ -42,12 +42,24 @@ def clean_words(tokens, filterStopwords=False, filterPos=None):
 	
 	return cleanTokens
 
-def clean_text(text, filterStopwords=False, filterPos=None):
+def clean_text(text, filterStopwords=False, filterPos=None, lang="es"):
 
-	nlp = spacy.load('es_core_news_sm')
 	cleanTokens = []
-	stopwordList = stopwords.words('spanish')
-	doc = nlp(text.decode("utf8"))
+	stopwordList = []
+	nlp = None
+	
+	if lang=="es":
+		nlp = spacy.load('es_core_news_sm')
+		stopwordList = stopwords.words('spanish')
+		doc = nlp(text.decode("utf8"))
+
+	elif lang =="en":
+		stopwordList = stopwords.words('english')
+		nlp = spacy.load('en_core_web_sm')
+		doc = nlp(text.decode("utf8"))
+
+	else:
+		return None
 
 	for token in doc:
 		if filterPos and not filterStopwords:
