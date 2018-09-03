@@ -1,6 +1,7 @@
 from __future__ import division
 import re
 from sqlEmbeddings import SQLEmbeddings
+from sklearn.metrics import precision_recall_fscore_support as score
 
 iSQL = SQLEmbeddings()
 
@@ -35,6 +36,8 @@ def loadTestData():
 def topicClustering(conversation, seeds):
 
 	totalMsg = len(conversation)
+	gold = []
+	predictions = []
 
 	for msgDict in conversation:
 		msgVector = iSQL.getMsgVector(msgDict["msg"], "google", 300, "en")
@@ -48,13 +51,15 @@ def topicClustering(conversation, seeds):
 		else:
 			predictedLabel = 0
 
+		gold.append(int(msgDict["label"]))
+		predictions.append(predictedLabel)
+
 		#print msgDict["msg"], distances, predictedLabel, msgDict["label"]
 
-		if msgDict["label"] == predictedLabel:
-			correct+=1
-
-	accuracy = correct / totalMsg
-	print correct, totalMsg, accuracy
+	precision, recall, fscore, support = score(gold, predictions)
+	print 'precision: {}'.format(precision)
+	print 'recall: {}'.format(recall)
+	print 'fscore: {}'.format(fscore)
 
 conversation = loadTestData()
 seeds = loadSeeds()
