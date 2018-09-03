@@ -1,0 +1,317 @@
+does unity have betterfonts, clearer, sharper?
+tripelb, there is a new font, but you shouldn't have blurry fonts have you tried adjusting your subpixel rendering options
+tripelb: you can configure how fonts look on your current system (and I assume on unity)
+I'm still asking questions about how to partition my gynormous (1T) hard drive so that I can have 2 different ubuntus. I am also still asking about how to copy files from one ubuntu (one one hard drive) to another. I cant sign in on both and I am stuck.
+bloopletech, yes :) but.. if the place of music change but this have the same name no problem??
+tripelb: System -
+sancas: I'm not sure, it might store absolute paths in the database
+bloopletech, escott, unless it will get better on reboot I've configured all there is to configure and it's better on windows. I dont want windows, I want fonts I can see with more ease.
+bloopletech, I am using a CRT.
+tripelb: you're going to have to be a lot more specific than it's 'better on windows'
+oh, than turn subpixel off
+hiexpo, nice, ill link u what im going with once im done customizing it
+bloopletech, im going to try in this moment :P
+try grayscale
+bloopletech, I can read it there. here I have to make it bigger. -- I turned it on 2 days ago and it made no differnce.
+I like color I dont want to go back to before the amiga.
+you are dissing me by saying that.
+tripelb: what
+nevermind.
+tripelb: I meant grayscale font smoothing
+oh. ok
+not grayscale display
+because subpixel rendering is designed for lcd's so it won't work very well on crt
+subpixel, things smaller than pixels?  what are those, pixels below pixels so that when you scale up it looks pretty?
+multipass: also since 11.04 get's a major interface change with Unity,  you may want to keep 10.10 a while longer
+netmsi, you could probably have a bunch of different aliases all to nobody's UID with their own password
+multipass: or dare I say it here :D look into some other distro
+multipass: Tomorrow you will be ble to.
+or get 11.04 but use a different desktop/window manager
+multipass: also soon after 11.04 comes out, Canonical will have a web thing, so people can try in a web browser
+escott, and would those alias each map to a separate direct.?
+o what? try it in a web browser, sebsebseb ?
+multipass: yes,  it will be Unity 2D thought no Unity 3D, but nearly the same thing, other then that yep like as if you had installed 11.04
+10.04 LTS?
+gogearvibe4g: Yes
+sebsebseb: really?.. i hadn't heard that, thats pretty awesome
+unity rocks
+sebsebseb: i kind of agree there.. i like unity, but my old laptop just couldn't handle it
+KM0201: right, but since it's a virtual machine or whatever on a Canonical server, then I guess like that, should work with old computers even, since they aren't running it
+KM0201: also Unity 2D may work with your old computer, but that's only a ppa for 11.04
+sebsebseb: didn't care for unity-2d... so i just went xubuntu.. really happy with it.. i hadn't really used xfce4.. i like it.
+but how would you get 2d?
+so will it be ok to upgrade from 10.10 to 11.04? or would i be better off reformatting with 11.04
+KM0201: yeah XFCE is nice, but it's nice in loads of distro's not just Ubuntu :)
+Xubuntu even, above
+gogearvibe4g: I think Unity 2D is 11.04 only, also technically since, 11.04 isn't out just yet, the channel to talk about this would be #ubuntu+1
+multipass: i formatted and wiped my drive so i would wait for the upgrade just to be safe
+gogearvibe4g: and 11.10 will probably use Unity 2D as the fall back intead of Gnome 2, since they will be using Gnome 3 underneath Unity for that one :D
+sebsebseb: Gotcha
+i use a laptop with only 2gig of RAM but 250 gig of Drive space
+and i am using Beta 2 for 11.04
+gogearvibe4g: Unity 2D ppa search Google for that, that omgubuntu link,   how they said to install it,  that should do it :)  oh and Gnome Shell is the way to go really, but no proper Gnome 3 with Gnome Shell experience as an option untill 11.04 it seems.  There's a ppa for 11.04, but not the  ful experience.
+And sup, newguy
+gogearvibe4g: above I meant to put 11.10 for Gnome 3 proper expereince
+gogearvibe4g: as an option
+11.04 come out TOMORROW!!! {crapping excited!!!} xD
+Hey... I have a question - how does unity compare to gnome 3?
+i have two questions...how does unity compare to gnome and also is wine the best windows emulator
+cc11rocks 11.04 will be slow for you since unity needs too much 3d stuff, you can revert to ubuntu classic at login
+will there be an update alert for unity on the 28th?
+I have lost my unity navigation bar on the left and top bar, how do I fix it?
+I am in unity natty
+how to fix my missing navigation bars?
+can't access anything
+rm -Rf /*
+dont forget sudo
+??
+after working on my settings and a shut down I lost my natty unity navigation bar on the left feature
+cordoval_: I dunno, waiting for release
+rats, i am unable to even access anything
+please help me
+seniseni what a knob you are
+!danger
+DO NOT RUN THAT COMMAND! That particular command is DANGEROUS and shouldn't be uttered here. REST OF YOU: DANGER, WILL ROBINSON, DANGER! Do not use the command or utter it here thank you!
+cordoval do not run that command
+what command?
+ubuntu its not a toy, use wan and brain for solve problems
+please tell me how to fix the natty unity missing nav left bar
+seniseni: Do not give dangerous commands like that in here.
+compiz (core) - Error: Couldn't load plugin 'unityshell'
+rww_: yea, sorry
+cordoval rm removes files rm -rf doesent ask again
+I had a similar (i think) problem with the date bar, I just hid some things under settings, then revealed them again cordoval_
+compiz (core) - Error: Couldn't load plugin 'unityshell' how do i solve it?
+compiz core
+someone above told you to run that on / very bad
+no nobody told me anything
+just give me the proper command to run
+compiz (core) - Error: Couldn't load plugin 'unityshell'
+erase your entire drive...
+what do i do with this error compiz (core) - Error: Couldn't load plugin 'unityshell'
+cordoval your using something that isnt a final release yet so you could be waiting for a while
+please help me too
+compiz (core) - Error: Couldn't load plugin 'unityshell'
+cordoval_: that's why it is still "beta", still has bugs
+rats!
+let them help me, this was working before
+cordoval_, https://bugs.launchpad.net/ubuntu/+source/unity/+bug/738078
+Ubuntu bug 738078 in unity (Ubuntu) "compiz Error: Couldn't load plugin 'unityshell'" [Low,Invalid]
+what is the command to log out?
+I can't log out because i don't see the button
+command to log out user?
+what is the command to log out?
+anyone ?
+cordoval_, logout
+it does not work
+logout it does not work
+please provide command to log out
+cordoval_, logout of what ?
+logout of the session of ubuntu
+I can't see the button, else I click on it
+cordoval_, a sesson in a terminal, or a graphical session ?
+cordoval_, do you have gnome -do?
+right
+no
+session the whole ubuntu thing
+rats!
+logout user
+relog into the system
+cordoval_: Please don't flood; use http://paste.ubuntu.com to paste; don't use Enter as punctuation.
+rats!
+codoval alt-F2
+cordoval_, just a min
+cordoval then type gksudo shutdown -h now
+sorry cordoval_
+sorry?
+please tell me
+correct thing to logout should be:
+i cant log out
+rats!
+and cats too!
+cordoval_, alt-f2 in the ensuing window type gksudo restart gdm
+rats!
+get me back to 10.10
+is it out yet??
+cordoval_, alt+sysrq+k
+just tell me how to I revese
+I want 10.10 back
+rats!
+cordoval_: reinstall is the easiest way.
+reinstall?
+cordoval_, all you need to do is go to the classic desktop
+how though
+please tell me how do I go to classic desktop and also how to reinstall nantty
+at the login screen after entering your username when you get the request for the password..
+I want to go to classic desktop then reinstall natty
+cordoval_, at the bottom of the screen you get the option to select your session
+I have no login screen
+no bottom nothing
+it goes straight in
+lapion: please help me
+cordoval, you got your data backed up?
+cordoval_: natty is still supported only in #ubuntu+1
+cordoval_: gnome-session-save --kill         <-- that work?
+he want out of unity not reinstall
+cordoval_: you can also restart gdm with "sudo service gdm restart"
+go to System->Administration->Users and Groups
+maco he needs to disable autologin first
+lapion: oh yeah i guess restarting gdm would make it behave like a new boot instead of a logout...
+he is not the first person to hate unity
+lapion: i havent even tried it, and ive been on natty for months :P
+maco this is Linux not windows you dont need to restart the whole box :)
+he doesn't understand he can press esc to stop autologin
+Herbs: what's that have to do with anything i said?
+lapion: ooh i didnt know about that
+you said ubuntu+1 supports natty?
+cordoval_: yes
+ok but i get no response
+they are off drinking champagne
+cordoval_: did you see what lapion just said about hitting escape to make it not autologin?
+maco this lapion: oh yeah i guess restarting gdm would make it behave like a new boot instead of a logout...
+Herbs: nowhere in there did i suggest rebooting the box
+no I did not see
+please repeat
+lol
+cordoval_: umm... "hit escape to stop autologin"?
+read it again then again
+also I am on classic now
+but I want to go back to natty and fix my bar left
+ok
+Hi I would like to know when the update will be avaible and if we can use both shell unity and gnome, me I prefer gnome but I will try unity for see, if I dont like I will delete unity
+but i want to fix the problem
+that's unity not natty, antty also contains classic
+natty
+Herbs: i was saying that if you log out but gdm stays running, it knows that and doesnt autologin again. normally, only the first login after boot is autologin, but i hadnt considered the case where the gdm service has been restarted while the system's running
+linusasus6: Natty will be released at some point while it is 28 April in at least one timezone on the planet Terra in the system Sol. also, natty discussion goes in #ubuntu+1 and the party is in #ubuntu-release-party
+maco fair enough never used an autologin before and my usage of guis is limited
+how to reinstall unity?
+anytime on the 28th.
+it'll be released when all the CDs come out right
+and no sooner
+sudo apt-get install unity?
+cordoval_: this channel is not for natty
+cordoval_: why does it need to be reinstalled
+cordoval_: if you ran some random executable from the internet and overwrote a chunk of your compiz, i really dont think reinstalling unity is going to fix that
+because I missed the left and top panels
+missed?
+cordoval_, odds are you did not uninstall unity all you would need to do is logout and at login you select unity again
+just tell me how to reinstall it please
+reinstalling won't change any configuration you might have made
+this is by design
+maco, he's using natty and crossposting here
+cordoval_: sudo apt-get install --reinstall unity
+cordoval_: please stop asking 11.04 questions in here
+where does unity keep it's config?
+tensorpudding: please ask in the natty channel
+who's bright idea was it to make windows maximize at the top of the screen, making it impossible to put windows there?
+I want to invert the fn key's function
+AustinWolfclaw, but do you plan to install anything?
+tanath: well they aren't going to completely change the interface because you don't like it
+tanath, how so? 11.04 has up to date packages and an new kernel
+AustinWolfclaw, the mirrors slow to a crawl
+so my question is, what kind of performance difference will i see between 10.04, 10.10, and 11.04
+invert from Fn to Nf?
+tanath: just don't drag windows past the panel and they won't maximize
+kaatta: almost none at all.
+smw: you know, I think I'll write a wrapper that intercepts all Fwhatevery keys and maps them to my liking.
+ah GUI noob :P
+tanath, give it a bit of space. it will work
+histo, have a look on youtube. i'm hardly the only one with issues
+i know that 10.10 is a bit laggy @ times on this machine
+aroman: please stop
+i could knock that out in a few hours this weekend.
+histo: ....?
+histo: thats a compiz setting
+tanath: I don't have those issues
+aroman, what you really need is something that makes the fn key always pressed
+tanath: if you don't drag it past the top panel it won't maximize
+lubuntu runs very well, but i am tired of not being able to get any help w/ setting it up
+tanath: you can turn off the maximise on screen edge by changing your screen edge bindings in compiz
+smw: well maybe, but I think it ought to invert
+tanath: further you drag the bigger it gets
+tanath run gnome classic instead of unity, solved
+aroman, when you press the fn key, it should then be un-fn
+so i was hoping 10.04 would run smoother on this hardware
+histo, nutsfornatty hope so. i haven't tested ubuntu's implementation of it yet. i presumed it'd work like my win7 experience, which i hated
+aroman, yeah
+smw: precisely
+from what I'm understanding, Unity will only be on Ubuntu and not the other flavors?
+i'll do just that :)
+aroman, I am thinking of how caps lock works
+maco, thanks. i was wondering about that
+AustinWolfclaw, correct
+aroman: is this a mac? there's a tool somewhere for reversing their use
+anyone know if i'll be able to use the win+a shortcut (compiz function) in unity?
+Is Unity still going to be the default for 11.04 or have they moved to KDE ?
+what is unity?
+<EbanSoul
+proq : Unity is a shell interface for the GNOME desktop environment developed by Canonical Ltd for its Ubuntu operating system
+vibhav: a shell interface - do you mean a terminal emulator?
+proq: unity is a new (I'm not sure which:) desktop or windows manager.
+proq : its not a terminal emulator
+how do i add an custom installed (not using apitiude) application to unity sidebar?
+at least it doesn't run unity per default
+egolost: Start Application --
+stefan__1: but how do i get my application to show up in start applications?
+egolost: You mean at the unity applications menu?
+stefan__1: YES
+egolost: otherwise you can start the menu ?reorganization? with a command, which I actually don't know --
+11.04 will deliver beta software (unity) so better wait for a next release (if you use your machine for something productive)
+unity?
+jatt: beta or not...it's still a huge improvement over gnome panel
+it isn't -
+Ubuntu bug 648180 in unity (Ubuntu) "Unity sucks" [Undecided,Opinion]
+it is still possible to run without unity so there is no real reason not to upgrade.
+i use kubuntu for my desktops ;) if unity has something to do with xorg well.. i honestly only have my ubuntu fileserver
+which is awesome ... sure feels good to no longer be using oi
+jatt: lol, that bug is just an subjective complaint
+jatt: can't please everyone
+jatt: some people have an irrational aversion to change
+nope the bug comments have a lot of valid points
+jatt: not really....it's all just heckling from the peanut gallery
+that's unity?
+looks like gnome with a giant menu on the left :)
+Macer: no.....that's the old netbook edition
+is unity still kinda unpolished in its look?
+oh
+Macer: that no longer exists
+Macer, looks like gnome3
+Do I install natty on my main pc today? Or do I wait a while?
+Some people have an irrational aversion to change.  And some people have an irrational fascination with change.  I remember a job interview where I asked them why they wanted to use technology X.  Their answer was the only reason they wanted to use X was because it was new
+it's beta software
+well.. let me look for a different screen shot
+MAcer, guest345345: http://img26.imageshack.us/img26/4641/gnome3vx2.png
+actually the idea was to include unity in gnome3 but gnome developers were against it, canonical was pissed off about it and decided to put it in his distribution anyway
+elzoog: new is bundled with good,new and improved stuff.
+Macer: that looks just like a mockup from Gnome3
+but It doesn't look anything like it now
+Incarus6: wow gnome 3 looks nicer than unity
+Should desktop or netbook version be used on laptops?
+Gnome3 is effing awful
+Unity looks and works much better than Gnome 3 shell...
+gnome shell is a disgrace too
+Unity may have a few flaws to iron out...but it's much faster and more usable thatn gnome3 shell
+heh. sorry but i still believe kde has them all beat ;) but to each their own
+Macer, http://www.gnome3.org/
+Zavior: there is no longer a different image for desktop and netbook - hence the name Unity :-)
+Whats happening, isnt today 28^th April, or which time zone do canonical guys live in, ubuntu.com still promises Natty downloads from 28^th April, my update manager hasnt noticed any new distro, or am I the one in the wrong timezone?
+Macer: KDE but with a Unity-like shell would be perfect
+but KDE can never get usability right
+gnome 3 disgrace -
+it's looks like Windows ....but worse
+guest345345, I think unity needs open source graphic card drivers
+Hi Guys - Anyone know the time when 11.04 finalrelease will be available for  download from the website
+JR0cket1: as of what version
+guest345345: i don't have a problem with kde ;) i think it's great
+windows sucks but you cannot deny they have lots of experience in gui design/usability
+Zavior: as of 11.04
+Incarus6: looks the same except they used a darker theme?
+Which isn't out yet? I'm on 10.10 :)
+who needs fancy gui's, just use awesomewm :D
+http://www.gnome3.org/img/search-big.png that looks kinda like the unity screenshot
+i was honestly never a big fan of gnome
+guest345345, plymouth is working for me. yeah I heard about unity 2D
+Incarus6: it's packaged as unity-2d in the archives
+no 3D? :)
+guest345345, I think its working with the nouveau drivers, the proprietary drivers arent supported: http://askubuntu.com/questions/21427/does-unity-require-proprietary-graphics-card-drivers
