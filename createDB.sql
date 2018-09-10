@@ -10,9 +10,9 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-DROP TABLE IF EXISTS `sbw`;
+DROP TABLE IF EXISTS `glove`;
 
-CREATE TABLE `sbw` (
+CREATE TABLE `glove` (
   `word` varchar(255) PRIMARY KEY,
   `dim1` decimal(10,8) DEFAULT NULL,
   `dim2` decimal(10,8) DEFAULT NULL,

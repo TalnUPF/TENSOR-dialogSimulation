@@ -2,18 +2,19 @@ from __future__ import division
 import re
 from sqlEmbeddings import SQLEmbeddings
 from sklearn.metrics import precision_recall_fscore_support as score
+import os
 
 iSQL = SQLEmbeddings()
 
-def load_seeds():
-	pathBase = "./ubuntuWikiSeeds/"
-	#pathBase = "./ubuntuChatSeeds/"
-	
+def loadSeeds(pathBase, embeddingsSelected):
+	print "============================="
+	print "selected seed is " + pathBase
+	print "selected embeddings are "+embeddingsSelected
 	seeds = {}
 
 	for fname in os.listdir(pathBase):
 		textSeed = open(pathBase+fname).read()
-		seeds[fname] = iSQL.getMsgVector(textSeed, "google", 300, "en")
+		seeds[fname] = iSQL.getMsgVector(textSeed, embeddingsSelected, 300, "en")
 
 	return seeds
 
@@ -33,14 +34,14 @@ def loadTestData():
 
 	return conversation
 
-def topicClustering(conversation, seeds):
+def topicClustering(conversation, seeds, embeddingsSelected):
 
 	totalMsg = len(conversation)
 	gold = []
 	predictions = []
 
 	for msgDict in conversation:
-		msgVector = iSQL.getMsgVector(msgDict["msg"], "google", 300, "en")
+		msgVector = iSQL.getMsgVector(msgDict["msg"], embeddingsSelected, 300, "en")
 		distances = {}
 		for seedName, seedVector in seeds.iteritems():
 			distance = iSQL.distance(msgVector,seedVector)
@@ -55,12 +56,43 @@ def topicClustering(conversation, seeds):
 		predictions.append(predictedLabel)
 
 		#print msgDict["msg"], distances, predictedLabel, msgDict["label"]
+	
+	print "micro average"
+	precision, recall, fscore, support = score(gold, predictions, average="micro")
+	print 'precision: {}'.format(precision)
+	print 'recall: {}'.format(recall)
+	print 'fscore: {}'.format(fscore)
 
-	precision, recall, fscore, support = score(gold, predictions)
+	print "macro average"
+	precision, recall, fscore, support = score(gold, predictions, average="macro")
+	print 'precision: {}'.format(precision)
+	print 'recall: {}'.format(recall)
+	print 'fscore: {}'.format(fscore)
+
+	print "weighted"
+	precision, recall, fscore, support = score(gold, predictions, average="weighted")
 	print 'precision: {}'.format(precision)
 	print 'recall: {}'.format(recall)
 	print 'fscore: {}'.format(fscore)
 
 conversation = loadTestData()
-seeds = loadSeeds()
-topicClustering(conversation, seeds)
+
+embeddingsSelected = "google"
+
+pathBase = "./ubuntuChatSeeds/"
+seeds = loadSeeds(pathBase, embeddingsSelected)
+topicClustering(conversation, seeds, embeddingsSelected)
+
+pathBase = "./ubuntuWikiSeeds/"
+seeds = loadSeeds(pathBase, embeddingsSelected)
+topicClustering(conversation, seeds, embeddingsSelected)
+
+embeddingsSelected = "wiki_en"
+
+pathBase = "./ubuntuChatSeeds/"
+seeds = loadSeeds(pathBase, embeddingsSelected)
+topicClustering(conversation, seeds, embeddingsSelected)
+
+pathBase = "./ubuntuWikiSeeds/"
+seeds = loadSeeds(pathBase, embeddingsSelected)
+topicClustering(conversation, seeds, embeddingsSelected)
