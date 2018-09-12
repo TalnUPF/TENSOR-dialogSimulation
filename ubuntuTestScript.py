@@ -3,6 +3,7 @@ import re
 from sqlEmbeddings import SQLEmbeddings
 from sklearn.metrics import precision_recall_fscore_support as score
 import os
+from sklearn.metrics import fbeta_score
 
 iSQL = SQLEmbeddings()
 
@@ -57,25 +58,46 @@ def topicClustering(conversation, seeds, embeddingsSelected):
 
 		#print msgDict["msg"], distances, predictedLabel, msgDict["label"]
 	
+
+
 	print "micro average"
 	precision, recall, fscore, support = score(gold, predictions, average="micro")
+	f2score = fbeta_score(gold, predictions, beta=2, average="micro")
+
 	print 'precision: {}'.format(precision)
 	print 'recall: {}'.format(recall)
 	print 'fscore: {}'.format(fscore)
+	print 'f2score: {}'.format(f2score)
 
 	print "macro average"
 	precision, recall, fscore, support = score(gold, predictions, average="macro")
+	f2score = fbeta_score(gold, predictions, beta=2, average="macro")
+	
 	print 'precision: {}'.format(precision)
 	print 'recall: {}'.format(recall)
 	print 'fscore: {}'.format(fscore)
+	print 'f2score: {}'.format(f2score)
 
 	print "weighted"
 	precision, recall, fscore, support = score(gold, predictions, average="weighted")
+	f2score = fbeta_score(gold, predictions, beta=2, average="weighted")
+	
 	print 'precision: {}'.format(precision)
 	print 'recall: {}'.format(recall)
 	print 'fscore: {}'.format(fscore)
+	print 'f2score: {}'.format(f2score)
 
 conversation = loadTestData()
+
+embeddingsSelected = "glove"
+
+pathBase = "./ubuntuChatSeeds/"
+seeds = loadSeeds(pathBase, embeddingsSelected)
+topicClustering(conversation, seeds, embeddingsSelected)
+
+pathBase = "./ubuntuWikiSeeds/"
+seeds = loadSeeds(pathBase, embeddingsSelected)
+topicClustering(conversation, seeds, embeddingsSelected)
 
 embeddingsSelected = "google"
 
@@ -96,3 +118,4 @@ topicClustering(conversation, seeds, embeddingsSelected)
 pathBase = "./ubuntuWikiSeeds/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
+
