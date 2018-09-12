@@ -31,7 +31,7 @@
                         <div class="tm-content-box">
                         	<img src="img/results.png" alt="Image" class="imageClass tm-margin-b-20 img-fluid">
                             <h4 class="tm-margin-b-20 tm-gold-text">See the results</h4>
-                            <p class="tm-margin-b-20">Visualize the annotation results.</p>
+                            <p class="tm-margin-b-20">Visualize the evaluation results.</p>
                             <a href="about.html" class="tm-btn">Visualize!</a>    
                         </div>  
 

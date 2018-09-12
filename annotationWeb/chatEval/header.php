@@ -19,8 +19,9 @@
     <ul class="nav navbar-nav">
       <a class="navLinkButton nav-item nav-link" href="index.php">Home</a>
       <a class="navLinkButton nav-item nav-link" href="fullText.php">See Text</a>
-      <a class="navLinkButton nav-item nav-link" href="evaluation.php">Annotate</a>
+      <a class="navLinkButton nav-item nav-link" href="evaluation.php">Evaluate</a>
       <a class="navLinkButton nav-item nav-link" href="results.php">Results</a>
+      <a class="navLinkButton nav-item nav-link annnn" href="annotation.php">Annotate</a>
     </ul>
   </div>
 </nav>
