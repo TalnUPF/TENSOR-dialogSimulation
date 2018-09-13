@@ -1,0 +1,109 @@
+selected seed is ./ubuntuChatSeeds/
+selected embeddings are glove
+/usr/local/lib/python2.7/dist-packages/scipy/spatial/distance.py:1832: RuntimeWarning: invalid value encountered in true_divide
+  dm /= _row_norms(XA).reshape(-1, 1)
+micro average
+precision: 0.693151634138
+recall: 0.693151634138
+fscore: 0.693151634138
+f2score: 0.693151634138
+macro average
+precision: 0.551910035111
+recall: 0.726770437759
+fscore: 0.510649833266
+f2score: 0.553368088917
+weighted
+precision: 0.934614823775
+recall: 0.693151634138
+fscore: 0.777258458783
+f2score: 0.713337850825
+=============================
+selected seed is ./ubuntuWikiSeeds/
+selected embeddings are glove
+micro average
+precision: 0.24090541633
+recall: 0.24090541633
+fscore: 0.24090541633
+f2score: 0.24090541633
+macro average
+precision: 0.520975722689
+recall: 0.564488543688
+fscore: 0.225531376218
+f2score: 0.242393802067
+weighted
+precision: 0.930350011549
+recall: 0.24090541633
+fscore: 0.322879294141
+f2score: 0.240149456992
+=============================
+selected seed is ./ubuntuChatSeeds/
+selected embeddings are google
+micro average
+precision: 0.739230858067
+recall: 0.739230858067
+fscore: 0.739230858067
+f2score: 0.739230858067
+macro average
+precision: 0.55718797964
+recall: 0.727902006031
+fscore: 0.535702649797
+f2score: 0.58220397143
+weighted
+precision: 0.933098494434
+recall: 0.739230858067
+fscore: 0.809949188936
+f2score: 0.757290241929
+=============================
+selected seed is ./ubuntuWikiSeeds/
+selected embeddings are google
+micro average
+precision: 0.254301882434
+recall: 0.254301882434
+fscore: 0.254301882434
+f2score: 0.254301882434
+macro average
+precision: 0.523143676587
+recall: 0.574597507779
+fscore: 0.236284172379
+f2score: 0.252587178663
+weighted
+precision: 0.933173856216
+recall: 0.254301882434
+fscore: 0.340935909353
+f2score: 0.255150771974
+=============================
+selected seed is ./ubuntuChatSeeds/
+selected embeddings are wiki_en
+micro average
+precision: 0.478923663241
+recall: 0.478923663241
+fscore: 0.478923663241
+f2score: 0.478923663241
+macro average
+precision: 0.539548955398
+recall: 0.690282000719
+fscore: 0.391568478316
+f2score: 0.413956419123
+weighted
+precision: 0.942240599347
+recall: 0.478923663241
+fscore: 0.597243212709
+f2score: 0.498341521993
+=============================
+selected seed is ./ubuntuWikiSeeds/
+selected embeddings are wiki_en
+micro average
+precision: 0.301074027024
+recall: 0.301074027024
+fscore: 0.301074027024
+f2score: 0.301074027024
+macro average
+precision: 0.524717937526
+recall: 0.592249345473
+fscore: 0.271346042396
+f2score: 0.284688422324
+weighted
+precision: 0.933435517045
+recall: 0.301074027024
+fscore: 0.402648890451
+f2score: 0.308416311258
