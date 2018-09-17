@@ -1,9 +1,9 @@
 <?php
 	require_once("header.php");
 
-	$txtRaw = file_get_contents("resources/forWeb.out");
-
-	$pieces = explode("\n\n",$txtRaw);
+	$chatId = explode("_", $_GET['chatId'])[0];
+	$txtRaw = file_get_contents("resources/topics/".$_GET['chatId']);
+	$pieces = explode("\n",$txtRaw);
 
 	$textList = array();
 	$catList = array();
@@ -38,7 +38,7 @@
 	     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 	}
 
-	$sql = "SELECT block_id, Q1,Q2 FROM `results`";
+	$sql = "SELECT block_id, Q1,Q2 FROM `results` WHERE `date`='".$chatId."'";
 	$stmt= $pdo->prepare($sql);
 	$stmt->execute();
 	$result = $stmt->fetchAll(PDO::FETCH_ASSOC);

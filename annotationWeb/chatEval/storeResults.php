@@ -1,11 +1,14 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
+	error_reporting(E_ALL);
+	ini_set('display_errors', 1);
 
 	$host = 'localhost';
 	$db   = 'chatEval';
 	$user = 'root';
 	$pass = 'pany8491';
+
+	$date = $_POST["chatId"];
 
 	$options = [
 	    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -23,24 +26,28 @@ ini_set('display_errors', 1);
 
 	foreach($_POST as $key => $answer)
 	{
-		$pieces = explode("_",$key);
-		$questionId = $pieces[0];
-		$block_id = $pieces[1];
-		
-		if(!array_key_exists($block_id,$results))
+		if($key!="chatId")
 		{
-			$results[$block_id] = array();
-		}
+			$pieces = explode("_",$key);
+			$questionId = $pieces[0];
+			$block_id = $pieces[1];
+			
+			if(!array_key_exists($block_id,$results))
+			{
+				$results[$block_id] = array();
+			}
 
-		$results[$block_id][$questionId] = intval($answer);
+			$results[$block_id][$questionId] = intval($answer);
+		}
+		
 		
 	}
-
+	$idAnn = rand();
 	foreach($results as $block => $dictAns)
 	{
-		$sql = "INSERT INTO `results` (`block_id`, Q1, Q2) VALUES (?,?,?)";
+		$sql = "INSERT INTO `results` (`block_id`, Q1, Q2, id_annotator, `date`) VALUES (?,?,?,?,?)";
 		$stmt= $pdo->prepare($sql);
-		$stmt->execute([$block, $dictAns["Q1"], $dictAns["Q2"]]);
+		$stmt->execute([$block, $dictAns["Q1"], $dictAns["Q2"], $idAnn,$date]);
 	}
 
 	require_once("header.php");

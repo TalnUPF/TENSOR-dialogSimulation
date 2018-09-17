@@ -1,19 +1,17 @@
 <?php
 	require_once("header.php");
 
-	$txtRaw = file_get_contents("resources/turns.txt");
+	$chatId = $_GET['chatId'];
+	$txtRaw = file_get_contents("resources/turns/".$chatId);
 
 	$pieces = explode("\n\n",$txtRaw);
 
 	$textList = array();
 	$catList = array();
 
-	foreach ($pieces as $msg) {
-		$pieceLine = explode("\t",$msg);
-		$txt = $pieceLine[0];
-		$textList[] = $txt;
-		$preds = $pieceLine[1];
-		$catList[] = $preds;
+	foreach ($pieces as $msg) 
+	{
+		$textList[] = $msg;
 	}
 	$i=0;
 ?>

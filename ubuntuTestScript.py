@@ -91,31 +91,32 @@ conversation = loadTestData()
 
 embeddingsSelected = "glove"
 
-pathBase = "./ubuntuChatSeeds/"
+pathBase = "./ubuntuChatSeeds2/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
 
+'''
 pathBase = "./ubuntuWikiSeeds/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
-
+'''
 embeddingsSelected = "google"
 
-pathBase = "./ubuntuChatSeeds/"
+pathBase = "./ubuntuChatSeeds2/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
-
+'''
 pathBase = "./ubuntuWikiSeeds/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
-
+'''
 embeddingsSelected = "wiki_en"
 
-pathBase = "./ubuntuChatSeeds/"
+pathBase = "./ubuntuChatSeeds2/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
-
+'''
 pathBase = "./ubuntuWikiSeeds/"
 seeds = loadSeeds(pathBase, embeddingsSelected)
 topicClustering(conversation, seeds, embeddingsSelected)
-
+'''

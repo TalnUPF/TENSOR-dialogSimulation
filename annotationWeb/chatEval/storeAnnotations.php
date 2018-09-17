@@ -20,13 +20,15 @@
 	     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 	}
 	$idAnn = rand();
-	
+	$date = $_POST["chatId"];
 	foreach($_POST as $key => $answer)
 	{
-		$sql = "INSERT INTO `annotations` (`turn_id`, annotation, `id_annotator`) VALUES (?,?,?)";
-		$stmt= $pdo->prepare($sql);
-		$stmt->execute([intval($key), $answer, $idAnn]);
-		
+		if($key!="chatId")
+		{
+			$sql = "INSERT INTO `annotations` (`turn_id`, annotation, `id_annotator`,`date`) VALUES (?,?,?,?)";
+			$stmt= $pdo->prepare($sql);
+			$stmt->execute([intval($key), $answer, $idAnn,$date]);
+		}
 	}
 
 	require_once("header.php");

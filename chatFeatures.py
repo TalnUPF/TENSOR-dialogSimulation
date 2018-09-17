@@ -18,7 +18,7 @@ class ChatFeatures:
 	def __init__ (self, conversation=None):
 
 		if not conversation:
-			self.raw = "./raw/small.xml"
+			self.raw = "./raw/11JUN.xml"
 		else:
 			self.raw = conversation
 

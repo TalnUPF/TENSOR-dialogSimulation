@@ -1,9 +1,9 @@
 <?php
 	require_once("header.php");
 
-	$txtRaw = file_get_contents("resources/turns.txt");
-
-	$pieces = explode("\n\n",$txtRaw);
+	$chatId = explode("_", $_GET['chatId'])[0];
+	$txtRaw = file_get_contents("resources/topics/".$_GET['chatId']);
+	$pieces = explode("\n",$txtRaw);
 
 	$textList = array();
 	$catList = array();
@@ -63,10 +63,10 @@
 				echo $textList[$i];
 ?>			
 			</td>
-
+			<input type="hidden" id="chatId" name="chatId" value="<?php echo $chatId;?>" />
 			<td class="col-md-3">
 				  <div align="center" class="categoryWrapper">
-				  	 <label for="sel1">Pick the most fitting category:</label>
+				  	 <label for="sel1">Select a topic label</label>
 				     <select name="<?php echo $i;?>" class="form-control dropdown" id="sel1">
 				          <option value="conversation">conversation</option>
 						  <option value="suspActivities">suspActivities</option>

@@ -1,9 +1,10 @@
 <?php
 	require_once("header.php");
 
-	$txtRaw = file_get_contents("resources/forWeb.out");
+	$chatId = explode("_", $_GET['chatId'])[0];
+	$txtRaw = file_get_contents("resources/topics/".$_GET['chatId']);
 
-	$pieces = explode("\n\n",$txtRaw);
+	$pieces = explode("\n",$txtRaw);
 
 	$textList = array();
 	$catList = array();
@@ -60,12 +61,13 @@
 				  <div>
 				  	Does this block make sense?
 				  </div>
+				  <input type="hidden" id="chatId" name="chatId" value="<?php echo $chatId;?>" />
 				  <input type="radio" name="Q1_<?php echo $i;?>" value="1"  checked="checked" /> Yes<br/>
 				  <input type="radio" name="Q1_<?php echo $i;?>" value="0"/> No <br/>
 			</td>
 			<td class="col-md-2">
 				  <div>
-				  	Does this topic classification sense?
+				  	Are these topics appropriate?
 				  </div>
 				  <input type="radio" name="Q2_<?php echo $i;?>" value="1"  checked="checked" /> Yes<br>
 				  <input type="radio" name="Q2_<?php echo $i;?>" value="0"/> No
