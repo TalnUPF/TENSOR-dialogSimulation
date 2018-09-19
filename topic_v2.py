@@ -164,6 +164,7 @@ class Topic:
 
 		textBlocksPerDay = {}
 		blockVectorsPerDay = {}
+		userBlocksPerDay = {}
 
 		for date, listMsgs in self.iChat.conversation.iteritems():
 			#print date
@@ -178,12 +179,17 @@ class Topic:
 			lastVector = None
 			acumTokens = 0
 			acumText = []
+			acumTextToAppend = []
+			acumUsers = []
 			textBlocks = []
+			userBlocks = []
 			blockVector = None
 			blockVectors = []
 			for idx, dictMsg in enumerate(listMsgs):
 				
 				text = dictMsg["text"]
+				user = dictMsg["user"]
+
 				if not filterPos:
 					cleanTokens = utils.clean_text(text)
 				else:
@@ -191,6 +197,8 @@ class Topic:
 
 				acumTokens+=len(cleanTokens)
 				acumText.extend(cleanTokens)
+				acumTextToAppend.append(cleanTokens)
+				acumUsers.append(user)
 
 				if acumTokens >= MIN_TOKENS:
 					if not blockVector:
@@ -202,24 +210,25 @@ class Topic:
 							continue
 						
 						distance = self.iSQL.distance(vector, blockVector)
-						#print distance
 						if distance > THRESHOLD:
-							textBlocks.append(acumText)
+							textBlocks.append(acumTextToAppend)
 							blockVectors.append(blockVector)
+							userBlocks.append(acumUsers)
 							blockVector = []
-							#print acumText
 							acumText = []
+							acumTextToAppend = []
+							acumUsers = []
 							acumTokens = 0
 						else:
-							#print "aggregating"
 							blockVector = self.iSQL.aggregateVectors(blockVector,vector)
+
+
 
 			blockVectorsPerDay[date] = blockVectors
 			textBlocksPerDay[date] = textBlocks
+			userBlocksPerDay[date] = userBlocks
 
-			#print len(textBlocks)
-
-		return blockVectorsPerDay, textBlocksPerDay
+		return blockVectorsPerDay, textBlocksPerDay, userBlocksPerDay
 
 
 	def turnBasedBlocks(self, filterPos=None, days_to_avoid=[], store=False):
@@ -287,7 +296,7 @@ class Topic:
 			self.seeds[fname] = self.iSQL.getMsgVector(textSeed)
 
 	def buildTopicHierarchy(self):
-		self.seedHierarchy =[["question","conversation","emotions","religion","news","yijad","trips","suspActivities"]]
+		self.seedHierarchy =[["conversation","emotions","religion","news","yijad","suspActivities"]]
 		#self.seedHierarchy =[["emotions","religion","news","yijad","trips","suspActivities"]]
 	
 	def printResults(self,results):
@@ -360,7 +369,7 @@ class Topic:
 
 		days_to_avoid = ["2018-05-15","2018-05-31"]
 		if not vectorBlocksPerDay and not textBlocksPerDay:
-			vectorBlocksPerDay, textBlocksPerDay = self.buildTextBlocks(filterPos,days_to_avoid)
+			vectorBlocksPerDay, textBlocksPerDay, userBlocksPerDay = self.buildTextBlocks(filterPos,days_to_avoid)
 
 		results = {}
 		for date, listVec in vectorBlocksPerDay.iteritems():
@@ -380,7 +389,13 @@ class Topic:
 				
 				results[date+"_"+idx] = {}
 				results[date+"_"+idx]["categories"] = []
-				results[date+"_"+idx]["text"] = " ".join(textBlocksPerDay[date][int(idx)])
+				txtblock = textBlocksPerDay[date][int(idx)]
+
+				strBlocks = ""
+				for idxUser , block in enumerate(txtblock):
+					strBlocks+= " ".join(block)+" [--["+userBlocksPerDay[date][int(idx)][idxUser]+"]--] "
+
+				results[date+"_"+idx]["text"] = strBlocks
 				results[date+"_"+idx]["distances"] = []
 
 				while i < len(self.seedHierarchy):
@@ -417,5 +432,5 @@ class Topic:
 if __name__ == '__main__':
 	
 	iTopic = Topic()
-	iTopic.turnBasedBlocks(store=True)
-	#iTopic.topicClustering(store=True)
+	#iTopic.turnBasedBlocks(store=True)
+	iTopic.topicClustering(store=True)
