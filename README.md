@@ -7,6 +7,7 @@ Repository with utils to analyze chat data generated in Tensor.
 - seeds/ has the basic topic seeds
 - dictSeeds/ has the most important tokens of each seed
 - annotationWeb/ has an html page where the users can annotate how well our system is doing, to see it, just copy that into your var/www/html and access localhost/chatEval 
+- build/ contains the files needed to generate a Docker with the demo.
 
 The other folders are just probably iterations of other content.
 
