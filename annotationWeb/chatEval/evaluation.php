@@ -2,7 +2,7 @@
 	require_once("header.php");
 
 	$chatId = explode("_", $_GET['chatId'])[0];
-	$txtRaw = file_get_contents("resources/topics/".$_GET['chatId']);
+	$txtRaw = file_get_contents("resources/topicsPerUser/".$_GET['chatId']);
 
 	$pieces = explode("\n",$txtRaw);
 
@@ -35,6 +35,9 @@
 		  </thead>
 <?php
 	$i=0;
+	$AZRA = "[--[azra]--]";
+	$JAWAD = "[--[jawad]--]";
+
 	while($i<count($textList))
 	{
 ?>
@@ -48,7 +51,30 @@
 			</td>
 			<td class="col-md-5">
 <?php
-				echo $textList[$i];
+				$textElem = trim($textList[$i]);
+				$pieces = explode(" ",$textElem);
+				$j = 0;
+				$acumMsg = "";
+				while($j < count($pieces))
+				{
+					$token = $pieces[$j];
+					if($token == $AZRA)
+					{
+						echo "<span class='azraText'>".$acumMsg."</span> ||";
+						$acumMsg = "";
+					}
+					else if ($token == $JAWAD)
+					{
+						echo "<span class='jawadText'>".$acumMsg."</span> ||";
+						$acumMsg = "";
+					}
+					else
+					{
+						$acumMsg.=" ".$token;
+					}
+					$j++;
+				}
+
 ?>			
 			</td>
 			<td class="col-md-2">

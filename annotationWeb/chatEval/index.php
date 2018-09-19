@@ -5,7 +5,7 @@
 <body>
 
 	 <div class="row">
-                    <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
                         <div class="tm-content-box">
                             <img src="img/txt.png" alt="Image" class="imageClass tm-margin-b-20 img-fluid">
@@ -16,7 +16,7 @@
 
                     </div>
 
-                    <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
                         <div class="tm-content-box">
                             <img src="img/evaluate.png" alt="Image" class="imageClass tm-margin-b-20 img-fluid">
@@ -26,13 +26,24 @@
                         </div>  
                     </div>
 
-                    <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                   <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
                         <div class="tm-content-box">
-                        	<img src="img/results.png" alt="Image" class="imageClass tm-margin-b-20 img-fluid">
+                            <img src="img/annotation.png" alt="Image" class="imageClass tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Annotate</h4>
+                            <p class="tm-margin-b-20">Manually annotate the conversations.</p>
+                            <a href="listAnnotation.php" class="tm-btn">Annotate!</a>    
+                        </div>  
+
+                    </div>
+
+                     <div class="column col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/results.png" alt="Image" class="imageClass tm-margin-b-20 img-fluid">
                             <h4 class="tm-margin-b-20 tm-gold-text">See the results</h4>
                             <p class="tm-margin-b-20">Visualize the evaluation results.</p>
-                            <a href="about.html" class="tm-btn">Visualize!</a>    
+                            <a href="listEvaluation.php" class="tm-btn">Visualize!</a>    
                         </div>  
 
                     </div>

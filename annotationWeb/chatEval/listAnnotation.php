@@ -3,7 +3,7 @@
 	require_once("header.php");
 
 
-	$files = scandir('./resources/topics/');
+	$files = scandir('./resources/topicsPerUser/');
 	echo "<div id='mainContainer'>";
 	echo "<h1>Chat Conversations</h1><br/>";
 
