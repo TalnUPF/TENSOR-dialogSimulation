@@ -1,0 +1,26 @@
+FROM ubuntu:16.04
+
+MAINTAINER Juan Soler-Company <juan.soler@upf.edu>
+
+RUN apt-get update -y
+
+RUN apt-get install -y apache2 vim bash-completion unzip
+RUN mkdir -p /var/lock/apache2 /var/run/apache2
+
+RUN apt-get install -y php7.0 php-mysql php7.0-dev php7.0-gd php7.0-pspell php7.0-snmp snmp php7.0-xmlrpc php7.0-cli libapache2-mod-php7.0 phpmyadmin
+
+RUN chmod 777 -R /var/www/html/
+WORKDIR /var/www/html/
+ADD chatEval.tar.gz .
+ADD chatEval.sql .
+ADD launch.sh .
+
+# MySQL
+ENV MYSQL_PWD pany8491
+RUN echo "mysql-server mysql-server/root_password password $MYSQL_PWD" | debconf-set-selections
+RUN echo "mysql-server mysql-server/root_password_again password $MYSQL_PWD" | debconf-set-selections
+RUN apt-get -y install mysql-server
+RUN apt-get install -y mysql-client mysql-client-core-5.7
+
+EXPOSE 80
+CMD sh launch.sh
